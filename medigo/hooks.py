@@ -234,4 +234,6 @@ fixtures = [
     "Lieux evenements",
     "Type Action",
     "Custom DocPerm",
+    "Server Script",
+    "Client Script",
 ]
