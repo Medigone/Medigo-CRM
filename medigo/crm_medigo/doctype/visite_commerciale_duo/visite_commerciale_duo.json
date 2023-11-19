@@ -1,0 +1,260 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:VCD-{client}-{YY}-{MM}-{DD}",
+ "creation": "2023-11-16 20:06:30.638106",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_visite_tab",
+  "status",
+  "date_prevue",
+  "client",
+  "delegue",
+  "notations",
+  "ponctualite",
+  "adaptation_application",
+  "connaissances_commerciales",
+  "connaissances_produits",
+  "autonomie",
+  "column_break_eizv",
+  "remontee_information",
+  "relationnel",
+  "gestion_temps",
+  "preparation_visite",
+  "note_visite",
+  "localisation_tab",
+  "commune",
+  "wilaya",
+  "zone",
+  "controle_tab",
+  "heure_debut_visite",
+  "gps_debut_visite",
+  "date_visite",
+  "column_break_dizu",
+  "heure_fin_visite",
+  "gps_fin_visite",
+  "temps_visite",
+  "remis_tab",
+  "liste_remis"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_visite_tab",
+   "fieldtype": "Tab Break",
+   "label": "D\u00e9tails Visite"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Programm\u00e9e\nEn Cours\nTermin\u00e9e\nAnnul\u00e9e"
+  },
+  {
+   "fieldname": "localisation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Localisation"
+  },
+  {
+   "fieldname": "controle_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contr\u00f4le"
+  },
+  {
+   "fieldname": "remis_tab",
+   "fieldtype": "Tab Break",
+   "label": "Remis"
+  },
+  {
+   "fieldname": "date_prevue",
+   "fieldtype": "Date",
+   "label": "Date Pr\u00e9vue"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "delegue",
+   "fieldtype": "Link",
+   "label": "D\u00e9l\u00e9gu\u00e9",
+   "options": "User"
+  },
+  {
+   "fieldname": "notations",
+   "fieldtype": "Tab Break",
+   "label": "Notations"
+  },
+  {
+   "fieldname": "ponctualite",
+   "fieldtype": "Select",
+   "label": "Ponctualit\u00e9",
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "adaptation_application",
+   "fieldtype": "Select",
+   "label": "Adaptation Application",
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "connaissances_commerciales",
+   "fieldtype": "Select",
+   "label": "Connaissances Commerciales",
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "connaissances_produits",
+   "fieldtype": "Select",
+   "label": "Connaissances Produits",
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "autonomie",
+   "fieldtype": "Select",
+   "label": "Autonomie",
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "column_break_eizv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remontee_information",
+   "fieldtype": "Select",
+   "label": "Remont\u00e9e Information",
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "relationnel",
+   "fieldtype": "Select",
+   "label": "Relationnel",
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "gestion_temps",
+   "fieldtype": "Select",
+   "label": "Gestion du temps",
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "preparation_visite",
+   "fieldtype": "Select",
+   "label": "Pr\u00e9paration Visite",
+   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "note_visite",
+   "fieldtype": "Int",
+   "label": "Note Visite",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "label": "Commune",
+   "options": "Communes"
+  },
+  {
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "label": "Wilaya",
+   "options": "Wilayas"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "liste_remis",
+   "fieldtype": "Table",
+   "label": "Liste Remis",
+   "options": "Remis Commercial"
+  },
+  {
+   "fieldname": "heure_debut_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure D\u00e9but Visite"
+  },
+  {
+   "fieldname": "gps_debut_visite",
+   "fieldtype": "Data",
+   "label": "GPS D\u00e9but Visite"
+  },
+  {
+   "fieldname": "date_visite",
+   "fieldtype": "Date",
+   "label": "Date Visite"
+  },
+  {
+   "fieldname": "column_break_dizu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heure_fin_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure Fin Visite"
+  },
+  {
+   "fieldname": "gps_fin_visite",
+   "fieldtype": "Data",
+   "label": "GPS Fin Visite"
+  },
+  {
+   "fieldname": "temps_visite",
+   "fieldtype": "Duration",
+   "label": "Temps Visite"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-16 20:46:08.089386",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Visite Commerciale Duo",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "date_visite",
+ "sort_order": "ASC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Programm\u00e9e"
+  },
+  {
+   "color": "Yellow",
+   "title": "En Cours"
+  },
+  {
+   "color": "Green",
+   "title": "Termin\u00e9e"
+  },
+  {
+   "color": "Red",
+   "title": "Annul\u00e9e"
+  }
+ ],
+ "title_field": "client",
+ "track_changes": 1
+}

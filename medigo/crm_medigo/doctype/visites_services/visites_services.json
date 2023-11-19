@@ -1,0 +1,262 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:VS-{YY}-{MM}-{####}",
+ "creation": "2023-10-25 12:13:22.992960",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "d\u00e9tails_visite_tab",
+  "d\u00e9tails_visite_column",
+  "status",
+  "date_prevue",
+  "etablissement",
+  "service",
+  "column_break_eyom",
+  "objectif_visite",
+  "objectif_produit_1",
+  "objectif_produit_2",
+  "objectif_produit_3",
+  "tab_2_tab",
+  "partenariat",
+  "contrepartie",
+  "objections_produit",
+  "traitement_objection",
+  "column_break_dwph",
+  "requete",
+  "localisation_tab",
+  "commune",
+  "wilaya",
+  "zone",
+  "r\u00e9capitulatif_tab",
+  "heure_debut_visite",
+  "gps_debut_visite",
+  "date_visite",
+  "column_break_dmtq",
+  "heure_fin_visite",
+  "gps_fin_visite",
+  "temps_visite"
+ ],
+ "fields": [
+  {
+   "fieldname": "d\u00e9tails_visite_tab",
+   "fieldtype": "Tab Break",
+   "label": "D\u00e9tails Visite"
+  },
+  {
+   "fieldname": "d\u00e9tails_visite_column",
+   "fieldtype": "Column Break",
+   "label": "D\u00e9tails Visite"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Programm\u00e9e\nEn Cours\nTermin\u00e9e\nAnnul\u00e9e"
+  },
+  {
+   "fieldname": "date_prevue",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Date Pr\u00e9vue"
+  },
+  {
+   "fieldname": "etablissement",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u00c9tablissement",
+   "options": "Etablissements"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Services"
+  },
+  {
+   "fieldname": "column_break_eyom",
+   "fieldtype": "Column Break",
+   "label": "Objectifs Visite"
+  },
+  {
+   "fieldname": "objectif_visite",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Objectif visite",
+   "options": "Objectif Visite"
+  },
+  {
+   "fieldname": "objectif_produit_1",
+   "fieldtype": "Link",
+   "label": "Objectif Produit 1",
+   "options": "Item"
+  },
+  {
+   "fieldname": "objectif_produit_2",
+   "fieldtype": "Link",
+   "label": "Objectif Produit 2",
+   "options": "Item"
+  },
+  {
+   "fieldname": "objectif_produit_3",
+   "fieldtype": "Link",
+   "label": "Objectif Produit 3",
+   "options": "Item"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Enqu\u00eate Visite"
+  },
+  {
+   "fieldname": "partenariat",
+   "fieldtype": "Data",
+   "label": "Partenariat"
+  },
+  {
+   "fieldname": "contrepartie",
+   "fieldtype": "Link",
+   "label": "Contrepartie",
+   "options": "Contrepartie"
+  },
+  {
+   "fieldname": "objections_produit",
+   "fieldtype": "Data",
+   "label": "Objections Produit"
+  },
+  {
+   "default": "Non",
+   "fieldname": "traitement_objection",
+   "fieldtype": "Select",
+   "label": "Traitement Objection",
+   "options": "Oui\nNon"
+  },
+  {
+   "fieldname": "column_break_dwph",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requete",
+   "fieldtype": "Small Text",
+   "label": "Requ\u00eate"
+  },
+  {
+   "fieldname": "localisation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Localisation"
+  },
+  {
+   "fetch_from": "service.commune",
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "label": "Commune",
+   "options": "Communes"
+  },
+  {
+   "fetch_from": "commune.wilaya",
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "label": "Wilaya",
+   "options": "Wilayas"
+  },
+  {
+   "fetch_from": "commune.zone",
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "r\u00e9capitulatif_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contr\u00f4le"
+  },
+  {
+   "fieldname": "heure_debut_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure D\u00e9but Visite"
+  },
+  {
+   "fieldname": "gps_debut_visite",
+   "fieldtype": "Data",
+   "label": "GPS D\u00e9but Visite"
+  },
+  {
+   "fieldname": "date_visite",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Visite"
+  },
+  {
+   "fieldname": "column_break_dmtq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heure_fin_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure Fin Visite"
+  },
+  {
+   "fieldname": "gps_fin_visite",
+   "fieldtype": "Data",
+   "label": "GPS Fin Visite"
+  },
+  {
+   "fieldname": "temps_visite",
+   "fieldtype": "Duration",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Temps Visite"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-25 19:59:20.807979",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Visites Services",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Programm\u00e9e"
+  },
+  {
+   "color": "Yellow",
+   "title": "En Cours"
+  },
+  {
+   "color": "Green",
+   "title": "Termin\u00e9e"
+  },
+  {
+   "color": "Red",
+   "title": "Annul\u00e9e"
+  }
+ ],
+ "track_changes": 1
+}

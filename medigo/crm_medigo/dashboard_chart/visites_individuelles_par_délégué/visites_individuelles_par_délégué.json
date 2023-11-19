@@ -1,0 +1,44 @@
+{
+ "based_on": "",
+ "chart_name": "Visites Individuelles Par D\u00e9l\u00e9gu\u00e9",
+ "chart_type": "Group By",
+ "color": "#449CF0",
+ "creation": "2023-10-27 23:17:44.400002",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Visites Individuelles",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[]",
+ "group_by_based_on": "owner",
+ "group_by_type": "Count",
+ "idx": 10,
+ "is_public": 1,
+ "is_standard": 1,
+ "last_synced_on": "2023-10-29 15:47:53.301201",
+ "modified": "2023-10-29 16:07:11.823903",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Visites Individuelles Par D\u00e9l\u00e9gu\u00e9",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Administrateur M\u00e9dical"
+  },
+  {
+   "role": "Superviseur M\u00e9dical"
+  }
+ ],
+ "source": "",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}

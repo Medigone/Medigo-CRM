@@ -1,0 +1,49 @@
+{
+ "based_on": "creation",
+ "chart_name": "Cr\u00e9ation \u00c9tablissements",
+ "chart_type": "Count",
+ "color": "#449CF0",
+ "creation": "2023-10-27 21:21:57.282775",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Etablissements",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[]",
+ "group_by_type": "Count",
+ "idx": 3,
+ "is_public": 1,
+ "is_standard": 1,
+ "last_synced_on": "2023-11-19 12:13:36.427402",
+ "modified": "2023-11-19 12:13:44.629515",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Cr\u00e9ation \u00c9tablissements",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Administrateur M\u00e9dical"
+  },
+  {
+   "role": "Superviseur M\u00e9dical"
+  },
+  {
+   "role": "D\u00e9l\u00e9gue M\u00e9dical"
+  },
+  {
+   "role": "Analyste M\u00e9dical"
+  }
+ ],
+ "source": "",
+ "time_interval": "Daily",
+ "timeseries": 1,
+ "timespan": "Last Month",
+ "type": "Line",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}

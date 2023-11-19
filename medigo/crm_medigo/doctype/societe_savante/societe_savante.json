@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-30 20:57:21.948537",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_tab",
+  "nom",
+  "specialite",
+  "phone",
+  "email",
+  "column_break_tyzw",
+  "commune",
+  "wilaya",
+  "zone",
+  "potentiel",
+  "membres_tab",
+  "prescripteurs"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "specialite",
+   "fieldtype": "Link",
+   "label": "Sp\u00e9cialit\u00e9",
+   "options": "Spec Soc Sav"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "membres_tab",
+   "fieldtype": "Tab Break",
+   "label": "Membres"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "D\u00e9tails"
+  },
+  {
+   "fieldname": "column_break_tyzw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "label": "Commune",
+   "options": "Communes"
+  },
+  {
+   "fetch_from": "commune.wilaya",
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "label": "Wilaya",
+   "options": "Wilayas"
+  },
+  {
+   "fetch_from": "commune.zone",
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "potentiel",
+   "fieldtype": "Rating",
+   "label": "Potentiel"
+  },
+  {
+   "fieldname": "prescripteurs",
+   "fieldtype": "Table",
+   "label": "Prescripteurs",
+   "options": "Membre soc sav"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-30 21:35:42.549791",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Societe Savante",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

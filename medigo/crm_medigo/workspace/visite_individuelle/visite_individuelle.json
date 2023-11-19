@@ -1,0 +1,71 @@
+{
+ "charts": [
+  {
+   "chart_name": "Heat Map Visites Individuelles",
+   "label": "Heatmap Visites Individuelles"
+  },
+  {
+   "chart_name": "Visites Individuelles Par Objectif",
+   "label": "Objectif Visites"
+  },
+  {
+   "chart_name": "Visites individuelles Par PR1",
+   "label": "Objectif Produit 1"
+  },
+  {
+   "chart_name": "Visites Individuelles Par D\u00e9l\u00e9gu\u00e9",
+   "label": "Visites Individuelles Par D\u00e9l\u00e9gu\u00e9"
+  },
+  {
+   "chart_name": "Visites individuelles Par PR2",
+   "label": "Objectif Produit 2"
+  },
+  {
+   "chart_name": "Visites individuelles Par PR3",
+   "label": "Objectif Produit 3"
+  }
+ ],
+ "content": "[{\"id\":\"FbWi17fMOC\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Heatmap Visites Individuelles\",\"col\":12}},{\"id\":\"6D34N8bsSn\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Individuelles\",\"col\":12}},{\"id\":\"Y9GiLvV2ls\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>VISITES INDIVIDUELLES AUJOURD'HUI</b>\",\"col\":12}},{\"id\":\"2645LOATLY\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Programm\u00e9es\",\"col\":4}},{\"id\":\"-o4Lw-UG1n\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites En Cours\",\"col\":4}},{\"id\":\"PejweWf0k2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Termin\u00e9es\",\"col\":4}},{\"id\":\"wlf9I7gWcs\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Visites\",\"col\":6}},{\"id\":\"qarJOYYvzp\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 1\",\"col\":6}},{\"id\":\"6jqsjcTiU_\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 2\",\"col\":6}},{\"id\":\"4hF2mvQguf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 3\",\"col\":6}},{\"id\":\"RC7kU7kOQ3\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Visites Individuelles Par D\u00e9l\u00e9gu\u00e9\",\"col\":12}}]",
+ "creation": "2023-10-27 21:35:41.613399",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "change",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Visite Individuelle",
+ "links": [],
+ "modified": "2023-11-19 12:28:43.756725",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Visite Individuelle",
+ "number_cards": [
+  {
+   "label": "Visites Individuelles",
+   "number_card_name": "Visites Individuelles"
+  },
+  {
+   "label": "Visites Programm\u00e9es",
+   "number_card_name": "Visites Individuelles Programm\u00e9es"
+  },
+  {
+   "label": "Visites En Cours",
+   "number_card_name": "Visites Individuelles En Cours"
+  },
+  {
+   "label": "Visites Termin\u00e9es",
+   "number_card_name": "Visites Individuelles En Cours-1"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [],
+ "title": "Visite Individuelle"
+}

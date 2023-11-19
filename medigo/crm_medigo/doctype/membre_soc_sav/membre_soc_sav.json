@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MSC-{######}",
+ "creation": "2023-10-30 21:28:35.946254",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "prescripteur",
+  "titre",
+  "role"
+ ],
+ "fields": [
+  {
+   "fieldname": "prescripteur",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Prescripteur",
+   "options": "Prescripteurs"
+  },
+  {
+   "fetch_from": "prescripteur.titre_prescripteur",
+   "fieldname": "titre",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Titre",
+   "options": "Titre Prescripteur"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "R\u00f4le",
+   "options": "Pr\u00e9sident\nVice Pr\u00e9sident\nSecr\u00e9taire G\u00e9n\u00e9ral\nSecr\u00e9taire G\u00e9n\u00e9ral \u2013 Adjoint\nTr\u00e9sorier"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-30 21:41:20.944385",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Membre soc sav",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

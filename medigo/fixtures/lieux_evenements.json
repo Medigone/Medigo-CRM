@@ -1,0 +1,44 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Lieux evenements",
+  "lieux_evenement": "Salle de Conférence",
+  "modified": "2023-10-29 14:31:48.242728",
+  "name": "Salle de Conférence"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Lieux evenements",
+  "lieux_evenement": "Restaurant",
+  "modified": "2023-10-29 14:31:48.260276",
+  "name": "Restaurant"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Lieux evenements",
+  "lieux_evenement": "Externe",
+  "modified": "2023-10-29 14:31:48.271586",
+  "name": "Externe"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Lieux evenements",
+  "lieux_evenement": "Journée médicale",
+  "modified": "2023-10-29 14:31:48.283717",
+  "name": "Journée médicale"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Lieux evenements",
+  "lieux_evenement": "Service",
+  "modified": "2023-10-29 14:31:48.229469",
+  "name": "Service"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Lieux evenements",
+  "lieux_evenement": "Hôtel",
+  "modified": "2023-10-29 14:31:48.184179",
+  "name": "Hôtel"
+ }
+]

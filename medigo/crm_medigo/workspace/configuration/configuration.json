@@ -1,0 +1,182 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"0FBbfzDKxX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Configuration</span>\",\"col\":12}},{\"id\":\"gEEiotgMdY\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"XtpFvv9KCY\",\"type\":\"card\",\"data\":{\"card_name\":\"Localisation\",\"col\":3}},{\"id\":\"pD87FskjMk\",\"type\":\"card\",\"data\":{\"card_name\":\"Entit\u00e9s\",\"col\":3}},{\"id\":\"9bqWxHQ84e\",\"type\":\"card\",\"data\":{\"card_name\":\"Visites\",\"col\":3}},{\"id\":\"eAylZNrV7u\",\"type\":\"card\",\"data\":{\"card_name\":\"Actions\",\"col\":3}}]",
+ "creation": "2023-10-26 13:50:05.622478",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "setting-gear",
+ "idx": 0,
+ "indicator_color": "cyan",
+ "is_hidden": 0,
+ "label": "Configuration",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Localisation",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Communes",
+   "link_count": 0,
+   "link_to": "Communes",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Wilaya",
+   "link_count": 0,
+   "link_to": "Wilayas",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Zone",
+   "link_count": 0,
+   "link_to": "Zone",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Entit\u00e9s",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Titre Prescripteur",
+   "link_count": 0,
+   "link_to": "Titre Prescripteur",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Type Etablissement",
+   "link_count": 0,
+   "link_to": "Type Etablissement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Type Service",
+   "link_count": 0,
+   "link_to": "Type Service",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Laboratoires",
+   "link_count": 0,
+   "link_to": "Laboratoires",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Visites",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Objectif Visite",
+   "link_count": 0,
+   "link_to": "Objectif Visite",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Contrepartie",
+   "link_count": 0,
+   "link_to": "Contrepartie",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Actions",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Type Action",
+   "link_count": 0,
+   "link_to": "Type Action",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lieux \u00e9v\u00e8nements",
+   "link_count": 0,
+   "link_to": "Lieux evenements",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Raisons absence",
+   "link_count": 0,
+   "link_to": "Raisons absence",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-11-19 12:28:02.551020",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Configuration",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 9.0,
+ "shortcuts": [],
+ "title": "Configuration"
+}

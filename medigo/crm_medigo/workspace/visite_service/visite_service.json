@@ -1,0 +1,67 @@
+{
+ "charts": [
+  {
+   "chart_name": "Visites Services Par PR1",
+   "label": "Objectif Produit 1"
+  },
+  {
+   "chart_name": "Visites Services Par Objectif",
+   "label": "R\u00e9partition Par Objectif"
+  },
+  {
+   "chart_name": "Heat Map Visites Services",
+   "label": "Heatmap Visites Services"
+  },
+  {
+   "chart_name": "Visites Services Par PR2",
+   "label": "Objectif Produit 2"
+  },
+  {
+   "chart_name": "Visites Services Par PR3",
+   "label": "Objectif Produit 3"
+  }
+ ],
+ "content": "[{\"id\":\"koV6s4WxVi\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Heatmap Visites Services\",\"col\":12}},{\"id\":\"0pGtwvNcdv\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Services\",\"col\":12}},{\"id\":\"Y9GiLvV2ls\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>VISITES SERVICES AUJOURD'HUI</b>\",\"col\":12}},{\"id\":\"2645LOATLY\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Programm\u00e9es\",\"col\":4}},{\"id\":\"-o4Lw-UG1n\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites En Cours\",\"col\":4}},{\"id\":\"PejweWf0k2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Termin\u00e9es\",\"col\":4}},{\"id\":\"YPYlN5acr2\",\"type\":\"chart\",\"data\":{\"chart_name\":\"R\u00e9partition Par Objectif\",\"col\":6}},{\"id\":\"CRL7u5te0o\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 1\",\"col\":6}},{\"id\":\"PFmO8iNpN_\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 2\",\"col\":6}},{\"id\":\"w9AjmhHKP6\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 3\",\"col\":6}}]",
+ "creation": "2023-10-27 22:30:13.046516",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "sort",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Visite Service",
+ "links": [],
+ "modified": "2023-11-19 12:28:54.822205",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Visite Service",
+ "number_cards": [
+  {
+   "label": "Visites Programm\u00e9es",
+   "number_card_name": "Visites Services Programm\u00e9es"
+  },
+  {
+   "label": "Visites En Cours",
+   "number_card_name": "Visites Services En Cours"
+  },
+  {
+   "label": "Visites Services",
+   "number_card_name": "Visites Services"
+  },
+  {
+   "label": "Visites Termin\u00e9es",
+   "number_card_name": "Visites Services Termin\u00e9es"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 3.0,
+ "shortcuts": [],
+ "title": "Visite Service"
+}

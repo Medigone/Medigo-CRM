@@ -1,0 +1,184 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.455702",
+  "name": "SF",
+  "titre_prescripteur": "SF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.487660",
+  "name": "VACC",
+  "titre_prescripteur": "VACC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.499719",
+  "name": "INF",
+  "titre_prescripteur": "INF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.512586",
+  "name": "MG",
+  "titre_prescripteur": "MG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.524682",
+  "name": "PED",
+  "titre_prescripteur": "PED"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.545126",
+  "name": "MGP",
+  "titre_prescripteur": "MGP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.556642",
+  "name": "PED RES",
+  "titre_prescripteur": "PED RES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.584258",
+  "name": "PUER",
+  "titre_prescripteur": "PUER"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.601526",
+  "name": "DSP",
+  "titre_prescripteur": "DSP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.617009",
+  "name": "PSY",
+  "titre_prescripteur": "PSY"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.628346",
+  "name": "PH",
+  "titre_prescripteur": "PH"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.640444",
+  "name": "ECO",
+  "titre_prescripteur": "ECO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.664228",
+  "name": "DIET",
+  "titre_prescripteur": "DIET"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.673737",
+  "name": "NUT",
+  "titre_prescripteur": "NUT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.683925",
+  "name": "GYNEC",
+  "titre_prescripteur": "GYNEC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.720660",
+  "name": "MED HYG SCO",
+  "titre_prescripteur": "MED HYG SCO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.731149",
+  "name": "CUIS",
+  "titre_prescripteur": "CUIS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.740714",
+  "name": "COORDINATEUR",
+  "titre_prescripteur": "COORDINATEUR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.751472",
+  "name": "DIRECTEUR",
+  "titre_prescripteur": "DIRECTEUR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.763839",
+  "name": "GYNEC PROF",
+  "titre_prescripteur": "GYNEC PROF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.774685",
+  "name": "INTERNE",
+  "titre_prescripteur": "INTERNE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.787782",
+  "name": "NOURRICE",
+  "titre_prescripteur": "NOURRICE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.695535",
+  "name": "PED MA",
+  "titre_prescripteur": "PED MA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.707001",
+  "name": "PED PROF",
+  "titre_prescripteur": "PED PROF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.804773",
+  "name": "CHEF DE SERVICE PROF",
+  "titre_prescripteur": "CHEF DE SERVICE PROF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.653076",
+  "name": "CHIR",
+  "titre_prescripteur": "CHIR"
+ }
+]

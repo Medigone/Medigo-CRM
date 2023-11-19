@@ -1,0 +1,47 @@
+{
+ "based_on": "date_visite",
+ "chart_name": "Heat Map Visites Services",
+ "chart_type": "Count",
+ "color": "#449CF0",
+ "creation": "2023-10-28 12:56:51.972516",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Visites Services",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[[\"Visites Services\",\"status\",\"=\",\"Termin\u00e9e\",false]]",
+ "group_by_based_on": "owner",
+ "group_by_type": "Count",
+ "idx": 13,
+ "is_public": 1,
+ "is_standard": 1,
+ "last_synced_on": "2023-10-29 11:42:07.899850",
+ "modified": "2023-10-29 16:08:04.917875",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Heat Map Visites Services",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Administrateur M\u00e9dical"
+  },
+  {
+   "role": "Superviseur M\u00e9dical"
+  },
+  {
+   "role": "D\u00e9l\u00e9gue M\u00e9dical"
+  }
+ ],
+ "source": "",
+ "time_interval": "Yearly",
+ "timeseries": 1,
+ "timespan": "Last Year",
+ "type": "Heatmap",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}

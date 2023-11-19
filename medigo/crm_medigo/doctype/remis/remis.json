@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:REM-{YY}-{MM}-{####}",
+ "creation": "2023-10-25 22:41:12.313670",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "visite",
+  "date",
+  "prescripteur",
+  "article",
+  "quantite"
+ ],
+ "fields": [
+  {
+   "fieldname": "prescripteur",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Prescripteur",
+   "options": "Prescripteurs"
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Article",
+   "options": "Item"
+  },
+  {
+   "fieldname": "quantite",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Quantit\u00e9",
+   "non_negative": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "visite",
+   "fieldtype": "Link",
+   "label": "Visite",
+   "options": "Visites Individuelles"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-19 10:07:22.825394",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Remis",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

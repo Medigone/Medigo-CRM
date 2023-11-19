@@ -1,0 +1,51 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Objectif Visite",
+  "modified": "2023-10-24 18:44:06.687080",
+  "name": "Présentation Produit",
+  "objectif_visite": "Présentation Produit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Objectif Visite",
+  "modified": "2023-10-24 18:44:06.698847",
+  "name": "Traitement Objections",
+  "objectif_visite": "Traitement Objections"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Objectif Visite",
+  "modified": "2023-10-24 18:44:06.709581",
+  "name": "Résolution Conflits",
+  "objectif_visite": "Résolution Conflits"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Objectif Visite",
+  "modified": "2023-10-24 18:44:06.722265",
+  "name": "Négociation d'exclusivité",
+  "objectif_visite": "Négociation d'exclusivité"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Objectif Visite",
+  "modified": "2023-10-24 18:44:06.745217",
+  "name": "Organisation Événement - Invitation",
+  "objectif_visite": "Organisation Événement - Invitation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Objectif Visite",
+  "modified": "2023-10-24 18:44:06.656423",
+  "name": "Prospection",
+  "objectif_visite": "Prospection"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Objectif Visite",
+  "modified": "2023-10-24 18:44:06.733750",
+  "name": "Négociation Offre Promo",
+  "objectif_visite": "Négociation Offre Promo"
+ }
+]

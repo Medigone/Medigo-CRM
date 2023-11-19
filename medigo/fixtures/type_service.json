@@ -1,0 +1,100 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.906446",
+  "name": "DERMATO PEDIATRIE",
+  "type_service": "DERMATO PEDIATRIE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.912880",
+  "name": "DIABETOLOGIE",
+  "type_service": "DIABETOLOGIE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.916530",
+  "name": "ENDOCRINOLOGIE",
+  "type_service": "ENDOCRINOLOGIE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.920370",
+  "name": "GASTRO-PEDIATRIE",
+  "type_service": "GASTRO-PEDIATRIE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.923924",
+  "name": "GYNECO",
+  "type_service": "GYNECO"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.928560",
+  "name": "INFECTUEUX",
+  "type_service": "INFECTUEUX"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.939983",
+  "name": "PEDIATRIE",
+  "type_service": "PEDIATRIE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.945976",
+  "name": "PNEUMO PEDIATRIE",
+  "type_service": "PNEUMO PEDIATRIE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.949577",
+  "name": "REANIMATION",
+  "type_service": "REANIMATION"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.953105",
+  "name": "URGENCE PEDIATRIE",
+  "type_service": "URGENCE PEDIATRIE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.956525",
+  "name": "VACCINATION",
+  "type_service": "VACCINATION"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.936137",
+  "name": "NEONATE",
+  "type_service": "NEONATE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-24 18:53:43.893311",
+  "name": "ADMINISTRATION",
+  "type_service": "ADMINISTRATION"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Service",
+  "modified": "2023-10-29 14:36:11.384355",
+  "name": "MATERNITÉ",
+  "type_service": "MATERNITÉ"
+ }
+]

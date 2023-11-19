@@ -1,0 +1,258 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{nom_complet_prescripteur}",
+ "creation": "2023-10-24 18:59:08.346405",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "d\u00e9tails_tab",
+  "d\u00e9tails_column",
+  "nom_prescripteur",
+  "prenom_prescripteur",
+  "nom_complet_prescripteur",
+  "telephone_prescripteur",
+  "email_prescripteur",
+  "connections_column",
+  "titre_prescripteur",
+  "etablissement",
+  "service",
+  "cabinet_prive_prescripteur",
+  "chef_de_service",
+  "informations_personnelles_tab",
+  "sexe",
+  "situation_matrimoniale",
+  "epouse",
+  "potentiel_tab",
+  "potentiel_column",
+  "status",
+  "potentiel",
+  "localisation_tab",
+  "tab_2_tab",
+  "commune",
+  "wilaya",
+  "zone",
+  "gps_prescripteur"
+ ],
+ "fields": [
+  {
+   "fieldname": "d\u00e9tails_tab",
+   "fieldtype": "Tab Break",
+   "label": "D\u00e9tails"
+  },
+  {
+   "fieldname": "d\u00e9tails_column",
+   "fieldtype": "Column Break",
+   "label": "D\u00e9tails Prescripteur"
+  },
+  {
+   "fieldname": "nom_prescripteur",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "prenom_prescripteur",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom"
+  },
+  {
+   "fieldname": "nom_complet_prescripteur",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nom Complet",
+   "unique": 1
+  },
+  {
+   "fieldname": "telephone_prescripteur",
+   "fieldtype": "Phone",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "email_prescripteur",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "connections_column",
+   "fieldtype": "Column Break",
+   "label": "Infos Profesionnels"
+  },
+  {
+   "fieldname": "titre_prescripteur",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Titre Prescripteur",
+   "options": "Titre Prescripteur"
+  },
+  {
+   "fieldname": "etablissement",
+   "fieldtype": "Link",
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u00c9tablissement",
+   "options": "Etablissements",
+   "search_index": 1
+  },
+  {
+   "fetch_from": ".",
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service",
+   "options": "Services",
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cabinet_prive_prescripteur",
+   "fieldtype": "Check",
+   "label": "Cabinet Priv\u00e9"
+  },
+  {
+   "default": "0",
+   "fieldname": "chef_de_service",
+   "fieldtype": "Check",
+   "label": "Chef de service ?"
+  },
+  {
+   "fieldname": "potentiel",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Potentiel"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Column Break",
+   "label": "Localisation"
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Commune",
+   "options": "Communes"
+  },
+  {
+   "fetch_from": "commune.wilaya",
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Wilaya",
+   "options": "Wilayas",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "commune.zone",
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Zone",
+   "options": "Zone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gps_prescripteur",
+   "fieldtype": "Data",
+   "label": "GPS Prescripteur"
+  },
+  {
+   "fieldname": "localisation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Localisation"
+  },
+  {
+   "fieldname": "potentiel_column",
+   "fieldtype": "Column Break",
+   "label": "Potentiel"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Actif\nInactif"
+  },
+  {
+   "fieldname": "sexe",
+   "fieldtype": "Select",
+   "label": "Sexe",
+   "options": "Homme\nFemme"
+  },
+  {
+   "fieldname": "situation_matrimoniale",
+   "fieldtype": "Select",
+   "label": "Situation matrimoniale",
+   "options": "C\u00e9libataire\nMari\u00e9(e)"
+  },
+  {
+   "depends_on": "eval:(doc.situation_matrimoniale==\"Mari\u00e9(e)\"&&doc.sexe==\"Femme\")",
+   "fieldname": "epouse",
+   "fieldtype": "Data",
+   "label": "\u00c9pouse"
+  },
+  {
+   "fieldname": "informations_personnelles_tab",
+   "fieldtype": "Tab Break",
+   "label": "Informations personnelles"
+  },
+  {
+   "fieldname": "potentiel_tab",
+   "fieldtype": "Tab Break",
+   "label": "Potentiel"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Visites Individuelles",
+   "link_fieldname": "prescripteur"
+  }
+ ],
+ "modified": "2023-11-16 21:32:20.407454",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Prescripteurs",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "nom_complet_prescripteur",
+ "sort_order": "ASC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Actif"
+  },
+  {
+   "color": "Red",
+   "title": "Inactif"
+  }
+ ],
+ "track_changes": 1
+}

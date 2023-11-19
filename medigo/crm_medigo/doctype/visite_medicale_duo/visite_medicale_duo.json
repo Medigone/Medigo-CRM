@@ -1,0 +1,276 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:VMD-{prescripteur}-{YY}-{MM}-{DD}",
+ "creation": "2023-11-16 15:08:50.370558",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "d\u00e9tails_visite_tab",
+  "d\u00e9tails_visite_column",
+  "status",
+  "date_prevue",
+  "delegue",
+  "prescripteur",
+  "objectifs_visite_column",
+  "objectif_visite",
+  "objectif_produit_1",
+  "objectif_produit_2",
+  "objectif_produit_3",
+  "enqu\u00eate_visite_tab",
+  "partenariat",
+  "contrepartie",
+  "objections_produit",
+  "traitement_objection",
+  "column_break_ycsz",
+  "requete",
+  "localisation_tab",
+  "commune",
+  "wilaya",
+  "zone",
+  "contr\u00f4le_tab",
+  "heure_debut_visite",
+  "gps_debut_visite",
+  "date_visite",
+  "column_break_yibe",
+  "heure_fin_visite",
+  "gps_fin_visite",
+  "temps_visite",
+  "remis_tab",
+  "liste_remis"
+ ],
+ "fields": [
+  {
+   "fieldname": "d\u00e9tails_visite_tab",
+   "fieldtype": "Tab Break",
+   "label": "D\u00e9tails Visite"
+  },
+  {
+   "fieldname": "d\u00e9tails_visite_column",
+   "fieldtype": "Column Break",
+   "label": "D\u00e9tails Visite"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Programm\u00e9e\nEn Cours\nTermin\u00e9e\nAnnul\u00e9e"
+  },
+  {
+   "fieldname": "objectifs_visite_column",
+   "fieldtype": "Column Break",
+   "label": "Objectifs Visite"
+  },
+  {
+   "fieldname": "enqu\u00eate_visite_tab",
+   "fieldtype": "Tab Break",
+   "label": "Enqu\u00eate Visite"
+  },
+  {
+   "fieldname": "localisation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Localisation"
+  },
+  {
+   "fieldname": "contr\u00f4le_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contr\u00f4le"
+  },
+  {
+   "fieldname": "remis_tab",
+   "fieldtype": "Tab Break",
+   "label": "Remis"
+  },
+  {
+   "fieldname": "date_prevue",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Pr\u00e9vue"
+  },
+  {
+   "fieldname": "prescripteur",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Prescripteur",
+   "options": "Prescripteurs",
+   "search_index": 1
+  },
+  {
+   "fieldname": "delegue",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "D\u00e9l\u00e9gu\u00e9",
+   "options": "User"
+  },
+  {
+   "fieldname": "objectif_visite",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Objectif visite",
+   "options": "Objectif Visite"
+  },
+  {
+   "fieldname": "objectif_produit_1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Objectif Produit 1",
+   "options": "Item"
+  },
+  {
+   "fieldname": "objectif_produit_2",
+   "fieldtype": "Link",
+   "label": "Objectif Produit 2",
+   "options": "Item"
+  },
+  {
+   "fieldname": "objectif_produit_3",
+   "fieldtype": "Link",
+   "label": "Objectif Produit 3",
+   "options": "Item"
+  },
+  {
+   "fieldname": "partenariat",
+   "fieldtype": "Data",
+   "label": "Partenariat"
+  },
+  {
+   "fieldname": "contrepartie",
+   "fieldtype": "Link",
+   "label": "Contrepartie",
+   "options": "Contrepartie"
+  },
+  {
+   "fieldname": "objections_produit",
+   "fieldtype": "Data",
+   "label": "Objections Produit"
+  },
+  {
+   "default": "Non",
+   "fieldname": "traitement_objection",
+   "fieldtype": "Select",
+   "label": "Traitement Objection",
+   "options": "Oui\nNon"
+  },
+  {
+   "fieldname": "column_break_ycsz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requete",
+   "fieldtype": "Small Text",
+   "label": "Requ\u00eate"
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "label": "Commune",
+   "options": "Communes"
+  },
+  {
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "label": "Wilaya",
+   "options": "Wilayas"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "heure_debut_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure D\u00e9but Visite"
+  },
+  {
+   "fieldname": "gps_debut_visite",
+   "fieldtype": "Data",
+   "label": "GPS D\u00e9but Visite"
+  },
+  {
+   "fieldname": "date_visite",
+   "fieldtype": "Date",
+   "label": "Date Visite"
+  },
+  {
+   "fieldname": "column_break_yibe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heure_fin_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure Fin Visite"
+  },
+  {
+   "fieldname": "gps_fin_visite",
+   "fieldtype": "Data",
+   "label": "GPS Fin Visite"
+  },
+  {
+   "fieldname": "temps_visite",
+   "fieldtype": "Duration",
+   "label": "Temps Visite"
+  },
+  {
+   "fieldname": "liste_remis",
+   "fieldtype": "Table",
+   "label": "Liste Remis",
+   "options": "Remis"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-16 15:50:28.122835",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Visite Medicale Duo",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "date_prevue",
+ "sort_order": "ASC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Programm\u00e9e"
+  },
+  {
+   "color": "Yellow",
+   "title": "En Cours"
+  },
+  {
+   "color": "Green",
+   "title": "Termin\u00e9e"
+  },
+  {
+   "color": "Red",
+   "title": "Annul\u00e9e"
+  }
+ ],
+ "title_field": "prescripteur",
+ "track_changes": 1
+}

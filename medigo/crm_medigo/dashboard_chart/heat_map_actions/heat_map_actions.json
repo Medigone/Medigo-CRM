@@ -1,0 +1,50 @@
+{
+ "based_on": "date_debut",
+ "chart_name": "Heat Map Actions",
+ "chart_type": "Count",
+ "color": "#449CF0",
+ "creation": "2023-10-29 18:55:28.843301",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Actions",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[]",
+ "group_by_based_on": "owner",
+ "group_by_type": "Count",
+ "idx": 1,
+ "is_public": 1,
+ "is_standard": 1,
+ "last_synced_on": "2023-11-17 22:43:27.144913",
+ "modified": "2023-11-17 22:43:45.916402",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Heat Map Actions",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Administrateur M\u00e9dical"
+  },
+  {
+   "role": "Superviseur M\u00e9dical"
+  },
+  {
+   "role": "D\u00e9l\u00e9gue M\u00e9dical"
+  },
+  {
+   "role": "Analyste M\u00e9dical"
+  }
+ ],
+ "source": "",
+ "time_interval": "Yearly",
+ "timeseries": 1,
+ "timespan": "Last Year",
+ "type": "Heatmap",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}

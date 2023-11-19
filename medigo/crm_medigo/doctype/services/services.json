@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "autoname": "format:SER-{######}",
+ "creation": "2023-10-25 00:47:29.397902",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_break_urnw",
+  "d\u00e9tails_service_column",
+  "etablissement",
+  "type_service",
+  "nom_service",
+  "potentiel",
+  "localisation_column",
+  "commune",
+  "wilaya",
+  "zone",
+  "gps_service"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_break_urnw",
+   "fieldtype": "Tab Break",
+   "label": "D\u00e9tails"
+  },
+  {
+   "fieldname": "d\u00e9tails_service_column",
+   "fieldtype": "Column Break",
+   "label": "D\u00e9tails Service"
+  },
+  {
+   "fieldname": "etablissement",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u00c9tablissement",
+   "options": "Etablissements",
+   "search_index": 1
+  },
+  {
+   "fieldname": "type_service",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Type Service",
+   "options": "Type Service"
+  },
+  {
+   "fieldname": "nom_service",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nom",
+   "read_only": 1
+  },
+  {
+   "fieldname": "localisation_column",
+   "fieldtype": "Column Break",
+   "label": "Localisation"
+  },
+  {
+   "fetch_from": "etablissement.commune",
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Commune",
+   "options": "Communes",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "commune.",
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Wilaya",
+   "options": "Wilayas",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "commune.zone",
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Zone",
+   "options": "Zone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "potentiel",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Potentiel"
+  },
+  {
+   "fetch_from": "etablissement.gps_etablissement",
+   "fieldname": "gps_service",
+   "fieldtype": "Data",
+   "label": "GPS Service"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Visites Services",
+   "link_fieldname": "service"
+  },
+  {
+   "link_doctype": "Prescripteurs",
+   "link_fieldname": "service"
+  }
+ ],
+ "modified": "2023-10-28 14:20:50.990242",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Services",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "nom_service",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "nom_service",
+ "track_changes": 1
+}

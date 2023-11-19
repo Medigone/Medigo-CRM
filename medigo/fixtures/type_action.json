@@ -1,0 +1,142 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.867128",
+  "name": "FORMATION THEMATIQUE EN LIGNE",
+  "type_action": "FORMATION THEMATIQUE EN LIGNE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.891841",
+  "name": "FORMATION THEMATIQUE EN PRESENTIEL",
+  "type_action": "FORMATION THEMATIQUE EN PRESENTIEL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.901027",
+  "name": "STAFF",
+  "type_action": "STAFF"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.909473",
+  "name": "EPU",
+  "type_action": "EPU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.916395",
+  "name": "TABLE RONDE",
+  "type_action": "TABLE RONDE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.921230",
+  "name": "SORTIE DETENTE",
+  "type_action": "SORTIE DETENTE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.926468",
+  "name": "CARAVANE PMI",
+  "type_action": "CARAVANE PMI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.932021",
+  "name": "DEGUSTATION",
+  "type_action": "DEGUSTATION"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.936462",
+  "name": "FORMATION EQUIPE OFFICINAL",
+  "type_action": "FORMATION EQUIPE OFFICINAL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.941079",
+  "name": "SYMPOSIUM",
+  "type_action": "SYMPOSIUM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.946077",
+  "name": "BAL DES SAGES FEMMES",
+  "type_action": "BAL DES SAGES FEMMES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.973595",
+  "name": "ACTION MAWLID NABAOUI",
+  "type_action": "ACTION MAWLID NABAOUI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.978225",
+  "name": "REPAS DES 24 HEURES",
+  "type_action": "REPAS DES 24 HEURES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.982630",
+  "name": "JOURNÉE DE L'ENFANT",
+  "type_action": "JOURNÉE DE L'ENFANT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.986197",
+  "name": "VOYAGE DE MOTIVATION",
+  "type_action": "VOYAGE DE MOTIVATION"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.990148",
+  "name": "TABLE DE CONTREVERSE",
+  "type_action": "TABLE DE CONTREVERSE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.995324",
+  "name": "JOURNÉE DE LA SAGE-FEMME",
+  "type_action": "JOURNÉE DE LA SAGE-FEMME"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:06.004649",
+  "name": "BON D'ACHAT",
+  "type_action": "BON D'ACHAT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:05.969271",
+  "name": "ACTION 8 MARS",
+  "type_action": "ACTION 8 MARS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Action",
+  "modified": "2023-10-29 14:34:06.000572",
+  "name": "JOURNÉE SCIENTIFIQUE (SOCIÉTÉ SAVANTE)",
+  "type_action": "JOURNÉE SCIENTIFIQUE (SOCIÉTÉ SAVANTE)"
+ }
+]

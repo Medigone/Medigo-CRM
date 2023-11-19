@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{nom_distributeur}",
+ "creation": "2023-11-16 21:20:45.002800",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nom_distributeur",
+  "phone",
+  "email",
+  "column_break_ejtn",
+  "type_distributeur",
+  "forme_juridique",
+  "gps_distributeur",
+  "potentiel_tab",
+  "status",
+  "potentiel",
+  "localisation_tab",
+  "commune",
+  "wilaya",
+  "zone"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom_distributeur",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "type_distributeur",
+   "fieldtype": "Select",
+   "label": "Type Distributeur",
+   "options": "Grossiste Alimentaire\nGrossiste Parapharm\nDistributeur"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "gps_distributeur",
+   "fieldtype": "Data",
+   "label": "GPS Distributeur"
+  },
+  {
+   "fieldname": "localisation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Localisation"
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "label": "Commune",
+   "options": "Communes"
+  },
+  {
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "label": "Wilaya",
+   "options": "Wilayas"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "column_break_ejtn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "potentiel_tab",
+   "fieldtype": "Tab Break",
+   "label": "Potentiel"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Actif\nInactif"
+  },
+  {
+   "fieldname": "potentiel",
+   "fieldtype": "Rating",
+   "label": "Potentiel"
+  },
+  {
+   "fieldname": "forme_juridique",
+   "fieldtype": "Select",
+   "label": "Forme Juridique",
+   "options": "SARL\nEURL\nPERSONNE PHYSIQUE"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-16 21:47:35.477780",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Distributeurs",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "nom_distributeur",
+ "sort_order": "ASC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Actif"
+  },
+  {
+   "color": "Red",
+   "title": "Inactif"
+  }
+ ],
+ "title_field": "nom_distributeur"
+}

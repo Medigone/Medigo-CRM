@@ -1,0 +1,47 @@
+{
+ "charts": [
+  {
+   "chart_name": "Cr\u00e9ation Prescripteurs",
+   "label": "Cr\u00e9ation Prescripteurs"
+  },
+  {
+   "chart_name": "Prescripteurs Par Titre",
+   "label": "Prescripteurs Par Titre"
+  }
+ ],
+ "content": "[{\"id\":\"KdLIGEGYaa\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Prescripteurs\",\"col\":6}},{\"id\":\"19c39KYsjO\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nouveaux Prescripteurs\",\"col\":6}},{\"id\":\"OuBW3pR7nc\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cr\u00e9ation Prescripteurs\",\"col\":6}},{\"id\":\"CDMkfffTyC\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Prescripteurs Par Titre\",\"col\":6}}]",
+ "creation": "2023-10-27 12:31:38.845752",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "users",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Prescripteur",
+ "links": [],
+ "modified": "2023-11-19 12:29:04.963061",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Prescripteur",
+ "number_cards": [
+  {
+   "label": "Prescripteurs",
+   "number_card_name": "Prescripteurs"
+  },
+  {
+   "label": "Nouveaux Prescripteurs",
+   "number_card_name": "Prescripteurs Nouveaux Ajouts"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 4.0,
+ "shortcuts": [],
+ "title": "Prescripteur"
+}

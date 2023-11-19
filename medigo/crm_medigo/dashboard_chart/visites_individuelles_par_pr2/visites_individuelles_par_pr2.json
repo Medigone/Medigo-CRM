@@ -1,0 +1,49 @@
+{
+ "based_on": "",
+ "chart_name": "Visites individuelles Par PR2",
+ "chart_type": "Group By",
+ "creation": "2023-10-27 23:00:51.486367",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Visites Individuelles",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[]",
+ "group_by_based_on": "objectif_produit_2",
+ "group_by_type": "Count",
+ "idx": 11,
+ "is_public": 1,
+ "is_standard": 1,
+ "last_synced_on": "2023-11-19 12:10:34.914595",
+ "modified": "2023-11-19 12:10:46.325918",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Visites individuelles Par PR2",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Administrateur M\u00e9dical"
+  },
+  {
+   "role": "Superviseur M\u00e9dical"
+  },
+  {
+   "role": "D\u00e9l\u00e9gue M\u00e9dical"
+  },
+  {
+   "role": "Analyste M\u00e9dical"
+  }
+ ],
+ "source": "",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Donut",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}

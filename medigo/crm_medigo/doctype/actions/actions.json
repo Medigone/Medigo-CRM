@@ -1,0 +1,288 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ACT-{####}",
+ "creation": "2023-10-29 13:46:09.372201",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "d\u00e9tails_tab",
+  "laboratoire",
+  "date_debut",
+  "date_fin",
+  "column_break_yavv",
+  "type_action",
+  "societe_savante",
+  "lieu_devenement",
+  "commune",
+  "description_tab",
+  "description",
+  "projet_tab",
+  "projet",
+  "etablissement_tab",
+  "etablissement",
+  "tab_2_tab",
+  "formateur__formatrice",
+  "invites_tab",
+  "prescripteurs",
+  "vm_tab",
+  "vm",
+  "banners_tab",
+  "type_banners",
+  "documents",
+  "section_break_dwln",
+  "programme_pdf",
+  "programme",
+  "column_break_pdpt",
+  "photo_stand",
+  "fiche_poso"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_fin",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Fin"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Formateurs"
+  },
+  {
+   "fieldname": "formateur__formatrice",
+   "fieldtype": "Table",
+   "label": "Formateurs / Formatrices",
+   "options": "Formateurs Actions"
+  },
+  {
+   "fieldname": "column_break_yavv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d\u00e9tails_tab",
+   "fieldtype": "Tab Break",
+   "label": "D\u00e9tails"
+  },
+  {
+   "fieldname": "vm_tab",
+   "fieldtype": "Tab Break",
+   "label": "VM"
+  },
+  {
+   "fieldname": "programme_pdf",
+   "fieldtype": "Attach",
+   "label": "Programme PDF"
+  },
+  {
+   "fieldname": "programme",
+   "fieldtype": "Attach Image",
+   "label": "Programme"
+  },
+  {
+   "fieldname": "photo_stand",
+   "fieldtype": "Attach Image",
+   "label": "Photo Stand"
+  },
+  {
+   "fieldname": "fiche_poso",
+   "fieldtype": "Attach Image",
+   "label": "Fiche Poso"
+  },
+  {
+   "fieldname": "column_break_pdpt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_action",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type Action",
+   "options": "Type Action"
+  },
+  {
+   "fieldname": "prescripteurs",
+   "fieldtype": "Table",
+   "label": "Prescripteurs",
+   "options": "Invites Action"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "vm",
+   "fieldtype": "Table",
+   "label": "VM's Pr\u00e9sents",
+   "options": "VM Action"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "type_banners",
+   "fieldtype": "Table",
+   "label": "Type Banners",
+   "options": "Type Banners Action"
+  },
+  {
+   "fieldname": "section_break_dwln",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "laboratoire",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Laboratoire",
+   "options": "Laboratoires"
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "label": "Commune",
+   "options": "Communes"
+  },
+  {
+   "fieldname": "description_tab",
+   "fieldtype": "Tab Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "projet",
+   "fieldtype": "Link",
+   "label": "Projet",
+   "options": "Project"
+  },
+  {
+   "fieldname": "banners_tab",
+   "fieldtype": "Tab Break",
+   "label": "Banners"
+  },
+  {
+   "fieldname": "etablissement",
+   "fieldtype": "Table",
+   "in_standard_filter": 1,
+   "label": "\u00c9tablissement",
+   "options": "Etablissement Action"
+  },
+  {
+   "fieldname": "projet_tab",
+   "fieldtype": "Tab Break",
+   "label": "Projet"
+  },
+  {
+   "fieldname": "date_debut",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date D\u00e9but"
+  },
+  {
+   "fieldname": "lieu_devenement",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Lieu d'\u00e9v\u00e8nement",
+   "options": "Lieux evenements"
+  },
+  {
+   "fieldname": "etablissement_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u00c9tablissement"
+  },
+  {
+   "fieldname": "invites_tab",
+   "fieldtype": "Tab Break",
+   "label": "Invit\u00e9s"
+  },
+  {
+   "depends_on": "eval:doc.laboratoire!=\"BIOMIL\" && (doc.type_action==\"JOURN\u00c9E SCIENTIFIQUE (SOCI\u00c9T\u00c9 SAVANTE)\"||doc.type_action==\"JOURN\u00c9E DE LA SAGE-FEMME\")",
+   "fieldname": "societe_savante",
+   "fieldtype": "Link",
+   "label": "Soci\u00e9t\u00e9 Savante",
+   "mandatory_depends_on": "eval:doc.laboratoire!=\"BIOMIL\" && (doc.type_action==\"JOURN\u00c9E SCIENTIFIQUE (SOCI\u00c9T\u00c9 SAVANTE)\"||doc.type_action==\"JOURN\u00c9E DE LA SAGE-FEMME\")",
+   "options": "Societe Savante"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-30 22:19:04.889249",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Actions",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur M\u00e9dical",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Superviseur M\u00e9dical",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "D\u00e9l\u00e9gue M\u00e9dical",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "date_debut",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1
+}

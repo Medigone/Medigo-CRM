@@ -1,0 +1,240 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:VCI-{client}-{YY}-{MM}-{DD}",
+ "creation": "2023-11-16 16:14:04.571258",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_visite_tab",
+  "status",
+  "date_prevue",
+  "client",
+  "classement_rotations",
+  "classements_column",
+  "classement_1",
+  "classement_2",
+  "classement_3",
+  "classement_4",
+  "rotations_column",
+  "rotation_c1",
+  "rotation_c2",
+  "rotation_c3",
+  "rotation_c4",
+  "localisation_tab",
+  "commune",
+  "wilaya",
+  "zone",
+  "controle_tab",
+  "heure_debut_visite",
+  "gps_debut_visite",
+  "date_visite",
+  "column_break_dgxy",
+  "heure_fin_visite",
+  "gps_fin_visite",
+  "temps_visite",
+  "remis_tab",
+  "liste_remis"
+ ],
+ "fields": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Programm\u00e9e\nEn Cours\nTermin\u00e9e\nAnnul\u00e9e"
+  },
+  {
+   "fieldname": "date_prevue",
+   "fieldtype": "Date",
+   "label": "Date Pr\u00e9vue"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "localisation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Localisation"
+  },
+  {
+   "fieldname": "remis_tab",
+   "fieldtype": "Tab Break",
+   "label": "Remis"
+  },
+  {
+   "fieldname": "controle_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contr\u00f4le"
+  },
+  {
+   "fieldname": "classement_rotations",
+   "fieldtype": "Tab Break",
+   "label": "Classement & Rotations"
+  },
+  {
+   "fieldname": "classement_1",
+   "fieldtype": "Data",
+   "label": "Classement - 1"
+  },
+  {
+   "fieldname": "classements_column",
+   "fieldtype": "Column Break",
+   "label": "Classements"
+  },
+  {
+   "fieldname": "classement_2",
+   "fieldtype": "Data",
+   "label": "Classement - 2"
+  },
+  {
+   "fieldname": "classement_3",
+   "fieldtype": "Data",
+   "label": "Classement - 3"
+  },
+  {
+   "fieldname": "classement_4",
+   "fieldtype": "Data",
+   "label": "Classement - 4"
+  },
+  {
+   "fieldname": "rotations_column",
+   "fieldtype": "Column Break",
+   "label": "Rotations"
+  },
+  {
+   "fieldname": "rotation_c1",
+   "fieldtype": "Int",
+   "label": "Rotation - C1"
+  },
+  {
+   "fieldname": "rotation_c2",
+   "fieldtype": "Int",
+   "label": "Rotation - C2"
+  },
+  {
+   "fieldname": "rotation_c3",
+   "fieldtype": "Int",
+   "label": "Rotation - C3"
+  },
+  {
+   "fieldname": "rotation_c4",
+   "fieldtype": "Int",
+   "label": "Rotation - C4"
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "label": "Commune",
+   "options": "Communes"
+  },
+  {
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "label": "Wilaya",
+   "options": "Wilayas"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "heure_debut_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure D\u00e9but Visite"
+  },
+  {
+   "fieldname": "gps_debut_visite",
+   "fieldtype": "Data",
+   "label": "GPS D\u00e9but Visite"
+  },
+  {
+   "fieldname": "date_visite",
+   "fieldtype": "Date",
+   "label": "Date Visite"
+  },
+  {
+   "fieldname": "column_break_dgxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heure_fin_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure Fin Visite"
+  },
+  {
+   "fieldname": "gps_fin_visite",
+   "fieldtype": "Data",
+   "label": "GPS Fin Visite"
+  },
+  {
+   "fieldname": "temps_visite",
+   "fieldtype": "Duration",
+   "label": "Temps Visite"
+  },
+  {
+   "fieldname": "liste_remis",
+   "fieldtype": "Table",
+   "label": "Liste Remis",
+   "options": "Remis Commercial"
+  },
+  {
+   "fieldname": "details_visite_tab",
+   "fieldtype": "Tab Break",
+   "label": "D\u00e9tails Visite"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-16 20:12:07.438788",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Visite Commerciale",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "date_visite",
+ "sort_order": "ASC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Programm\u00e9e"
+  },
+  {
+   "color": "Yellow",
+   "title": "En Cours"
+  },
+  {
+   "color": "Green",
+   "title": "Termin\u00e9e"
+  },
+  {
+   "color": "Red",
+   "title": "Annul\u00e9e"
+  }
+ ],
+ "title_field": "client",
+ "track_changes": 1
+}

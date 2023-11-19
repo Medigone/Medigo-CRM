@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:ETA-{######}",
+ "creation": "2023-10-24 23:46:24.986867",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "d\u00e9tails_tab",
+  "d\u00e9tails_column",
+  "nom_etablissement",
+  "type_etablissement",
+  "secteur_etablissement",
+  "telephone_etablissement",
+  "email_etablissement",
+  "column_break_mhxz",
+  "commune",
+  "wilaya",
+  "zone",
+  "gps_etablissement",
+  "potentiel"
+ ],
+ "fields": [
+  {
+   "fieldname": "d\u00e9tails_tab",
+   "fieldtype": "Tab Break",
+   "label": "D\u00e9tails"
+  },
+  {
+   "fieldname": "d\u00e9tails_column",
+   "fieldtype": "Column Break",
+   "label": "D\u00e9tails \u00c9tablissement"
+  },
+  {
+   "fieldname": "nom_etablissement",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nom \u00c9tablissement"
+  },
+  {
+   "fieldname": "type_etablissement",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type \u00c9tablissement",
+   "options": "Type Etablissement"
+  },
+  {
+   "fieldname": "secteur_etablissement",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Secteur",
+   "options": "Public\nPriv\u00e9"
+  },
+  {
+   "fieldname": "telephone_etablissement",
+   "fieldtype": "Phone",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "email_etablissement",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_mhxz",
+   "fieldtype": "Column Break",
+   "label": "Localisation"
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Commune",
+   "options": "Communes"
+  },
+  {
+   "fetch_from": "commune.wilaya",
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Wilaya",
+   "options": "Wilayas",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "commune.zone",
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gps_etablissement",
+   "fieldtype": "Data",
+   "label": "GPS \u00c9tablissement"
+  },
+  {
+   "fieldname": "potentiel",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Potentiel"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Services",
+   "link_fieldname": "etablissement"
+  },
+  {
+   "link_doctype": "Prescripteurs",
+   "link_fieldname": "etablissement"
+  }
+ ],
+ "modified": "2023-10-31 01:06:52.345058",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Etablissements",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur M\u00e9dical",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Superviseur M\u00e9dical",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "D\u00e9l\u00e9gue M\u00e9dical",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "nom_etablissement",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "nom_etablissement",
+ "track_changes": 1
+}

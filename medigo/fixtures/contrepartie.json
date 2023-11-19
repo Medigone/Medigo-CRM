@@ -1,0 +1,58 @@
+[
+ {
+  "contrepartie": "FORMATION EXTERNE",
+  "docstatus": 0,
+  "doctype": "Contrepartie",
+  "modified": "2023-10-24 18:38:50.306132",
+  "name": "FORMATION EXTERNE"
+ },
+ {
+  "contrepartie": "FORMATION INTERNE",
+  "docstatus": 0,
+  "doctype": "Contrepartie",
+  "modified": "2023-10-24 18:39:00.286871",
+  "name": "FORMATION INTERNE"
+ },
+ {
+  "contrepartie": "SORTIE DÉTENTE",
+  "docstatus": 0,
+  "doctype": "Contrepartie",
+  "modified": "2023-10-24 18:39:29.855475",
+  "name": "SORTIE DÉTENTE"
+ },
+ {
+  "contrepartie": "BON D'ACHAT",
+  "docstatus": 0,
+  "doctype": "Contrepartie",
+  "modified": "2023-10-24 18:39:43.826875",
+  "name": "BON D'ACHAT"
+ },
+ {
+  "contrepartie": "INSCRIPTION CONGRE A L'ETRANGER",
+  "docstatus": 0,
+  "doctype": "Contrepartie",
+  "modified": "2023-10-24 18:39:54.560890",
+  "name": "INSCRIPTION CONGRE A L'ETRANGER"
+ },
+ {
+  "contrepartie": "INSCRIPTION CONGRE LOCAL",
+  "docstatus": 0,
+  "doctype": "Contrepartie",
+  "modified": "2023-10-24 18:40:05.575447",
+  "name": "INSCRIPTION CONGRE LOCAL"
+ },
+ {
+  "contrepartie": "CONGRE A L'ETRANGER",
+  "docstatus": 0,
+  "doctype": "Contrepartie",
+  "modified": "2023-10-24 18:40:18.637880",
+  "name": "CONGRE A L'ETRANGER"
+ },
+ {
+  "contrepartie": "CONGRE LOCAL",
+  "docstatus": 0,
+  "doctype": "Contrepartie",
+  "modified": "2023-10-24 18:40:29.399623",
+  "name": "CONGRE LOCAL"
+ }
+]
