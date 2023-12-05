@@ -110,5 +110,5 @@
  "sort_field": "wilaya",
  "sort_order": "ASC",
  "states": [],
- "title_field": "commune"
+ "title_field": "nom_complet_commune"
 }
