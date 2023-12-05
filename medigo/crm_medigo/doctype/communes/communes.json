@@ -11,9 +11,9 @@
  "field_order": [
   "commune",
   "wilaya",
-  "column_break_jxzh",
+  "zone",
   "nom_complet_commune",
-  "zone"
+  "column_break_jxzh"
  ],
  "fields": [
   {
