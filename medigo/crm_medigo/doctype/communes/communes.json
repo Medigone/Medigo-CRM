@@ -11,6 +11,8 @@
  "field_order": [
   "commune",
   "wilaya",
+  "column_break_jxzh",
+  "nom_complet_commune",
   "zone"
  ],
  "fields": [
@@ -37,6 +39,15 @@
    "in_standard_filter": 1,
    "label": "Zone",
    "options": "Zone"
+  },
+  {
+   "fieldname": "column_break_jxzh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nom_complet_commune",
+   "fieldtype": "Data",
+   "label": "Nom Complet"
   }
  ],
  "index_web_pages_for_search": 1,
