@@ -1,87 +1,91 @@
 {
  "actions": [],
  "allow_import": 1,
- "allow_rename": 1,
- "autoname": "format:VCI-{client}-{YY}-{MM}-{DD}",
  "creation": "2023-11-16 16:14:04.571258",
  "default_view": "List",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "details_visite_tab",
-  "status",
   "date_prevue",
   "client",
-  "classement_rotations",
-  "classements_column",
-  "classement_1",
-  "classement_2",
-  "classement_3",
-  "classement_4",
-  "rotations_column",
-  "rotation_c1",
-  "rotation_c2",
-  "rotation_c3",
-  "rotation_c4",
-  "localisation_tab",
+  "nom_client",
+  "cat_client",
+  "column_break_uexh",
+  "date_visite",
+  "amended_from",
   "commune",
   "wilaya",
   "zone",
+  "classement_rotations",
+  "classements_column",
+  "classement_1",
+  "rotation_c1",
+  "classement_2",
+  "rotation_c2",
+  "classement_3",
+  "rotation_c3",
+  "classement_4",
+  "rotation_c4",
+  "column_break_haqm",
+  "class_b1",
+  "class_bp1",
+  "class_bcf",
+  "remis_tab",
+  "liste_remis",
   "controle_tab",
   "heure_debut_visite",
-  "gps_debut_visite",
-  "date_visite",
+  "gps_visite",
+  "my_location_start",
+  "temps_visite",
   "column_break_dgxy",
   "heure_fin_visite",
   "gps_fin_visite",
-  "temps_visite",
-  "remis_tab",
-  "liste_remis"
+  "my_location"
  ],
  "fields": [
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Programm\u00e9e\nEn Cours\nTermin\u00e9e\nAnnul\u00e9e"
-  },
-  {
+   "default": "Today",
    "fieldname": "date_prevue",
    "fieldtype": "Date",
-   "label": "Date Pr\u00e9vue"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Pr\u00e9vue",
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")"
   },
   {
    "fieldname": "client",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Client",
-   "options": "Customer"
+   "options": "Customer",
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")"
   },
   {
-   "fieldname": "localisation_tab",
-   "fieldtype": "Tab Break",
-   "label": "Localisation"
-  },
-  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "remis_tab",
    "fieldtype": "Tab Break",
    "label": "Remis"
   },
   {
+   "allow_on_submit": 1,
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "controle_tab",
    "fieldtype": "Tab Break",
-   "label": "Contr\u00f4le"
+   "label": "Date & Localisation"
   },
   {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "classement_rotations",
    "fieldtype": "Tab Break",
    "label": "Classement & Rotations"
   },
   {
    "fieldname": "classement_1",
-   "fieldtype": "Data",
-   "label": "Classement - 1"
+   "fieldtype": "Link",
+   "label": "Classement - 1",
+   "options": "Produits Labos"
   },
   {
    "fieldname": "classements_column",
@@ -90,97 +94,102 @@
   },
   {
    "fieldname": "classement_2",
-   "fieldtype": "Data",
-   "label": "Classement - 2"
+   "fieldtype": "Link",
+   "label": "Classement - 2",
+   "options": "Produits Labos"
   },
   {
    "fieldname": "classement_3",
-   "fieldtype": "Data",
-   "label": "Classement - 3"
+   "fieldtype": "Link",
+   "label": "Classement - 3",
+   "options": "Produits Labos"
   },
   {
    "fieldname": "classement_4",
-   "fieldtype": "Data",
-   "label": "Classement - 4"
+   "fieldtype": "Link",
+   "label": "Classement - 4",
+   "options": "Produits Labos"
   },
   {
-   "fieldname": "rotations_column",
-   "fieldtype": "Column Break",
-   "label": "Rotations"
-  },
-  {
+   "depends_on": "eval:(doc.classement_1 != \"\")",
    "fieldname": "rotation_c1",
    "fieldtype": "Int",
-   "label": "Rotation - C1"
+   "label": "Rotation - C1",
+   "non_negative": 1
   },
   {
+   "depends_on": "eval:(doc.classement_2 != \"\")",
    "fieldname": "rotation_c2",
    "fieldtype": "Int",
-   "label": "Rotation - C2"
+   "label": "Rotation - C2",
+   "non_negative": 1
   },
   {
+   "depends_on": "eval:(doc.classement_3 != \"\")",
    "fieldname": "rotation_c3",
    "fieldtype": "Int",
-   "label": "Rotation - C3"
+   "label": "Rotation - C3",
+   "non_negative": 1
   },
   {
+   "depends_on": "eval:(doc.classement_4 != \"\")",
    "fieldname": "rotation_c4",
    "fieldtype": "Int",
-   "label": "Rotation - C4"
+   "label": "Rotation - C4",
+   "non_negative": 1
   },
   {
+   "fetch_from": "client.commune",
    "fieldname": "commune",
    "fieldtype": "Link",
    "label": "Commune",
-   "options": "Communes"
+   "options": "Communes",
+   "read_only": 1
   },
   {
+   "fetch_from": "client.wilaya",
    "fieldname": "wilaya",
    "fieldtype": "Link",
    "label": "Wilaya",
-   "options": "Wilayas"
+   "options": "Wilayas",
+   "read_only": 1
   },
   {
+   "fetch_from": "client.zone",
    "fieldname": "zone",
    "fieldtype": "Link",
    "label": "Zone",
-   "options": "Zone"
+   "options": "Zone",
+   "read_only": 1
   },
   {
    "fieldname": "heure_debut_visite",
    "fieldtype": "Datetime",
-   "label": "Heure D\u00e9but Visite"
+   "label": "Heure D\u00e9but Visite",
+   "read_only": 1
   },
   {
-   "fieldname": "gps_debut_visite",
-   "fieldtype": "Data",
-   "label": "GPS D\u00e9but Visite"
-  },
-  {
+   "depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\")",
    "fieldname": "date_visite",
    "fieldtype": "Date",
-   "label": "Date Visite"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Visite",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_dgxy",
    "fieldtype": "Column Break"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "heure_fin_visite",
    "fieldtype": "Datetime",
-   "label": "Heure Fin Visite"
+   "label": "Heure Fin Visite",
+   "read_only": 1
   },
   {
-   "fieldname": "gps_fin_visite",
-   "fieldtype": "Data",
-   "label": "GPS Fin Visite"
-  },
-  {
-   "fieldname": "temps_visite",
-   "fieldtype": "Duration",
-   "label": "Temps Visite"
-  },
-  {
+   "allow_on_submit": 1,
    "fieldname": "liste_remis",
    "fieldtype": "Table",
    "label": "Liste Remis",
@@ -190,15 +199,107 @@
    "fieldname": "details_visite_tab",
    "fieldtype": "Tab Break",
    "label": "D\u00e9tails Visite"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Visite d'origine",
+   "no_copy": 1,
+   "options": "Visite Commerciale",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uexh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "client.customer_name",
+   "fieldname": "nom_client",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom Client",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "client.customer_group",
+   "fieldname": "cat_client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cat\u00e9gorie Client",
+   "options": "Customer Group",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_haqm",
+   "fieldtype": "Column Break",
+   "label": "Classement BIOMIL"
+  },
+  {
+   "fieldname": "class_b1",
+   "fieldtype": "Select",
+   "label": "BIOMIL 1",
+   "non_negative": 1,
+   "options": "\n1\n2\n3\n4\n5\n6\n0"
+  },
+  {
+   "fieldname": "class_bp1",
+   "fieldtype": "Select",
+   "label": "BIOMIL +1",
+   "non_negative": 1,
+   "options": "\n1\n2\n3\n4\n5\n6\n0"
+  },
+  {
+   "fieldname": "class_bcf",
+   "fieldtype": "Select",
+   "label": "CF",
+   "non_negative": 1,
+   "options": "\n1\n2\n3\n4\n5\n6\n0"
+  },
+  {
+   "fieldname": "gps_visite",
+   "fieldtype": "Data",
+   "label": "GPS D\u00e9but Visite",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "temps_visite",
+   "fieldtype": "Data",
+   "label": "Temps Visite",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "gps_fin_visite",
+   "fieldtype": "Data",
+   "label": "GPS Fin Visite",
+   "read_only": 1
+  },
+  {
+   "fieldname": "my_location",
+   "fieldtype": "HTML",
+   "label": "Map Fin Visite"
+  },
+  {
+   "fieldname": "my_location_start",
+   "fieldtype": "HTML",
+   "label": "Map D\u00e9but Visite"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2023-11-16 20:12:07.438788",
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Sales Order",
+   "link_fieldname": "visite"
+  }
+ ],
+ "modified": "2024-02-09 18:58:13.769065",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale",
- "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -212,29 +313,64 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur Commercial",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analyste Commercial",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "D\u00e9l\u00e9gue Commercial",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Superviseur Commercial",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
   }
  ],
- "show_title_field_in_link": 1,
- "sort_field": "date_visite",
- "sort_order": "ASC",
- "states": [
-  {
-   "color": "Blue",
-   "title": "Programm\u00e9e"
-  },
-  {
-   "color": "Yellow",
-   "title": "En Cours"
-  },
-  {
-   "color": "Green",
-   "title": "Termin\u00e9e"
-  },
-  {
-   "color": "Red",
-   "title": "Annul\u00e9e"
-  }
- ],
- "title_field": "client",
+ "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

@@ -10,15 +10,22 @@
  "field_order": [
   "d\u00e9tails_visite_tab",
   "d\u00e9tails_visite_column",
-  "status",
   "date_prevue",
+  "date_visite",
   "etablissement",
-  "service",
   "column_break_eyom",
   "objectif_visite",
   "objectif_produit_1",
   "objectif_produit_2",
   "objectif_produit_3",
+  "column_break_iaer",
+  "commune",
+  "wilaya",
+  "zone",
+  "amended_from",
+  "prescripteurs_tab",
+  "service",
+  "prescripteurs",
   "tab_2_tab",
   "partenariat",
   "contrepartie",
@@ -27,17 +34,11 @@
   "column_break_dwph",
   "requete",
   "localisation_tab",
-  "commune",
-  "wilaya",
-  "zone",
-  "r\u00e9capitulatif_tab",
   "heure_debut_visite",
   "gps_debut_visite",
-  "date_visite",
-  "column_break_dmtq",
+  "column_break_vxjn",
   "heure_fin_visite",
-  "gps_fin_visite",
-  "temps_visite"
+  "gps_fin_visite"
  ],
  "fields": [
   {
@@ -47,22 +48,15 @@
   },
   {
    "fieldname": "d\u00e9tails_visite_column",
-   "fieldtype": "Column Break",
-   "label": "D\u00e9tails Visite"
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Status",
-   "options": "Programm\u00e9e\nEn Cours\nTermin\u00e9e\nAnnul\u00e9e"
-  },
-  {
+   "default": "Today",
    "fieldname": "date_prevue",
    "fieldtype": "Date",
    "in_standard_filter": 1,
-   "label": "Date Pr\u00e9vue"
+   "label": "Date Pr\u00e9vue",
+   "reqd": 1
   },
   {
    "fieldname": "etablissement",
@@ -70,7 +64,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "\u00c9tablissement",
-   "options": "Etablissements"
+   "options": "Etablissements",
+   "reqd": 1
   },
   {
    "fieldname": "service",
@@ -80,39 +75,44 @@
   },
   {
    "fieldname": "column_break_eyom",
-   "fieldtype": "Column Break",
-   "label": "Objectifs Visite"
+   "fieldtype": "Column Break"
   },
   {
+   "default": "Prospection",
    "fieldname": "objectif_visite",
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Objectif visite",
-   "options": "Objectif Visite"
+   "options": "Objectif Visite",
+   "reqd": 1
   },
   {
    "fieldname": "objectif_produit_1",
    "fieldtype": "Link",
    "label": "Objectif Produit 1",
-   "options": "Item"
+   "options": "Item",
+   "reqd": 1
   },
   {
    "fieldname": "objectif_produit_2",
    "fieldtype": "Link",
    "label": "Objectif Produit 2",
-   "options": "Item"
+   "options": "Item",
+   "reqd": 1
   },
   {
    "fieldname": "objectif_produit_3",
    "fieldtype": "Link",
    "label": "Objectif Produit 3",
-   "options": "Item"
+   "options": "Item",
+   "reqd": 1
   },
   {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "tab_2_tab",
    "fieldtype": "Tab Break",
-   "label": "Enqu\u00eate Visite"
+   "label": "Enqu\u00eate"
   },
   {
    "fieldname": "partenariat",
@@ -131,11 +131,10 @@
    "label": "Objections Produit"
   },
   {
-   "default": "Non",
    "fieldname": "traitement_objection",
    "fieldtype": "Select",
    "label": "Traitement Objection",
-   "options": "Oui\nNon"
+   "options": "\nOui\nNon"
   },
   {
    "fieldname": "column_break_dwph",
@@ -147,78 +146,102 @@
    "label": "Requ\u00eate"
   },
   {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "localisation_tab",
    "fieldtype": "Tab Break",
-   "label": "Localisation"
+   "label": "Localisation & Date"
   },
   {
-   "fetch_from": "service.commune",
+   "fetch_from": "etablissement.commune",
    "fieldname": "commune",
    "fieldtype": "Link",
    "label": "Commune",
-   "options": "Communes"
+   "options": "Communes",
+   "read_only": 1
   },
   {
    "fetch_from": "commune.wilaya",
    "fieldname": "wilaya",
    "fieldtype": "Link",
    "label": "Wilaya",
-   "options": "Wilayas"
+   "options": "Wilayas",
+   "read_only": 1
   },
   {
    "fetch_from": "commune.zone",
    "fieldname": "zone",
    "fieldtype": "Link",
    "label": "Zone",
-   "options": "Zone"
-  },
-  {
-   "fieldname": "r\u00e9capitulatif_tab",
-   "fieldtype": "Tab Break",
-   "label": "Contr\u00f4le"
+   "options": "Zone",
+   "read_only": 1
   },
   {
    "fieldname": "heure_debut_visite",
    "fieldtype": "Datetime",
-   "label": "Heure D\u00e9but Visite"
+   "label": "Heure D\u00e9but Visite",
+   "read_only": 1
   },
   {
    "fieldname": "gps_debut_visite",
    "fieldtype": "Data",
-   "label": "GPS D\u00e9but Visite"
+   "label": "GPS D\u00e9but Visite",
+   "read_only": 1
   },
   {
+   "depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\")",
    "fieldname": "date_visite",
    "fieldtype": "Date",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Date Visite"
-  },
-  {
-   "fieldname": "column_break_dmtq",
-   "fieldtype": "Column Break"
+   "label": "Date Visite",
+   "read_only": 1
   },
   {
    "fieldname": "heure_fin_visite",
    "fieldtype": "Datetime",
-   "label": "Heure Fin Visite"
+   "label": "Heure Fin Visite",
+   "read_only": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "gps_fin_visite",
    "fieldtype": "Data",
-   "label": "GPS Fin Visite"
+   "label": "GPS Fin Visite",
+   "read_only": 1
   },
   {
-   "fieldname": "temps_visite",
-   "fieldtype": "Duration",
-   "hide_days": 1,
-   "hide_seconds": 1,
-   "label": "Temps Visite"
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visites Services",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_iaer",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vxjn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
+   "fieldname": "prescripteurs_tab",
+   "fieldtype": "Tab Break",
+   "label": "Service & Prescripteurs"
+  },
+  {
+   "fieldname": "prescripteurs",
+   "fieldtype": "Table",
+   "options": "Prescripteurs Visite"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-10-25 19:59:20.807979",
+ "modified": "2024-02-15 10:17:31.566780",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Services",
@@ -235,6 +258,59 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analyste M\u00e9dical",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "read": 1,
+   "report": 1,
+   "role": "D\u00e9l\u00e9gue M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Superviseur M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

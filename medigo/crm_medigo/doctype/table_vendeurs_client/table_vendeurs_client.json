@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2024-01-13 12:20:34.217502",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vendeur",
+  "qualite_interaction",
+  "resp_achats"
+ ],
+ "fields": [
+  {
+   "fieldname": "vendeur",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vendeur",
+   "options": "Vendeurs Clients"
+  },
+  {
+   "fetch_from": "vendeur.qualite_interaction",
+   "fieldname": "qualite_interaction",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "label": "Qualit\u00e9 Interaction"
+  },
+  {
+   "default": "0",
+   "fetch_from": "vendeur.resp_achats",
+   "fieldname": "resp_achats",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "R\u00e9sponsable des achats"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-13 12:24:01.522936",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Table vendeurs client",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

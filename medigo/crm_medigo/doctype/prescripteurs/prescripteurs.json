@@ -77,7 +77,8 @@
   {
    "fieldname": "email_prescripteur",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "options": "Email"
   },
   {
    "fieldname": "connections_column",
@@ -142,7 +143,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Commune",
-   "options": "Communes"
+   "options": "Communes",
+   "search_index": 1
   },
   {
    "fetch_from": "commune.wilaya",
@@ -188,7 +190,7 @@
    "fieldname": "sexe",
    "fieldtype": "Select",
    "label": "Sexe",
-   "options": "Homme\nFemme"
+   "options": "\nHomme\nFemme"
   },
   {
    "fieldname": "situation_matrimoniale",
@@ -220,7 +222,7 @@
    "link_fieldname": "prescripteur"
   }
  ],
- "modified": "2023-11-16 21:32:20.407454",
+ "modified": "2024-02-12 12:13:07.404807",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Prescripteurs",
@@ -238,10 +240,58 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analyste M\u00e9dical",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "D\u00e9l\u00e9gue M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Superviseur M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "write": 1
   }
  ],
+ "search_fields": "nom_complet_prescripteur,commune,service,titre_prescripteur,etablissement",
  "show_name_in_global_search": 1,
  "show_preview_popup": 1,
+ "show_title_field_in_link": 1,
  "sort_field": "nom_complet_prescripteur",
  "sort_order": "ASC",
  "states": [
@@ -254,5 +304,6 @@
    "title": "Inactif"
   }
  ],
+ "title_field": "nom_complet_prescripteur",
  "track_changes": 1
 }

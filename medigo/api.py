@@ -1,5 +1,6 @@
 import frappe
 from frappe import auth
+from frappe.model.document import Document
 
 # Déplacez la fonction generate_keys au-dessus de la fonction login
 def generate_keys(user):
@@ -42,3 +43,10 @@ def login(usr, pwd):
         "username": user.username,
         "email": user.email
     }
+
+    
+
+@frappe.whitelist()
+def get_prescripteur(service):
+    prescripteur = frappe.db.sql("""SELECT name FROM `tabPrescripteurs` WHERE service=%s""", (service,), as_dict=True)
+    return prescripteur

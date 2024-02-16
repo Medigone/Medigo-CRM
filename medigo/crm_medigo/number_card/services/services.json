@@ -1,6 +1,6 @@
 {
  "aggregate_function_based_on": "",
- "color": "#449CF0",
+ "color": "#EC864B",
  "creation": "2023-10-27 21:17:14.109132",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -12,7 +12,7 @@
  "is_public": 1,
  "is_standard": 1,
  "label": "Services",
- "modified": "2023-10-29 16:17:29.964595",
+ "modified": "2024-01-12 17:30:41.451025",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Services",

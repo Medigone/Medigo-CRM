@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-09 20:19:40.624300",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "prescripteur",
+  "objectif",
+  "remarque"
+ ],
+ "fields": [
+  {
+   "fieldname": "prescripteur",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Prescripteur",
+   "options": "Prescripteurs"
+  },
+  {
+   "fieldname": "objectif",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Objectif",
+   "options": "Objectif Visite"
+  },
+  {
+   "fieldname": "remarque",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarque"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-09 20:22:21.119516",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Prescripteurs Visite",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

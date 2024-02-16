@@ -23,7 +23,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-25 19:59:21.890730",
+ "modified": "2024-01-13 13:22:54.853224",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Type Etablissement",
@@ -41,6 +41,41 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analyste M\u00e9dical",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "read": 1,
+   "role": "D\u00e9l\u00e9gue M\u00e9dical",
+   "select": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Superviseur M\u00e9dical",
+   "select": 1
   }
  ],
  "show_title_field_in_link": 1,

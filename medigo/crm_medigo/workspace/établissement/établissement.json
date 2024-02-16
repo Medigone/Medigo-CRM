@@ -30,7 +30,7 @@
  "is_hidden": 0,
  "label": "\u00c9tablissement",
  "links": [],
- "modified": "2023-11-19 12:29:12.033101",
+ "modified": "2024-02-13 17:18:02.783182",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "\u00c9tablissement",
@@ -53,11 +53,11 @@
   }
  ],
  "owner": "Administrator",
- "parent_page": "",
+ "parent_page": "Menu M\u00e9dical",
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 5.0,
+ "sequence_id": 6.0,
  "shortcuts": [],
  "title": "\u00c9tablissement"
 }

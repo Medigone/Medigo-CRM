@@ -1,8 +1,6 @@
 {
  "actions": [],
  "allow_import": 1,
- "allow_rename": 1,
- "autoname": "format:VMI-{prescripteur}-{YY}-{MM}-{DD}",
  "creation": "2023-10-25 01:01:19.752293",
  "default_view": "List",
  "doctype": "DocType",
@@ -11,14 +9,20 @@
  "field_order": [
   "tab_break_bv9m",
   "d\u00eatails_visite_column",
-  "status",
   "date_prevue",
+  "date_visite",
   "prescripteur",
+  "titre_prescripteur",
   "objectifs_produits_column",
   "objectif_visite",
   "objectif_produit_1",
   "objectif_produit_2",
   "objectif_produit_3",
+  "localisation_column",
+  "commune",
+  "wilaya",
+  "zone",
+  "amended_from",
   "enquete_visite_tab",
   "partenariat",
   "contrepartie",
@@ -26,20 +30,14 @@
   "traitement_objection",
   "column_break_zwbv",
   "requete",
+  "remis_tab",
+  "liste_remis",
   "localisation_tab",
-  "commune",
-  "wilaya",
-  "zone",
-  "tab_3_tab",
   "heure_debut_visite",
   "gps_debut_visite",
-  "date_visite",
-  "column_break_utfw",
+  "column_break_rfib",
   "heure_fin_visite",
-  "gps_fin_visite",
-  "temps_visite",
-  "remis_tab",
-  "liste_remis"
+  "gps_fin_visite"
  ],
  "fields": [
   {
@@ -49,23 +47,16 @@
   },
   {
    "fieldname": "d\u00eatails_visite_column",
-   "fieldtype": "Column Break",
-   "label": "D\u00e9tails Visite"
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Status",
-   "options": "Programm\u00e9e\nEn Cours\nTermin\u00e9e\nAnnul\u00e9e"
-  },
-  {
+   "default": "Today",
    "fieldname": "date_prevue",
    "fieldtype": "Date",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Date Pr\u00e9vue"
+   "label": "Date Pr\u00e9vue",
+   "reqd": 1
   },
   {
    "fieldname": "prescripteur",
@@ -74,38 +65,43 @@
    "in_standard_filter": 1,
    "label": "Prescripteur",
    "options": "Prescripteurs",
+   "reqd": 1,
    "search_index": 1
   },
   {
    "fieldname": "objectifs_produits_column",
-   "fieldtype": "Column Break",
-   "label": "Objectifs Visite"
+   "fieldtype": "Column Break"
   },
   {
+   "default": "Prospection",
    "fieldname": "objectif_visite",
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Objectif visite",
-   "options": "Objectif Visite"
+   "options": "Objectif Visite",
+   "reqd": 1
   },
   {
    "fieldname": "objectif_produit_1",
    "fieldtype": "Link",
    "label": "Objectif Produit 1",
-   "options": "Item"
+   "options": "Item",
+   "reqd": 1
   },
   {
    "fieldname": "objectif_produit_2",
    "fieldtype": "Link",
    "label": "Objectif Produit 2",
-   "options": "Item"
+   "options": "Item",
+   "reqd": 1
   },
   {
    "fieldname": "objectif_produit_3",
    "fieldtype": "Link",
    "label": "Objectif Produit 3",
-   "options": "Item"
+   "options": "Item",
+   "reqd": 1
   },
   {
    "fieldname": "partenariat",
@@ -124,11 +120,10 @@
    "label": "Objections Produit"
   },
   {
-   "default": "Non",
    "fieldname": "traitement_objection",
    "fieldtype": "Select",
    "label": "Traitement Objection",
-   "options": "Oui\nNon"
+   "options": "\nOui\nNon"
   },
   {
    "fieldname": "column_break_zwbv",
@@ -140,9 +135,10 @@
    "label": "Requ\u00eate"
   },
   {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "localisation_tab",
    "fieldtype": "Tab Break",
-   "label": "Localisation"
+   "label": "Date & Localisation"
   },
   {
    "fetch_from": "prescripteur.commune",
@@ -150,90 +146,114 @@
    "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "Commune",
-   "options": "Communes"
+   "options": "Communes",
+   "read_only": 1
   },
   {
-   "fetch_from": "commune.",
+   "fetch_from": "prescripteur.wilaya",
    "fieldname": "wilaya",
    "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "Wilaya",
-   "options": "Wilayas"
+   "options": "Wilayas",
+   "read_only": 1
   },
   {
-   "fetch_from": "commune.zone",
+   "fetch_from": "prescripteur.zone",
    "fieldname": "zone",
    "fieldtype": "Link",
    "label": "Zone",
-   "options": "Zone"
+   "options": "Zone",
+   "read_only": 1
   },
   {
-   "depends_on": "eval:doc.status==\"Termin\u00e9e\"",
-   "fieldname": "tab_3_tab",
-   "fieldtype": "Tab Break",
-   "label": "Contr\u00f4le"
-  },
-  {
-   "fieldname": "heure_debut_visite",
-   "fieldtype": "Datetime",
-   "label": "Heure D\u00e9but Visite"
-  },
-  {
-   "fieldname": "gps_debut_visite",
-   "fieldtype": "Data",
-   "label": "GPS D\u00e9but Visite"
-  },
-  {
-   "fieldname": "date_visite",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Date Visite"
-  },
-  {
-   "fieldname": "column_break_utfw",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "heure_fin_visite",
-   "fieldtype": "Datetime",
-   "label": "Heure Fin Visite"
-  },
-  {
-   "fieldname": "gps_fin_visite",
-   "fieldtype": "Data",
-   "label": "GPS Fin Visite"
-  },
-  {
-   "fieldname": "temps_visite",
-   "fieldtype": "Duration",
-   "label": "Temps Visite"
-  },
-  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "remis_tab",
    "fieldtype": "Tab Break",
    "label": "Remis"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "liste_remis",
    "fieldtype": "Table",
    "label": "Liste Remis",
    "options": "Remis"
   },
   {
-   "depends_on": "eval:(doc.status==\"En Cours\" || doc.status==\"Termin\u00e9e\")",
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "enquete_visite_tab",
    "fieldtype": "Tab Break",
-   "label": "Enqu\u00eate Visite"
+   "label": "Enqu\u00eate"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visites Individuelles",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "prescripteur.titre_prescripteur",
+   "fieldname": "titre_prescripteur",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Titre Prescripteur",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\")",
+   "fieldname": "date_visite",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Visite",
+   "read_only": 1
+  },
+  {
+   "fieldname": "heure_debut_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure D\u00e9but Visite",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gps_debut_visite",
+   "fieldtype": "Data",
+   "label": "GPS D\u00e9but Visite",
+   "read_only": 1
+  },
+  {
+   "fieldname": "heure_fin_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure Fin Visite",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "gps_fin_visite",
+   "fieldtype": "Data",
+   "label": "GPS Fin Visite",
+   "read_only": 1
+  },
+  {
+   "fieldname": "localisation_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rfib",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-11-16 16:01:32.447815",
+ "modified": "2024-02-13 11:07:27.130436",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Individuelles",
- "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -247,29 +267,64 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analyste M\u00e9dical",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Superviseur M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "read": 1,
+   "role": "D\u00e9l\u00e9gue M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
   }
  ],
- "show_title_field_in_link": 1,
  "sort_field": "date_prevue",
  "sort_order": "ASC",
- "states": [
-  {
-   "color": "Blue",
-   "title": "Programm\u00e9e"
-  },
-  {
-   "color": "Yellow",
-   "title": "En Cours"
-  },
-  {
-   "color": "Green",
-   "title": "Termin\u00e9e"
-  },
-  {
-   "color": "Red",
-   "title": "Annul\u00e9e"
-  }
- ],
- "title_field": "prescripteur",
+ "states": [],
  "track_changes": 1
 }

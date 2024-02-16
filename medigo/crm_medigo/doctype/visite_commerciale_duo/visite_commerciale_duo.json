@@ -9,7 +9,6 @@
  "engine": "InnoDB",
  "field_order": [
   "details_visite_tab",
-  "status",
   "date_prevue",
   "client",
   "delegue",
@@ -38,19 +37,14 @@
   "gps_fin_visite",
   "temps_visite",
   "remis_tab",
-  "liste_remis"
+  "liste_remis",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "details_visite_tab",
    "fieldtype": "Tab Break",
    "label": "D\u00e9tails Visite"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Programm\u00e9e\nEn Cours\nTermin\u00e9e\nAnnul\u00e9e"
   },
   {
    "fieldname": "localisation_tab",
@@ -210,11 +204,21 @@
    "fieldname": "temps_visite",
    "fieldtype": "Duration",
    "label": "Temps Visite"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visite Commerciale Duo",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-11-16 20:46:08.089386",
+ "modified": "2024-02-07 11:51:42.249827",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Duo",
@@ -231,6 +235,48 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur Commercial",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analyste Commercial",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Superviseur Commercial",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

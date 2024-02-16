@@ -1,0 +1,50 @@
+{
+ "based_on": "date_visite",
+ "chart_name": "Heat Map VCI",
+ "chart_type": "Count",
+ "color": "#449CF0",
+ "creation": "2024-02-07 14:50:22.411480",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Visites Individuelles",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[[\"Visites Individuelles\",\"workflow_state\",\"=\",\"Termin\u00e9e\",false]]",
+ "group_by_based_on": "owner",
+ "group_by_type": "Count",
+ "idx": 1,
+ "is_public": 1,
+ "is_standard": 1,
+ "last_synced_on": "2024-02-08 15:37:43.053336",
+ "modified": "2024-02-08 15:38:11.265686",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Heat Map VCI",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Administrateur Commercial"
+  },
+  {
+   "role": "Superviseur Commercial"
+  },
+  {
+   "role": "D\u00e9l\u00e9gue Commercial"
+  },
+  {
+   "role": "Analyste Commercial"
+  }
+ ],
+ "source": "",
+ "time_interval": "Yearly",
+ "timeseries": 1,
+ "timespan": "Last Year",
+ "type": "Heatmap",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}

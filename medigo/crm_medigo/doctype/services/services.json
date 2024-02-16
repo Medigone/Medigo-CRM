@@ -72,7 +72,7 @@
    "read_only": 1
   },
   {
-   "fetch_from": "commune.",
+   "fetch_from": "commune.wilaya",
    "fieldname": "wilaya",
    "fieldtype": "Link",
    "in_standard_filter": 1,
@@ -114,7 +114,7 @@
    "link_fieldname": "service"
   }
  ],
- "modified": "2023-10-28 14:20:50.990242",
+ "modified": "2024-02-12 12:15:40.861632",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Services",
@@ -132,12 +132,61 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analyste M\u00e9dical",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "D\u00e9l\u00e9gue M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Superviseur M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "write": 1
   }
  ],
+ "search_fields": "etablissement,type_service,commune",
+ "show_name_in_global_search": 1,
  "show_title_field_in_link": 1,
  "sort_field": "nom_service",
  "sort_order": "ASC",
  "states": [],
  "title_field": "nom_service",
- "track_changes": 1
+ "track_changes": 1,
+ "translated_doctype": 1
 }

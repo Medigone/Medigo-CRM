@@ -1,0 +1,50 @@
+{
+ "based_on": "",
+ "chart_name": "VCI - Par Type Client",
+ "chart_type": "Group By",
+ "color": "#449CF0",
+ "creation": "2024-02-08 15:49:07.182343",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Visite Commerciale",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[[\"Visite Commerciale\",\"workflow_state\",\"=\",\"Termin\u00e9e\",false],[\"Visite Commerciale\",\"date_visite\",\"Timespan\",\"this month\",false]]",
+ "group_by_based_on": "cat_client",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "last_synced_on": "2024-02-08 15:49:36.940838",
+ "modified": "2024-02-08 15:50:16.776270",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "VCI - Par Type Client",
+ "number_of_groups": 6,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrateur Commercial"
+  },
+  {
+   "role": "Analyste Commercial"
+  },
+  {
+   "role": "D\u00e9l\u00e9gue Commercial"
+  },
+  {
+   "role": "Superviseur Commercial"
+  }
+ ],
+ "source": "",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Donut",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}

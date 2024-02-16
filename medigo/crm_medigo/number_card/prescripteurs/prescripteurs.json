@@ -1,6 +1,6 @@
 {
  "aggregate_function_based_on": "",
- "color": "#449CF0",
+ "color": "#29CD42",
  "creation": "2023-10-27 12:32:42.418484",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -12,7 +12,7 @@
  "is_public": 1,
  "is_standard": 1,
  "label": "Prescripteurs",
- "modified": "2023-10-29 16:17:29.804854",
+ "modified": "2024-01-12 17:30:29.303911",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Prescripteurs",

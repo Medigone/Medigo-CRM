@@ -62,14 +62,18 @@
    "options": "Communes"
   },
   {
+   "fetch_from": "commune.wilaya",
    "fieldname": "wilaya",
    "fieldtype": "Link",
    "label": "Wilaya",
    "options": "Wilayas"
   },
   {
+   "fetch_from": "commune.zone",
    "fieldname": "zone",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Zone",
    "options": "Zone"
   },
@@ -97,12 +101,12 @@
    "fieldname": "forme_juridique",
    "fieldtype": "Select",
    "label": "Forme Juridique",
-   "options": "SARL\nEURL\nPERSONNE PHYSIQUE"
+   "options": "\nSARL\nEURL\nPERSONNE PHYSIQUE"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-16 21:47:35.477780",
+ "modified": "2024-02-12 22:31:42.454091",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Distributeurs",
@@ -120,8 +124,52 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur Commercial",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analyste Commercial",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "read": 1,
+   "role": "D\u00e9l\u00e9gue Commercial",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Superviseur Commercial",
+   "select": 1,
+   "share": 1,
+   "write": 1
   }
  ],
+ "search_fields": "nom_distributeur,type_distributeur,zone",
  "show_title_field_in_link": 1,
  "sort_field": "nom_distributeur",
  "sort_order": "ASC",
