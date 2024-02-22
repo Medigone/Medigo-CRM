@@ -17,7 +17,7 @@
    "label": "Services Par Type"
   }
  ],
- "content": "[{\"id\":\"L3bfpcv2K1\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u00c9tablissements\",\"col\":3}},{\"id\":\"4-2-l6eEv0\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nouveaux \u00c9tablissements\",\"col\":3}},{\"id\":\"dviv6hFXy0\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Services\",\"col\":3}},{\"id\":\"nuqQmMnkTI\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nouveaux Services\",\"col\":3}},{\"id\":\"NMOS0bAvaD\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cr\u00e9ation \u00c9tablissements\",\"col\":6}},{\"id\":\"WjcXK_tpXW\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cr\u00e9ation Services\",\"col\":6}},{\"id\":\"M2Uy2BR3lY\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u00c9tablissements Par Type\",\"col\":6}},{\"id\":\"TV58rT_yNL\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Services Par Type\",\"col\":6}}]",
+ "content": "[{\"id\":\"0v8Be7jHER\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>\u00c9tablissements</b>\",\"col\":12}},{\"id\":\"L3bfpcv2K1\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nombre\",\"col\":3}},{\"id\":\"4-2-l6eEv0\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Cr\u00e9\u00e9s Aujourd\u2019hui\",\"col\":3}},{\"id\":\"5svhReNJb6\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>Services</b>\",\"col\":12}},{\"id\":\"sApEzq7CUM\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Services\",\"col\":3}},{\"id\":\"tAlt547GKd\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Cr\u00e9es Aujourd\u2019hui\",\"col\":3}},{\"id\":\"dz8ko1W5oo\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"NMOS0bAvaD\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cr\u00e9ation \u00c9tablissements\",\"col\":6}},{\"id\":\"WjcXK_tpXW\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cr\u00e9ation Services\",\"col\":6}},{\"id\":\"M2Uy2BR3lY\",\"type\":\"chart\",\"data\":{\"chart_name\":\"\u00c9tablissements Par Type\",\"col\":6}},{\"id\":\"TV58rT_yNL\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Services Par Type\",\"col\":6}}]",
  "creation": "2023-10-27 21:02:53.425336",
  "custom_blocks": [],
  "docstatus": 0,
@@ -30,13 +30,13 @@
  "is_hidden": 0,
  "label": "\u00c9tablissement",
  "links": [],
- "modified": "2024-02-13 17:18:02.783182",
+ "modified": "2024-02-22 12:25:10.845843",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "\u00c9tablissement",
  "number_cards": [
   {
-   "label": "\u00c9tablissements",
+   "label": "Nombre",
    "number_card_name": "\u00c9tablissements"
   },
   {
@@ -44,19 +44,32 @@
    "number_card_name": "Services"
   },
   {
-   "label": "Nouveaux Services",
-   "number_card_name": "Services Nouveaux Ajouts"
+   "label": "Cr\u00e9\u00e9s Aujourd\u2019hui",
+   "number_card_name": "\u00c9tablissements Nouveaux Ajouts"
   },
   {
-   "label": "Nouveaux \u00c9tablissements",
-   "number_card_name": "\u00c9tablissements Nouveaux Ajouts"
+   "label": "Cr\u00e9es Aujourd\u2019hui",
+   "number_card_name": "Services Nouveaux Ajouts"
   }
  ],
  "owner": "Administrator",
  "parent_page": "Menu M\u00e9dical",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Administrateur M\u00e9dical"
+  },
+  {
+   "role": "Analyste M\u00e9dical"
+  },
+  {
+   "role": "D\u00e9l\u00e9gue M\u00e9dical"
+  },
+  {
+   "role": "Superviseur M\u00e9dical"
+  }
+ ],
  "sequence_id": 6.0,
  "shortcuts": [],
  "title": "\u00c9tablissement"

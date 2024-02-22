@@ -18,7 +18,7 @@
  "is_hidden": 0,
  "label": "Action",
  "links": [],
- "modified": "2024-02-13 17:18:02.968835",
+ "modified": "2024-02-22 12:25:11.022427",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Action",
@@ -36,7 +36,20 @@
  "parent_page": "Menu M\u00e9dical",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Administrateur M\u00e9dical"
+  },
+  {
+   "role": "Analyste M\u00e9dical"
+  },
+  {
+   "role": "D\u00e9l\u00e9gue M\u00e9dical"
+  },
+  {
+   "role": "Superviseur M\u00e9dical"
+  }
+ ],
  "sequence_id": 7.0,
  "shortcuts": [
   {

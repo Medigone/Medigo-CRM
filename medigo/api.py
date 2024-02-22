@@ -50,3 +50,6 @@ def login(usr, pwd):
 def get_prescripteur(service):
     prescripteur = frappe.db.sql("""SELECT name FROM `tabPrescripteurs` WHERE service=%s""", (service,), as_dict=True)
     return prescripteur
+
+
+

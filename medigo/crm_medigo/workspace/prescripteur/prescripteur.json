@@ -9,7 +9,7 @@
    "label": "Prescripteurs Par Titre"
   }
  ],
- "content": "[{\"id\":\"KdLIGEGYaa\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Prescripteurs\",\"col\":6}},{\"id\":\"19c39KYsjO\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nouveaux Prescripteurs\",\"col\":6}},{\"id\":\"OuBW3pR7nc\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cr\u00e9ation Prescripteurs\",\"col\":6}},{\"id\":\"CDMkfffTyC\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Prescripteurs Par Titre\",\"col\":6}}]",
+ "content": "[{\"id\":\"KdLIGEGYaa\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Prescripteurs\",\"col\":6}},{\"id\":\"19c39KYsjO\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Cr\u00e9\u00e9s Aujourd\u2019hui\",\"col\":6}},{\"id\":\"OuBW3pR7nc\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cr\u00e9ation Prescripteurs\",\"col\":6}},{\"id\":\"CDMkfffTyC\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Prescripteurs Par Titre\",\"col\":6}}]",
  "creation": "2023-10-27 12:31:38.845752",
  "custom_blocks": [],
  "docstatus": 0,
@@ -22,25 +22,38 @@
  "is_hidden": 0,
  "label": "Prescripteur",
  "links": [],
- "modified": "2024-02-13 17:18:02.684722",
+ "modified": "2024-02-22 12:25:10.718431",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Prescripteur",
  "number_cards": [
   {
-   "label": "Prescripteurs",
-   "number_card_name": "Prescripteurs"
+   "label": "Cr\u00e9\u00e9s Aujourd\u2019hui",
+   "number_card_name": "Prescripteurs Nouveaux Ajouts"
   },
   {
-   "label": "Nouveaux Prescripteurs",
-   "number_card_name": "Prescripteurs Nouveaux Ajouts"
+   "label": "Prescripteurs",
+   "number_card_name": "Prescripteurs"
   }
  ],
  "owner": "Administrator",
  "parent_page": "Menu M\u00e9dical",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Administrateur M\u00e9dical"
+  },
+  {
+   "role": "Analyste M\u00e9dical"
+  },
+  {
+   "role": "D\u00e9l\u00e9gue M\u00e9dical"
+  },
+  {
+   "role": "Superviseur M\u00e9dical"
+  }
+ ],
  "sequence_id": 5.0,
  "shortcuts": [],
  "title": "Prescripteur"

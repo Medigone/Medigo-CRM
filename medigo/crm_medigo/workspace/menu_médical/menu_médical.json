@@ -1,0 +1,190 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"pa4HFgBmX8\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Accueil - Med\",\"col\":12}},{\"id\":\"XbB38IslXX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Nouvelle VMI\",\"col\":3}},{\"id\":\"8hTlKhS4TJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Nouvelle VMS\",\"col\":3}},{\"id\":\"maZHmZ2RRt\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rMPmylslVV\",\"type\":\"card\",\"data\":{\"card_name\":\"Menu Visites\",\"col\":4}},{\"id\":\"mI8hjLWgw6\",\"type\":\"card\",\"data\":{\"card_name\":\"Menu Prescripteurs\",\"col\":4}},{\"id\":\"L9FsKq6lEW\",\"type\":\"card\",\"data\":{\"card_name\":\"Menu \u00c9tablissements\",\"col\":4}},{\"id\":\"krMOHjJUmJ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Individuelles\",\"col\":6}},{\"id\":\"zi5ubsbnNj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Services\",\"col\":6}},{\"id\":\"uhv7YvrARd\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Prescripteurs\",\"col\":4}},{\"id\":\"QnjZPMxW_7\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Services\",\"col\":4}},{\"id\":\"zr_KgdGIcc\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u00c9tablissements\",\"col\":4}}]",
+ "creation": "2024-01-12 17:14:10.753910",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Accueil - Med",
+   "label": "Accueil - Med"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "non-profit",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Menu M\u00e9dical",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Menu Visites",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Visites Individuelles",
+   "link_count": 0,
+   "link_to": "Visites Individuelles",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Visites Services",
+   "link_count": 0,
+   "link_to": "Visites Services",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Visite M\u00e9dicale Duo",
+   "link_count": 0,
+   "link_to": "Visite Medicale Duo",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Visite M\u00e9dicale Manager",
+   "link_count": 0,
+   "link_to": "Visite Medicale Manager",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Menu Prescripteurs",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Prescripteurs",
+   "link_count": 0,
+   "link_to": "Prescripteurs",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Visites Individuelles",
+   "link_count": 0,
+   "link_to": "Visites Individuelles",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Menu \u00c9tablissements",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u00c9tablissements",
+   "link_count": 0,
+   "link_to": "Etablissements",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Services",
+   "link_count": 0,
+   "link_to": "Services",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-02-22 12:25:10.097047",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Menu M\u00e9dical",
+ "number_cards": [
+  {
+   "label": "Prescripteurs",
+   "number_card_name": "Prescripteurs"
+  },
+  {
+   "label": "Visites Individuelles",
+   "number_card_name": "VMI - Nombre"
+  },
+  {
+   "label": "Visites Services",
+   "number_card_name": "Visites Services"
+  },
+  {
+   "label": "\u00c9tablissements",
+   "number_card_name": "\u00c9tablissements"
+  },
+  {
+   "label": "Services",
+   "number_card_name": "Services"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Administrateur M\u00e9dical"
+  },
+  {
+   "role": "Analyste M\u00e9dical"
+  },
+  {
+   "role": "D\u00e9l\u00e9gue M\u00e9dical"
+  },
+  {
+   "role": "Superviseur M\u00e9dical"
+  }
+ ],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Nouvelle VMS",
+   "link_to": "Visites Services",
+   "stats_filter": "[[\"Visites Services\",\"date_visite\",\"is\",\"not set\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Nouvelle VMI",
+   "link_to": "Visites Individuelles",
+   "stats_filter": "[[\"Visites Individuelles\",\"date_visite\",\"is\",\"not set\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Menu M\u00e9dical"
+}

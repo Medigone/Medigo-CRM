@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"0FBbfzDKxX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Configuration</span>\",\"col\":12}},{\"id\":\"gEEiotgMdY\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"XtpFvv9KCY\",\"type\":\"card\",\"data\":{\"card_name\":\"Localisation\",\"col\":3}},{\"id\":\"pD87FskjMk\",\"type\":\"card\",\"data\":{\"card_name\":\"Entit\u00e9s\",\"col\":3}},{\"id\":\"9bqWxHQ84e\",\"type\":\"card\",\"data\":{\"card_name\":\"Visites\",\"col\":3}},{\"id\":\"eAylZNrV7u\",\"type\":\"card\",\"data\":{\"card_name\":\"Actions\",\"col\":3}}]",
+ "content": "[{\"id\":\"0FBbfzDKxX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Configuration</span>\",\"col\":12}},{\"id\":\"9bqWxHQ84e\",\"type\":\"card\",\"data\":{\"card_name\":\"Visites\",\"col\":3}},{\"id\":\"eAylZNrV7u\",\"type\":\"card\",\"data\":{\"card_name\":\"Actions\",\"col\":3}},{\"id\":\"szfO8xuNlK\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"pD87FskjMk\",\"type\":\"card\",\"data\":{\"card_name\":\"Entit\u00e9s\",\"col\":3}},{\"id\":\"XtpFvv9KCY\",\"type\":\"card\",\"data\":{\"card_name\":\"Localisation\",\"col\":3}}]",
  "creation": "2023-10-26 13:50:05.622478",
  "custom_blocks": [],
  "docstatus": 0,
@@ -47,54 +47,6 @@
    "label": "Zone",
    "link_count": 0,
    "link_to": "Zone",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Entit\u00e9s",
-   "link_count": 4,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Titre Prescripteur",
-   "link_count": 0,
-   "link_to": "Titre Prescripteur",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Type Etablissement",
-   "link_count": 0,
-   "link_to": "Type Etablissement",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Type Service",
-   "link_count": 0,
-   "link_to": "Type Service",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Laboratoires",
-   "link_count": 0,
-   "link_to": "Laboratoires",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -164,15 +116,73 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Entit\u00e9s",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Titre Prescripteur",
+   "link_count": 0,
+   "link_to": "Titre Prescripteur",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Type Etablissement",
+   "link_count": 0,
+   "link_to": "Type Etablissement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Type Service",
+   "link_count": 0,
+   "link_to": "Type Service",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Laboratoires",
+   "link_count": 0,
+   "link_to": "Laboratoires",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Produits Laboratoires",
+   "link_count": 0,
+   "link_to": "Produits Labos",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-02-13 17:18:03.974152",
+ "modified": "2024-02-22 12:25:11.133125",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Configuration",
  "number_cards": [],
  "owner": "Administrator",
- "parent_page": "",
+ "parent_page": "Menu M\u00e9dical",
  "public": 1,
  "quick_lists": [],
  "roles": [
@@ -181,9 +191,12 @@
   },
   {
    "role": "System Manager"
+  },
+  {
+   "role": "Administrateur M\u00e9dical"
   }
  ],
- "sequence_id": 13.0,
+ "sequence_id": 8.0,
  "shortcuts": [],
  "title": "Configuration"
 }

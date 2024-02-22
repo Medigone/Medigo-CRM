@@ -17,7 +17,7 @@
    "label": "Objectif Produit 3"
   }
  ],
- "content": "[{\"id\":\"0pGtwvNcdv\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Services\",\"col\":12}},{\"id\":\"Y9GiLvV2ls\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>VISITES SERVICES AUJOURD'HUI</b>\",\"col\":12}},{\"id\":\"2645LOATLY\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Programm\u00e9es\",\"col\":4}},{\"id\":\"-o4Lw-UG1n\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites En Cours\",\"col\":4}},{\"id\":\"PejweWf0k2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Termin\u00e9es\",\"col\":4}},{\"id\":\"YPYlN5acr2\",\"type\":\"chart\",\"data\":{\"chart_name\":\"R\u00e9partition Par Objectif\",\"col\":6}},{\"id\":\"CRL7u5te0o\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 1\",\"col\":6}},{\"id\":\"PFmO8iNpN_\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 2\",\"col\":6}},{\"id\":\"w9AjmhHKP6\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 3\",\"col\":6}}]",
+ "content": "[{\"id\":\"Y9GiLvV2ls\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>VISITES SERVICES AUJOURD'HUI</b>\",\"col\":12}},{\"id\":\"2645LOATLY\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Programm\u00e9es\",\"col\":3}},{\"id\":\"-o4Lw-UG1n\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"En Cours\",\"col\":3}},{\"id\":\"PejweWf0k2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Termin\u00e9es\",\"col\":3}},{\"id\":\"0pGtwvNcdv\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Valid\u00e9es\",\"col\":3}},{\"id\":\"YPYlN5acr2\",\"type\":\"chart\",\"data\":{\"chart_name\":\"R\u00e9partition Par Objectif\",\"col\":6}},{\"id\":\"CRL7u5te0o\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 1\",\"col\":6}},{\"id\":\"PFmO8iNpN_\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 2\",\"col\":6}},{\"id\":\"w9AjmhHKP6\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 3\",\"col\":6}}]",
  "creation": "2023-10-27 22:30:13.046516",
  "custom_blocks": [],
  "docstatus": 0,
@@ -30,33 +30,46 @@
  "is_hidden": 0,
  "label": "Visite Service",
  "links": [],
- "modified": "2024-02-13 17:18:02.551038",
+ "modified": "2024-02-22 12:25:10.561391",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Service",
  "number_cards": [
   {
-   "label": "Visites Programm\u00e9es",
+   "label": "Programm\u00e9es",
    "number_card_name": "Visites Services Programm\u00e9es"
   },
   {
-   "label": "Visites En Cours",
+   "label": "En Cours",
    "number_card_name": "Visites Services En Cours"
   },
   {
-   "label": "Visites Services",
-   "number_card_name": "Visites Services"
+   "label": "Termin\u00e9es",
+   "number_card_name": "Visites Services Termin\u00e9es"
   },
   {
-   "label": "Visites Termin\u00e9es",
-   "number_card_name": "Visites Services Termin\u00e9es"
+   "label": "Valid\u00e9es",
+   "number_card_name": "Visites Services"
   }
  ],
  "owner": "Administrator",
  "parent_page": "Menu M\u00e9dical",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Administrateur M\u00e9dical"
+  },
+  {
+   "role": "Analyste M\u00e9dical"
+  },
+  {
+   "role": "D\u00e9l\u00e9gue M\u00e9dical"
+  },
+  {
+   "role": "Superviseur M\u00e9dical"
+  }
+ ],
  "sequence_id": 4.0,
  "shortcuts": [],
  "title": "Visite Service"
