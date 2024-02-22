@@ -290,7 +290,7 @@
    "fieldname": "duree_visite",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Dur\u00e9e Visite",
+   "label": "Dur\u00e9e",
    "read_only": 1
   },
   {
@@ -320,7 +320,7 @@
    "link_fieldname": "vci"
   }
  ],
- "modified": "2024-02-22 17:12:09.904966",
+ "modified": "2024-02-22 17:44:50.931380",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale",

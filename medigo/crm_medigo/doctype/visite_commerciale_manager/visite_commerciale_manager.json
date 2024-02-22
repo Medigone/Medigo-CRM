@@ -253,7 +253,7 @@
    "fieldname": "duree_visite",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Dur\u00e9e Visite",
+   "label": "Dur\u00e9e",
    "read_only": 1
   },
   {
@@ -282,7 +282,7 @@
    "link_fieldname": "vcm"
   }
  ],
- "modified": "2024-02-22 17:14:06.105046",
+ "modified": "2024-02-22 17:44:41.087493",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Manager",

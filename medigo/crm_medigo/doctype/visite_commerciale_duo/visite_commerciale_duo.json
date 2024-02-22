@@ -20,6 +20,9 @@
   "wilaya",
   "zone",
   "notations",
+  "note_visite",
+  "column_break_kwbb",
+  "section_break_eadx",
   "ponctualite",
   "adaptation_application",
   "connaissances_commerciales",
@@ -30,7 +33,6 @@
   "relationnel",
   "gestion_temps",
   "preparation_visite",
-  "note_visite",
   "notes_tab",
   "remarques",
   "remis_tab",
@@ -95,33 +97,28 @@
   },
   {
    "fieldname": "ponctualite",
-   "fieldtype": "Select",
-   "label": "Ponctualit\u00e9",
-   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+   "fieldtype": "Int",
+   "label": "Ponctualit\u00e9"
   },
   {
    "fieldname": "adaptation_application",
-   "fieldtype": "Select",
-   "label": "Adaptation Application",
-   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+   "fieldtype": "Int",
+   "label": "Adaptation Application"
   },
   {
    "fieldname": "connaissances_commerciales",
-   "fieldtype": "Select",
-   "label": "Connaissances Commerciales",
-   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+   "fieldtype": "Int",
+   "label": "Connaissances Commerciales"
   },
   {
    "fieldname": "connaissances_produits",
-   "fieldtype": "Select",
-   "label": "Connaissances Produits",
-   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+   "fieldtype": "Int",
+   "label": "Connaissances Produits"
   },
   {
    "fieldname": "autonomie",
-   "fieldtype": "Select",
-   "label": "Autonomie",
-   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+   "fieldtype": "Int",
+   "label": "Autonomie"
   },
   {
    "fieldname": "column_break_eizv",
@@ -129,33 +126,31 @@
   },
   {
    "fieldname": "remontee_information",
-   "fieldtype": "Select",
-   "label": "Remont\u00e9e Information",
-   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+   "fieldtype": "Int",
+   "label": "Remont\u00e9e Information"
   },
   {
    "fieldname": "relationnel",
-   "fieldtype": "Select",
-   "label": "Relationnel",
-   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+   "fieldtype": "Int",
+   "label": "Relationnel"
   },
   {
    "fieldname": "gestion_temps",
-   "fieldtype": "Select",
-   "label": "Gestion du temps",
-   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+   "fieldtype": "Int",
+   "label": "Gestion du temps"
   },
   {
    "fieldname": "preparation_visite",
-   "fieldtype": "Select",
-   "label": "Pr\u00e9paration Visite",
-   "options": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+   "fieldtype": "Int",
+   "label": "Pr\u00e9paration Visite"
   },
   {
    "fieldname": "note_visite",
-   "fieldtype": "Int",
+   "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Note Visite",
-   "non_negative": 1
+   "precision": "2",
+   "read_only": 1
   },
   {
    "fetch_from": "client.commune",
@@ -262,7 +257,7 @@
    "fieldname": "duree_visite",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Dur\u00e9e Visite",
+   "label": "Dur\u00e9e",
    "read_only": 1
   },
   {
@@ -291,6 +286,14 @@
    "fieldname": "remarques",
    "fieldtype": "Text Editor",
    "label": "Remarques"
+  },
+  {
+   "fieldname": "column_break_kwbb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_eadx",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -301,7 +304,7 @@
    "link_fieldname": "vcd"
   }
  ],
- "modified": "2024-02-22 17:10:44.155284",
+ "modified": "2024-02-22 17:46:47.601289",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Duo",
