@@ -1,0 +1,32 @@
+{
+ "attach_print": 1,
+ "channel": "Email",
+ "creation": "2024-02-11 19:06:25.287527",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Sales Order",
+ "enabled": 0,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h3>Nouvelle Commande </h3>\n\n<p>Commande {{ doc.name }} </p>\n\n\n<h4>D\u00e9tails :</h4>\n\n<ul>\n<li><strong>Client: </strong>{{ doc.customer_name }}\n<li><strong>Date de livraison: </strong>{{ doc.delivery_date }}\n<li><strong>Montant: </strong>{{ doc.grand_total }}\n</ul>",
+ "modified": "2024-02-22 16:18:04.986186",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Nouvelle Commande Confirm\u00e9e - Distributeur",
+ "owner": "Administrator",
+ "print_format": "Commande",
+ "property_value": "Oui",
+ "recipients": [
+  {
+   "receiver_by_document_field": "email_dist"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Biomil",
+ "sender_email": "contact@biomil.pro",
+ "set_property_after_alert": "transmise",
+ "subject": "Nouvelle Commande - {{ doc.customer_name }}"
+}
