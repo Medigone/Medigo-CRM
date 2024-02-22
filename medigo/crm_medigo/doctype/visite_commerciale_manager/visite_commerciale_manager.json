@@ -53,10 +53,10 @@
   },
   {
    "default": "Today",
-   "depends_on": "eval:(doc.workflow_state==\"Program\u00e9e\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "date_prevue",
    "fieldtype": "Date",
-   "label": "Date Pr\u00e9vue"
+   "label": "Date Pr\u00e9vue",
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")"
   },
   {
    "fieldname": "client",
@@ -251,10 +251,11 @@
    "fieldname": "duree_visite",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Temps Visite",
+   "label": "Dur\u00e9e Visite",
    "read_only": 1
   },
   {
+   "depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "connections_tab",
    "fieldtype": "Tab Break",
    "label": "Connections",
@@ -269,7 +270,7 @@
    "link_fieldname": "vcm"
   }
  ],
- "modified": "2024-02-22 16:15:36.426607",
+ "modified": "2024-02-22 16:56:30.185481",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Manager",

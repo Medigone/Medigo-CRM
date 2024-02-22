@@ -2,7 +2,6 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:VCD-{client}-{YY}-{MM}-{DD}",
  "creation": "2023-11-16 20:06:30.638106",
  "default_view": "List",
  "doctype": "DocType",
@@ -10,8 +9,16 @@
  "field_order": [
   "details_visite_tab",
   "date_prevue",
+  "date_visite",
   "client",
+  "nom_client",
+  "cat_client",
+  "column_break_dddw",
   "delegue",
+  "amended_from",
+  "commune",
+  "wilaya",
+  "zone",
   "notations",
   "ponctualite",
   "adaptation_application",
@@ -24,21 +31,19 @@
   "gestion_temps",
   "preparation_visite",
   "note_visite",
-  "localisation_tab",
-  "commune",
-  "wilaya",
-  "zone",
+  "remis_tab",
+  "liste_remis",
   "controle_tab",
   "heure_debut_visite",
   "gps_debut_visite",
-  "date_visite",
+  "carte_debut_visite",
   "column_break_dizu",
   "heure_fin_visite",
   "gps_fin_visite",
-  "temps_visite",
-  "remis_tab",
-  "liste_remis",
-  "amended_from"
+  "carte_fin_visite",
+  "column_break_isuo",
+  "duree_visite",
+  "connections_tab"
  ],
  "fields": [
   {
@@ -47,38 +52,41 @@
    "label": "D\u00e9tails Visite"
   },
   {
-   "fieldname": "localisation_tab",
-   "fieldtype": "Tab Break",
-   "label": "Localisation"
-  },
-  {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "controle_tab",
    "fieldtype": "Tab Break",
-   "label": "Contr\u00f4le"
+   "label": "Date & Localisation"
   },
   {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "remis_tab",
    "fieldtype": "Tab Break",
    "label": "Remis"
   },
   {
+   "default": "Today",
    "fieldname": "date_prevue",
    "fieldtype": "Date",
-   "label": "Date Pr\u00e9vue"
+   "label": "Date Pr\u00e9vue",
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
+   "reqd": 1
   },
   {
    "fieldname": "client",
    "fieldtype": "Link",
    "label": "Client",
-   "options": "Customer"
+   "options": "Customer",
+   "reqd": 1
   },
   {
    "fieldname": "delegue",
    "fieldtype": "Link",
    "label": "D\u00e9l\u00e9gu\u00e9",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "notations",
    "fieldtype": "Tab Break",
    "label": "Notations"
@@ -148,22 +156,31 @@
    "non_negative": 1
   },
   {
+   "fetch_from": "client.commune",
    "fieldname": "commune",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Commune",
-   "options": "Communes"
+   "options": "Communes",
+   "read_only": 1
   },
   {
+   "fetch_from": "client.wilaya",
    "fieldname": "wilaya",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Wilaya",
-   "options": "Wilayas"
+   "options": "Wilayas",
+   "read_only": 1
   },
   {
+   "fetch_from": "client.zone",
    "fieldname": "zone",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Zone",
-   "options": "Zone"
+   "options": "Zone",
+   "read_only": 1
   },
   {
    "fieldname": "liste_remis",
@@ -174,17 +191,22 @@
   {
    "fieldname": "heure_debut_visite",
    "fieldtype": "Datetime",
-   "label": "Heure D\u00e9but Visite"
+   "label": "Heure D\u00e9but Visite",
+   "read_only": 1
   },
   {
    "fieldname": "gps_debut_visite",
    "fieldtype": "Data",
-   "label": "GPS D\u00e9but Visite"
+   "label": "GPS D\u00e9but Visite",
+   "read_only": 1
   },
   {
    "fieldname": "date_visite",
    "fieldtype": "Date",
-   "label": "Date Visite"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Visite",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_dizu",
@@ -193,17 +215,14 @@
   {
    "fieldname": "heure_fin_visite",
    "fieldtype": "Datetime",
-   "label": "Heure Fin Visite"
+   "label": "Heure Fin Visite",
+   "read_only": 1
   },
   {
    "fieldname": "gps_fin_visite",
    "fieldtype": "Data",
-   "label": "GPS Fin Visite"
-  },
-  {
-   "fieldname": "temps_visite",
-   "fieldtype": "Duration",
-   "label": "Temps Visite"
+   "label": "GPS Fin Visite",
+   "read_only": 1
   },
   {
    "fieldname": "amended_from",
@@ -213,16 +232,67 @@
    "options": "Visite Commerciale Duo",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fetch_from": "client.customer_name",
+   "fieldname": "nom_client",
+   "fieldtype": "Data",
+   "label": "Nom Client",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "client.customer_group",
+   "fieldname": "cat_client",
+   "fieldtype": "Link",
+   "label": "Cat\u00e9gorie Client",
+   "options": "Customer Group",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dddw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_isuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "duree_visite",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Dur\u00e9e Visite",
+   "read_only": 1
+  },
+  {
+   "fieldname": "carte_debut_visite",
+   "fieldtype": "HTML",
+   "label": "Carte D\u00e9but Visite"
+  },
+  {
+   "fieldname": "carte_fin_visite",
+   "fieldtype": "HTML",
+   "label": "Carte Fin Visite"
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
+   "fieldname": "connections_tab",
+   "fieldtype": "Tab Break",
+   "label": "Connections",
+   "show_dashboard": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2024-02-07 11:51:42.249827",
+ "links": [
+  {
+   "link_doctype": "Sales Order",
+   "link_fieldname": "vcd"
+  }
+ ],
+ "modified": "2024-02-22 16:59:47.782161",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Duo",
- "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
