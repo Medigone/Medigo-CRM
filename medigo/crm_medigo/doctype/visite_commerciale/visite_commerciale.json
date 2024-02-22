@@ -31,6 +31,8 @@
   "class_b1",
   "class_bp1",
   "class_bcf",
+  "notes_tab",
+  "remarques",
   "remis_tab",
   "liste_remis",
   "controle_tab",
@@ -297,6 +299,17 @@
    "fieldtype": "Tab Break",
    "label": "Connections",
    "show_dashboard": 1
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
+   "fieldname": "notes_tab",
+   "fieldtype": "Tab Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "remarques",
+   "fieldtype": "Text Editor",
+   "label": "Remarques"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -307,7 +320,7 @@
    "link_fieldname": "vci"
   }
  ],
- "modified": "2024-02-22 16:58:07.053502",
+ "modified": "2024-02-22 17:12:09.904966",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale",
@@ -381,7 +394,7 @@
    "write": 1
   }
  ],
- "search_fields": "nom_client,commune",
+ "search_fields": "nom_client,commune,cat_client",
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

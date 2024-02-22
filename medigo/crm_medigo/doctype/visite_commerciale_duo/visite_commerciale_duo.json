@@ -31,6 +31,8 @@
   "gestion_temps",
   "preparation_visite",
   "note_visite",
+  "notes_tab",
+  "remarques",
   "remis_tab",
   "liste_remis",
   "controle_tab",
@@ -279,6 +281,16 @@
    "fieldtype": "Tab Break",
    "label": "Connections",
    "show_dashboard": 1
+  },
+  {
+   "fieldname": "notes_tab",
+   "fieldtype": "Tab Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "remarques",
+   "fieldtype": "Text Editor",
+   "label": "Remarques"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -289,7 +301,7 @@
    "link_fieldname": "vcd"
   }
  ],
- "modified": "2024-02-22 16:59:47.782161",
+ "modified": "2024-02-22 17:10:44.155284",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Duo",
@@ -350,6 +362,7 @@
    "write": 1
   }
  ],
+ "search_fields": "nom_client,commune,cat_client",
  "show_title_field_in_link": 1,
  "sort_field": "date_visite",
  "sort_order": "ASC",
@@ -371,6 +384,6 @@
    "title": "Annul\u00e9e"
   }
  ],
- "title_field": "client",
+ "title_field": "nom_client",
  "track_changes": 1
 }

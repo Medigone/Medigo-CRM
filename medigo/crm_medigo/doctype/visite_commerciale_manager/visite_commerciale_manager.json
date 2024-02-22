@@ -31,6 +31,8 @@
   "rotation_c2",
   "rotation_c3",
   "rotation_c4",
+  "notes_tab",
+  "remarques",
   "remis_tab",
   "liste_remis",
   "controle_tab",
@@ -260,6 +262,16 @@
    "fieldtype": "Tab Break",
    "label": "Connections",
    "show_dashboard": 1
+  },
+  {
+   "fieldname": "notes_tab",
+   "fieldtype": "Tab Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "remarques",
+   "fieldtype": "Text Editor",
+   "label": "Remarques"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -270,7 +282,7 @@
    "link_fieldname": "vcm"
   }
  ],
- "modified": "2024-02-22 16:56:30.185481",
+ "modified": "2024-02-22 17:14:06.105046",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Manager",
