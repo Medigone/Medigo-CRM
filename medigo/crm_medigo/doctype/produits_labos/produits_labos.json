@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{laboratoire}-{nom_produit}",
+ "autoname": "field:nom_produit",
  "creation": "2024-02-02 10:02:42.625878",
  "default_view": "List",
  "doctype": "DocType",
@@ -27,11 +27,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-02 10:13:44.657556",
+ "modified": "2024-02-24 00:07:12.118336",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Produits Labos",
- "naming_rule": "Expression",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -90,7 +90,10 @@
    "share": 1
   }
  ],
+ "search_fields": "laboratoire",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "nom_produit"
 }

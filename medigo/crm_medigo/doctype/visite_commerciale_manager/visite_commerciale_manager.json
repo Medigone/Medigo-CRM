@@ -91,28 +91,28 @@
    "fieldname": "classement_1",
    "fieldtype": "Link",
    "label": "Classement - 1",
-   "options": "Item",
+   "options": "Produits Labos",
    "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "classement_2",
    "fieldtype": "Link",
    "label": "Classement - 2",
-   "options": "Item",
+   "options": "Produits Labos",
    "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "classement_3",
    "fieldtype": "Link",
    "label": "Classement - 3",
-   "options": "Item",
+   "options": "Produits Labos",
    "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "classement_4",
    "fieldtype": "Link",
    "label": "Classement - 4",
-   "options": "Item",
+   "options": "Produits Labos",
    "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
@@ -129,7 +129,7 @@
    "fieldname": "rotation_c2",
    "fieldtype": "Int",
    "label": "Rotation - C2",
-   "mandatory_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "rotation_c3",
@@ -346,7 +346,7 @@
    "link_fieldname": "vcm"
   }
  ],
- "modified": "2024-02-23 23:54:17.378804",
+ "modified": "2024-02-24 00:00:55.047906",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Manager",
