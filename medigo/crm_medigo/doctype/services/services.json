@@ -18,8 +18,7 @@
   "localisation_column",
   "commune",
   "wilaya",
-  "zone",
-  "gps_service"
+  "zone"
  ],
  "fields": [
   {
@@ -29,8 +28,7 @@
   },
   {
    "fieldname": "d\u00e9tails_service_column",
-   "fieldtype": "Column Break",
-   "label": "D\u00e9tails Service"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "etablissement",
@@ -58,8 +56,7 @@
   },
   {
    "fieldname": "localisation_column",
-   "fieldtype": "Column Break",
-   "label": "Localisation"
+   "fieldtype": "Column Break"
   },
   {
    "fetch_from": "etablissement.commune",
@@ -95,12 +92,6 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Potentiel"
-  },
-  {
-   "fetch_from": "etablissement.gps_etablissement",
-   "fieldname": "gps_service",
-   "fieldtype": "Data",
-   "label": "GPS Service"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -114,7 +105,7 @@
    "link_fieldname": "service"
   }
  ],
- "modified": "2024-02-12 12:15:40.861632",
+ "modified": "2024-02-23 13:43:06.430170",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Services",

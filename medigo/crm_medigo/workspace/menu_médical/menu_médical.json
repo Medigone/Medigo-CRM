@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"pa4HFgBmX8\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Accueil - Med\",\"col\":12}},{\"id\":\"XbB38IslXX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Nouvelle VMI\",\"col\":3}},{\"id\":\"8hTlKhS4TJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Nouvelle VMS\",\"col\":3}},{\"id\":\"maZHmZ2RRt\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rMPmylslVV\",\"type\":\"card\",\"data\":{\"card_name\":\"Menu Visites\",\"col\":4}},{\"id\":\"mI8hjLWgw6\",\"type\":\"card\",\"data\":{\"card_name\":\"Menu Prescripteurs\",\"col\":4}},{\"id\":\"L9FsKq6lEW\",\"type\":\"card\",\"data\":{\"card_name\":\"Menu \u00c9tablissements\",\"col\":4}},{\"id\":\"krMOHjJUmJ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Individuelles\",\"col\":6}},{\"id\":\"zi5ubsbnNj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Services\",\"col\":6}},{\"id\":\"uhv7YvrARd\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Prescripteurs\",\"col\":4}},{\"id\":\"QnjZPMxW_7\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Services\",\"col\":4}},{\"id\":\"zr_KgdGIcc\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u00c9tablissements\",\"col\":4}}]",
+ "content": "[{\"id\":\"pa4HFgBmX8\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Accueil - Med\",\"col\":12}},{\"id\":\"XbB38IslXX\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Nouvelle VMI\",\"col\":3}},{\"id\":\"8hTlKhS4TJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Nouvelle VMS\",\"col\":3}},{\"id\":\"maZHmZ2RRt\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rMPmylslVV\",\"type\":\"card\",\"data\":{\"card_name\":\"Visites\",\"col\":4}},{\"id\":\"mI8hjLWgw6\",\"type\":\"card\",\"data\":{\"card_name\":\"Prescripteurs\",\"col\":4}},{\"id\":\"L9FsKq6lEW\",\"type\":\"card\",\"data\":{\"card_name\":\"\u00c9tablissements\",\"col\":4}},{\"id\":\"krMOHjJUmJ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Individuelles\",\"col\":6}},{\"id\":\"zi5ubsbnNj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visites Services\",\"col\":6}},{\"id\":\"uhv7YvrARd\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Prescripteurs\",\"col\":4}},{\"id\":\"QnjZPMxW_7\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Services\",\"col\":4}},{\"id\":\"zr_KgdGIcc\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"\u00c9tablissements\",\"col\":4}}]",
  "creation": "2024-01-12 17:14:10.753910",
  "custom_blocks": [
   {
@@ -21,7 +21,35 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Menu Visites",
+   "label": "Menu \u00c9tablissements",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u00c9tablissements",
+   "link_count": 0,
+   "link_to": "Etablissements",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Services",
+   "link_count": 0,
+   "link_to": "Services",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Visites",
    "link_count": 4,
    "onboard": 0,
    "type": "Card Break"
@@ -69,8 +97,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Menu Prescripteurs",
-   "link_count": 2,
+   "label": "Prescripteurs",
+   "link_count": 1,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -87,17 +115,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Visites Individuelles",
-   "link_count": 0,
-   "link_to": "Visites Individuelles",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Menu \u00c9tablissements",
+   "label": "\u00c9tablissements",
    "link_count": 2,
    "onboard": 0,
    "type": "Card Break"
@@ -123,7 +141,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-02-22 12:25:10.097047",
+ "modified": "2024-02-23 13:46:00.399216",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Menu M\u00e9dical",
