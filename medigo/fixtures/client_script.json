@@ -260,7 +260,7 @@
   "modified": "2024-02-19 22:56:51.127309",
   "module": "CRM Medigo",
   "name": "Carte debut",
-  "script": "frappe.ui.form.on('Visites Individuelles', {\n    refresh(frm) {\n        if (frm.doc.gps_debut_visite) {\n            const [latitude, longitude] = frm.doc.gps_debut_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_debut_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});\n\n",
+  "script": "frappe.ui.form.on('Visites Individuelles', {\n    refresh(frm) {\n        if (frm.doc.gps_debut_visite) {\n            const [latitude, longitude] = frm.doc.gps_debut_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_debut_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});\n\n",
   "view": "Form"
  },
  {
@@ -271,7 +271,7 @@
   "modified": "2024-02-19 23:25:16.551907",
   "module": "CRM Medigo",
   "name": "Carte Fin",
-  "script": "frappe.ui.form.on('Visites Individuelles', {\n    refresh(frm) {\n        if (frm.doc.gps_fin_visite) {\n            const [latitude, longitude] = frm.doc.gps_fin_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_fin_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});\n\n",
+  "script": "frappe.ui.form.on('Visites Individuelles', {\n    refresh(frm) {\n        if (frm.doc.gps_fin_visite) {\n            const [latitude, longitude] = frm.doc.gps_fin_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_fin_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});\n\n",
   "view": "Form"
  },
  {
@@ -293,7 +293,7 @@
   "modified": "2024-02-19 23:00:51.179130",
   "module": "CRM Medigo",
   "name": "Carte debut VMS",
-  "script": "frappe.ui.form.on('Visites Services', {\n    refresh(frm) {\n        if (frm.doc.gps_debut_visite) {\n            const [latitude, longitude] = frm.doc.gps_debut_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_debut_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
+  "script": "frappe.ui.form.on('Visites Services', {\n    refresh(frm) {\n        if (frm.doc.gps_debut_visite) {\n            const [latitude, longitude] = frm.doc.gps_debut_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_debut_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
   "view": "Form"
  },
  {
@@ -304,7 +304,7 @@
   "modified": "2024-02-19 23:24:44.103891",
   "module": "CRM Medigo",
   "name": "Carte Fin VMS",
-  "script": "frappe.ui.form.on('Visites Services', {\n    refresh(frm) {\n        if (frm.doc.gps_fin_visite) {\n            const [latitude, longitude] = frm.doc.gps_fin_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_fin_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});\n",
+  "script": "frappe.ui.form.on('Visites Services', {\n    refresh(frm) {\n        if (frm.doc.gps_fin_visite) {\n            const [latitude, longitude] = frm.doc.gps_fin_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_fin_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});\n",
   "view": "Form"
  },
  {
@@ -326,7 +326,7 @@
   "modified": "2024-02-19 23:23:20.969566",
   "module": "CRM Medigo",
   "name": "Carte debut VCI",
-  "script": "frappe.ui.form.on('Visite Commerciale', {\n    refresh(frm) {\n        if (frm.doc.gps_visite) {\n            const [latitude, longitude] = frm.doc.gps_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_debut_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
+  "script": "frappe.ui.form.on('Visite Commerciale', {\n    refresh(frm) {\n        if (frm.doc.gps_visite) {\n            const [latitude, longitude] = frm.doc.gps_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_debut_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
   "view": "Form"
  },
  {
@@ -337,7 +337,7 @@
   "modified": "2024-02-19 23:23:49.451101",
   "module": "CRM Medigo",
   "name": "Carte Fin VCI",
-  "script": "frappe.ui.form.on('Visite Commerciale', {\n    refresh(frm) {\n        if (frm.doc.gps_fin_visite) {\n            const [latitude, longitude] = frm.doc.gps_fin_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_fin_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
+  "script": "frappe.ui.form.on('Visite Commerciale', {\n    refresh(frm) {\n        if (frm.doc.gps_fin_visite) {\n            const [latitude, longitude] = frm.doc.gps_fin_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_fin_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
   "view": "Form"
  },
  {
@@ -359,7 +359,7 @@
   "modified": "2024-02-19 23:38:53.220265",
   "module": "CRM Medigo",
   "name": "Carte Prescripteur",
-  "script": "frappe.ui.form.on('Prescripteurs', {\n    refresh(frm) {\n        if (frm.doc.gps_prescripteur) {\n            const [latitude, longitude] = frm.doc.gps_prescripteur.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_prescripteur'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
+  "script": "frappe.ui.form.on('Prescripteurs', {\n    refresh(frm) {\n        if (frm.doc.gps_prescripteur) {\n            const [latitude, longitude] = frm.doc.gps_prescripteur.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_prescripteur'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
   "view": "Form"
  },
  {
@@ -381,7 +381,7 @@
   "modified": "2024-02-19 23:47:33.374524",
   "module": "CRM Medigo",
   "name": "Carte Etablissement",
-  "script": "frappe.ui.form.on('Etablissements', {\n    refresh(frm) {\n        if (frm.doc.gps_etablissement) {\n            const [latitude, longitude] = frm.doc.gps_etablissement.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_etablissement'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
+  "script": "frappe.ui.form.on('Etablissements', {\n    refresh(frm) {\n        if (frm.doc.gps_etablissement) {\n            const [latitude, longitude] = frm.doc.gps_etablissement.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_etablissement'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
   "view": "Form"
  },
  {
@@ -403,7 +403,7 @@
   "modified": "2024-02-19 23:54:20.534581",
   "module": "Selling",
   "name": "Carte Client",
-  "script": "frappe.ui.form.on('Customer', {\n    refresh(frm) {\n        if (frm.doc.gps_client) {\n            const [latitude, longitude] = frm.doc.gps_client.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_client'].wrapper).html(`<iframe width=\"100%\" height=\"200\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
+  "script": "frappe.ui.form.on('Customer', {\n    refresh(frm) {\n        if (frm.doc.gps_client) {\n            const [latitude, longitude] = frm.doc.gps_client.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_client'].wrapper).html(`<iframe width=\"100%\" height=\"200\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
   "view": "Form"
  },
  {
@@ -436,7 +436,7 @@
   "modified": "2024-02-21 17:50:38.879755",
   "module": "CRM Medigo",
   "name": "Carte debut VCD",
-  "script": "frappe.ui.form.on('Visite Commerciale Duo', {\n    refresh(frm) {\n        if (frm.doc.gps_debut_visite) {\n            const [latitude, longitude] = frm.doc.gps_debut_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_debut_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
+  "script": "frappe.ui.form.on('Visite Commerciale Duo', {\n    refresh(frm) {\n        if (frm.doc.gps_debut_visite) {\n            const [latitude, longitude] = frm.doc.gps_debut_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_debut_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
   "view": "Form"
  },
  {
@@ -447,7 +447,7 @@
   "modified": "2024-02-21 17:47:54.467443",
   "module": "CRM Medigo",
   "name": "Carte Fin VCD",
-  "script": "frappe.ui.form.on('Visite Commerciale Duo', {\n    refresh(frm) {\n        if (frm.doc.gps_fin_visite) {\n            const [latitude, longitude] = frm.doc.gps_fin_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_fin_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
+  "script": "frappe.ui.form.on('Visite Commerciale Duo', {\n    refresh(frm) {\n        if (frm.doc.gps_fin_visite) {\n            const [latitude, longitude] = frm.doc.gps_fin_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_fin_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
   "view": "Form"
  },
  {
@@ -480,7 +480,7 @@
   "modified": "2024-02-21 19:38:46.923078",
   "module": "CRM Medigo",
   "name": "Carte debut VCM",
-  "script": "frappe.ui.form.on('Visite Commerciale Manager', {\n    refresh(frm) {\n        if (frm.doc.gps_debut_visite) {\n            const [latitude, longitude] = frm.doc.gps_debut_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_debut_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
+  "script": "frappe.ui.form.on('Visite Commerciale Manager', {\n    refresh(frm) {\n        if (frm.doc.gps_debut_visite) {\n            const [latitude, longitude] = frm.doc.gps_debut_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_debut_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:0\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
   "view": "Form"
  },
  {
@@ -513,7 +513,7 @@
   "modified": "2024-02-21 19:40:45.214085",
   "module": "CRM Medigo",
   "name": "Carte Fin VCM",
-  "script": "frappe.ui.form.on('Visite Commerciale Manager', {\n    refresh(frm) {\n        if (frm.doc.gps_fin_visite) {\n            const [latitude, longitude] = frm.doc.gps_fin_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_fin_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
+  "script": "frappe.ui.form.on('Visite Commerciale Manager', {\n    refresh(frm) {\n        if (frm.doc.gps_fin_visite) {\n            const [latitude, longitude] = frm.doc.gps_fin_visite.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=apikey=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_fin_visite'].wrapper).html(`<iframe width=\"100%\" height=\"300\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
   "view": "Form"
  },
  {
