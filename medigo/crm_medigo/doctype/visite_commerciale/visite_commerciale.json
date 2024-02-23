@@ -54,7 +54,6 @@
    "default": "Today",
    "fieldname": "date_prevue",
    "fieldtype": "Date",
-   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Date Pr\u00e9vue",
    "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")"
@@ -156,6 +155,8 @@
    "fetch_from": "client.commune",
    "fieldname": "commune",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Commune",
    "options": "Communes",
    "read_only": 1
@@ -164,6 +165,7 @@
    "fetch_from": "client.wilaya",
    "fieldname": "wilaya",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Wilaya",
    "options": "Wilayas",
    "read_only": 1
@@ -328,6 +330,8 @@
   {
    "fieldname": "utilisateur",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Utilisateur",
    "read_only": 1
   },
@@ -344,7 +348,7 @@
    "link_fieldname": "vci"
   }
  ],
- "modified": "2024-02-23 12:20:16.617867",
+ "modified": "2024-02-23 14:26:50.993076",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale",
