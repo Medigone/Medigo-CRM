@@ -5,6 +5,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.759911",
   "name": "CHLEF",
+  "region": null,
   "wilaya": "CHLEF",
   "zone": "Ouest"
  },
@@ -14,6 +15,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.766224",
   "name": "LAGHOUAT",
+  "region": null,
   "wilaya": "LAGHOUAT",
   "zone": "Centre 1"
  },
@@ -23,6 +25,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.797353",
   "name": "OUM EL BOUAGUI",
+  "region": null,
   "wilaya": "OUM EL BOUAGUI",
   "zone": "Est"
  },
@@ -32,6 +35,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.806979",
   "name": "BATNA",
+  "region": null,
   "wilaya": "BATNA",
   "zone": "Est"
  },
@@ -41,6 +45,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.812613",
   "name": "BEJAIA",
+  "region": null,
   "wilaya": "BEJAIA",
   "zone": "Centre 2"
  },
@@ -50,6 +55,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.817505",
   "name": "BISKRA",
+  "region": null,
   "wilaya": "BISKRA",
   "zone": "Est"
  },
@@ -59,6 +65,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.822206",
   "name": "BECHAR",
+  "region": null,
   "wilaya": "BECHAR",
   "zone": "Ouest"
  },
@@ -68,6 +75,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.827799",
   "name": "BLIDA",
+  "region": null,
   "wilaya": "BLIDA",
   "zone": "Centre 1"
  },
@@ -77,6 +85,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.833219",
   "name": "BOUIRA",
+  "region": null,
   "wilaya": "BOUIRA",
   "zone": "Centre 2"
  },
@@ -86,6 +95,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.841321",
   "name": "TAMANRASSET",
+  "region": null,
   "wilaya": "TAMANRASSET",
   "zone": "Est"
  },
@@ -95,6 +105,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.846953",
   "name": "TEBESSA",
+  "region": null,
   "wilaya": "TEBESSA",
   "zone": "Est"
  },
@@ -104,6 +115,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.852373",
   "name": "TLEMCEN",
+  "region": null,
   "wilaya": "TLEMCEN",
   "zone": "Ouest"
  },
@@ -113,6 +125,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.870419",
   "name": "TIARET",
+  "region": null,
   "wilaya": "TIARET",
   "zone": "Ouest"
  },
@@ -122,6 +135,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.875550",
   "name": "TIZI OUZOU",
+  "region": null,
   "wilaya": "TIZI OUZOU",
   "zone": "Centre 2"
  },
@@ -131,6 +145,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.885142",
   "name": "DJELFA",
+  "region": null,
   "wilaya": "DJELFA",
   "zone": "Centre 1"
  },
@@ -140,6 +155,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.888832",
   "name": "JIJEL",
+  "region": null,
   "wilaya": "JIJEL",
   "zone": "Est"
  },
@@ -149,6 +165,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.893368",
   "name": "SETIF",
+  "region": null,
   "wilaya": "SETIF",
   "zone": "Est"
  },
@@ -158,6 +175,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.896757",
   "name": "SAIDA",
+  "region": null,
   "wilaya": "SAIDA",
   "zone": "Ouest"
  },
@@ -167,6 +185,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.910825",
   "name": "SKIKDA",
+  "region": null,
   "wilaya": "SKIKDA",
   "zone": "Est"
  },
@@ -176,6 +195,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.914745",
   "name": "SIDI BEL ABBES",
+  "region": null,
   "wilaya": "SIDI BEL ABBES",
   "zone": "Ouest"
  },
@@ -185,6 +205,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.919243",
   "name": "ANNABA",
+  "region": null,
   "wilaya": "ANNABA",
   "zone": "Est"
  },
@@ -194,6 +215,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.923950",
   "name": "GUELMA",
+  "region": null,
   "wilaya": "GUELMA",
   "zone": "Est"
  },
@@ -203,6 +225,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.932437",
   "name": "CONSTANTINE",
+  "region": null,
   "wilaya": "CONSTANTINE",
   "zone": "Est"
  },
@@ -212,6 +235,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.936876",
   "name": "MEDEA",
+  "region": null,
   "wilaya": "MEDEA",
   "zone": "Centre 1"
  },
@@ -221,6 +245,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.942183",
   "name": "MOSTAGANEM",
+  "region": null,
   "wilaya": "MOSTAGANEM",
   "zone": "Ouest"
  },
@@ -230,6 +255,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.947698",
   "name": "M'SILA",
+  "region": null,
   "wilaya": "M'SILA",
   "zone": "Est"
  },
@@ -239,6 +265,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.952435",
   "name": "MASCARA",
+  "region": null,
   "wilaya": "MASCARA",
   "zone": "Ouest"
  },
@@ -248,6 +275,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.956787",
   "name": "OUARGLA",
+  "region": null,
   "wilaya": "OUARGLA",
   "zone": "Centre 2"
  },
@@ -257,6 +285,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.965613",
   "name": "EL BAYADH",
+  "region": null,
   "wilaya": "EL BAYADH",
   "zone": "Ouest"
  },
@@ -266,6 +295,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.969468",
   "name": "ILLIZI",
+  "region": null,
   "wilaya": "ILLIZI",
   "zone": "Est"
  },
@@ -275,6 +305,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.972964",
   "name": "BORDJ BOU ARRERIDJ",
+  "region": null,
   "wilaya": "BORDJ BOU ARRERIDJ",
   "zone": "Est"
  },
@@ -284,6 +315,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.977076",
   "name": "BOUMERDES",
+  "region": null,
   "wilaya": "BOUMERDES",
   "zone": "Centre 2"
  },
@@ -293,6 +325,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.980404",
   "name": "EL TARF",
+  "region": null,
   "wilaya": "EL TARF",
   "zone": "Est"
  },
@@ -302,6 +335,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.985103",
   "name": "TINDOUF",
+  "region": null,
   "wilaya": "TINDOUF",
   "zone": "Ouest"
  },
@@ -311,6 +345,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.989206",
   "name": "TISSEMSILT",
+  "region": null,
   "wilaya": "TISSEMSILT",
   "zone": "Ouest"
  },
@@ -320,6 +355,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.993307",
   "name": "EL OUED",
+  "region": null,
   "wilaya": "EL OUED",
   "zone": "Est"
  },
@@ -329,6 +365,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.996890",
   "name": "KHENCHELA",
+  "region": null,
   "wilaya": "KHENCHELA",
   "zone": "Est"
  },
@@ -338,6 +375,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.001003",
   "name": "SOUK AHRAS",
+  "region": null,
   "wilaya": "SOUK AHRAS",
   "zone": "Est"
  },
@@ -347,6 +385,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.005143",
   "name": "TIPAZA",
+  "region": null,
   "wilaya": "TIPAZA",
   "zone": "Centre 1"
  },
@@ -356,6 +395,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.010367",
   "name": "MILA",
+  "region": null,
   "wilaya": "MILA",
   "zone": "Est"
  },
@@ -365,6 +405,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.014911",
   "name": "AIN DEFLA",
+  "region": null,
   "wilaya": "AIN DEFLA",
   "zone": "Centre 2"
  },
@@ -374,6 +415,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.018805",
   "name": "NAAMA",
+  "region": null,
   "wilaya": "NAAMA",
   "zone": "Ouest"
  },
@@ -383,6 +425,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.022744",
   "name": "AIN TEMOUCHENT",
+  "region": null,
   "wilaya": "AIN TEMOUCHENT",
   "zone": "Ouest"
  },
@@ -392,6 +435,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.028481",
   "name": "GHARDAIA",
+  "region": null,
   "wilaya": "GHARDAIA",
   "zone": "Centre 2"
  },
@@ -401,6 +445,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.033978",
   "name": "RELIZANE",
+  "region": null,
   "wilaya": "RELIZANE",
   "zone": "Ouest"
  },
@@ -410,6 +455,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.037669",
   "name": "TIMIMOUN",
+  "region": null,
   "wilaya": "TIMIMOUN",
   "zone": "Ouest"
  },
@@ -419,6 +465,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.041834",
   "name": "BORDJ BADJI MOKHTAR",
+  "region": null,
   "wilaya": "BORDJ BADJI MOKHTAR",
   "zone": "Sud"
  },
@@ -428,6 +475,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.046390",
   "name": "OULED DJELLAL",
+  "region": null,
   "wilaya": "OULED DJELLAL",
   "zone": "Sud"
  },
@@ -437,6 +485,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.050069",
   "name": "BENI ABBES",
+  "region": null,
   "wilaya": "BENI ABBES",
   "zone": "Ouest"
  },
@@ -446,6 +495,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.053818",
   "name": "IN SALAH",
+  "region": null,
   "wilaya": "IN SALAH",
   "zone": "Sud"
  },
@@ -455,6 +505,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.058783",
   "name": "IN GUEZZAM",
+  "region": null,
   "wilaya": "IN GUEZZAM",
   "zone": "Sud"
  },
@@ -464,6 +515,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.066408",
   "name": "TOUGGOURT",
+  "region": null,
   "wilaya": "TOUGGOURT",
   "zone": "Sud"
  },
@@ -473,6 +525,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.069766",
   "name": "DJANET",
+  "region": null,
   "wilaya": "DJANET",
   "zone": "Sud"
  },
@@ -482,6 +535,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.073080",
   "name": "EL MGHAIER",
+  "region": null,
   "wilaya": "EL MGHAIER",
   "zone": "Est"
  },
@@ -491,6 +545,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:41.078111",
   "name": "EL MENIAA",
+  "region": null,
   "wilaya": "EL MENIAA",
   "zone": "Sud"
  },
@@ -500,6 +555,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.881416",
   "name": "ALGER",
+  "region": null,
   "wilaya": "ALGER",
   "zone": "Centre 2"
  },
@@ -509,6 +565,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.961237",
   "name": "ORAN",
+  "region": null,
   "wilaya": "ORAN",
   "zone": "Ouest"
  },
@@ -518,6 +575,7 @@
   "doctype": "Wilayas",
   "modified": "2023-10-24 18:17:40.737538",
   "name": "ADRAR",
+  "region": null,
   "wilaya": "ADRAR",
   "zone": "Ouest"
  }
