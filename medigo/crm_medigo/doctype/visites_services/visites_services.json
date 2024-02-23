@@ -33,7 +33,7 @@
   "type_service",
   "section_break_ahsl",
   "prescripteurs",
-  "tab_2_tab",
+  "section_break_twbd",
   "partenariat",
   "contrepartie",
   "objections_produit",
@@ -131,12 +131,6 @@
    "options": "Item",
    "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
    "reqd": 1
-  },
-  {
-   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
-   "fieldname": "tab_2_tab",
-   "fieldtype": "Tab Break",
-   "label": "Enqu\u00eate"
   },
   {
    "fieldname": "partenariat",
@@ -352,12 +346,16 @@
   {
    "fieldname": "column_break_rwct",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_twbd",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-23 12:31:57.845137",
+ "modified": "2024-02-23 13:10:25.153527",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Services",

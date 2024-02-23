@@ -114,24 +114,28 @@
   {
    "fieldname": "partenariat",
    "fieldtype": "Data",
-   "label": "Partenariat"
+   "label": "Partenariat",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "contrepartie",
    "fieldtype": "Link",
    "label": "Contrepartie",
-   "options": "Contrepartie"
+   "options": "Contrepartie",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "objections_produit",
    "fieldtype": "Data",
-   "label": "Objections Produit"
+   "label": "Objections Produit",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "traitement_objection",
    "fieldtype": "Select",
    "label": "Traitement Objection",
-   "options": "\nOui\nNon"
+   "options": "\nOui\nNon",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "column_break_zwbv",
@@ -140,7 +144,8 @@
   {
    "fieldname": "requete",
    "fieldtype": "Small Text",
-   "label": "Requ\u00eate"
+   "label": "Requ\u00eate",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
@@ -306,7 +311,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-23 11:08:03.094513",
+ "modified": "2024-02-23 13:06:43.688098",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Individuelles",
