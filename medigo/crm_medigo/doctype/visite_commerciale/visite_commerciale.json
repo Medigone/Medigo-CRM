@@ -17,6 +17,9 @@
   "commune",
   "wilaya",
   "zone",
+  "column_break_azwk",
+  "utilisateur",
+  "duree_visite",
   "classement_rotations",
   "classements_column",
   "classement_1",
@@ -36,15 +39,14 @@
   "remis_tab",
   "liste_remis",
   "controle_tab",
+  "column_break_dgxy",
   "heure_debut_visite",
   "gps_visite",
   "carte_debut_visite",
-  "column_break_dgxy",
+  "column_break_ecfg",
   "heure_fin_visite",
   "gps_fin_visite",
   "carte_fin_visite",
-  "column_break_ecfg",
-  "duree_visite",
   "tableau_de_bord_tab"
  ],
  "fields": [
@@ -63,7 +65,8 @@
    "in_standard_filter": 1,
    "label": "Client",
    "options": "Customer",
-   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")"
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
+   "search_index": 1
   },
   {
    "allow_on_submit": 1,
@@ -89,58 +92,65 @@
    "fieldname": "classement_1",
    "fieldtype": "Link",
    "label": "Classement - 1",
-   "options": "Produits Labos"
+   "options": "Produits Labos",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "classements_column",
-   "fieldtype": "Column Break",
-   "label": "Classements"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "classement_2",
    "fieldtype": "Link",
    "label": "Classement - 2",
-   "options": "Produits Labos"
+   "options": "Produits Labos",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "classement_3",
    "fieldtype": "Link",
    "label": "Classement - 3",
-   "options": "Produits Labos"
+   "options": "Produits Labos",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "classement_4",
    "fieldtype": "Link",
    "label": "Classement - 4",
-   "options": "Produits Labos"
+   "options": "Produits Labos",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "depends_on": "eval:(doc.classement_1 != \"\")",
    "fieldname": "rotation_c1",
    "fieldtype": "Int",
    "label": "Rotation - C1",
-   "non_negative": 1
+   "non_negative": 1,
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "depends_on": "eval:(doc.classement_2 != \"\")",
    "fieldname": "rotation_c2",
    "fieldtype": "Int",
    "label": "Rotation - C2",
-   "non_negative": 1
+   "non_negative": 1,
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "depends_on": "eval:(doc.classement_3 != \"\")",
    "fieldname": "rotation_c3",
    "fieldtype": "Int",
    "label": "Rotation - C3",
-   "non_negative": 1
+   "non_negative": 1,
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "depends_on": "eval:(doc.classement_4 != \"\")",
    "fieldname": "rotation_c4",
    "fieldtype": "Int",
    "label": "Rotation - C4",
-   "non_negative": 1
+   "non_negative": 1,
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fetch_from": "client.commune",
@@ -235,39 +245,43 @@
   },
   {
    "fieldname": "column_break_haqm",
-   "fieldtype": "Column Break",
-   "label": "Classement BIOMIL"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "class_b1",
    "fieldtype": "Select",
    "label": "BIOMIL 1",
    "non_negative": 1,
-   "options": "\n1\n2\n3\n4\n5\n6\n0"
+   "options": "\n1\n2\n3\n4\n5\n6\nNon Class\u00e9",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "class_bp1",
    "fieldtype": "Select",
    "label": "BIOMIL +1",
    "non_negative": 1,
-   "options": "\n1\n2\n3\n4\n5\n6\n0"
+   "options": "\n1\n2\n3\n4\n5\n6\nNon Class\u00e9",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "class_bcf",
    "fieldtype": "Select",
    "label": "CF",
    "non_negative": 1,
-   "options": "\n1\n2\n3\n4\n5\n6\n0"
+   "options": "\n1\n2\n3\n4\n5\n6\nNon Class\u00e9",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "gps_visite",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "GPS D\u00e9but Visite",
    "read_only": 1
   },
   {
    "fieldname": "gps_fin_visite",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "GPS Fin Visite",
    "read_only": 1
   },
@@ -310,6 +324,16 @@
    "fieldname": "remarques",
    "fieldtype": "Text Editor",
    "label": "Remarques"
+  },
+  {
+   "fieldname": "utilisateur",
+   "fieldtype": "Data",
+   "label": "Utilisateur",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_azwk",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -320,7 +344,7 @@
    "link_fieldname": "vci"
   }
  ],
- "modified": "2024-02-22 17:44:50.931380",
+ "modified": "2024-02-23 12:20:16.617867",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale",

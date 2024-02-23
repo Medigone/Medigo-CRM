@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "prescripteur",
+  "titre",
   "objectif",
   "remarque"
  ],
@@ -30,12 +31,20 @@
    "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Remarque"
+  },
+  {
+   "fetch_from": "prescripteur.titre_prescripteur",
+   "fieldname": "titre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Titre",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-02-09 20:22:21.119516",
+ "modified": "2024-02-22 19:07:08.144688",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Prescripteurs Visite",

@@ -21,7 +21,7 @@
    "label": "Objectif Produit 3"
   }
  ],
- "content": "[{\"id\":\"Y9GiLvV2ls\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>VISITES INDIVIDUELLES AUJOURD'HUI</b>\",\"col\":12}},{\"id\":\"2645LOATLY\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Programm\u00e9es\",\"col\":3}},{\"id\":\"-o4Lw-UG1n\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"En Cours\",\"col\":3}},{\"id\":\"PejweWf0k2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Termin\u00e9es\",\"col\":3}},{\"id\":\"6D34N8bsSn\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Valid\u00e9es\",\"col\":3}},{\"id\":\"wlf9I7gWcs\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Visites\",\"col\":6}},{\"id\":\"qarJOYYvzp\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 1\",\"col\":6}},{\"id\":\"6jqsjcTiU_\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 2\",\"col\":6}},{\"id\":\"4hF2mvQguf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 3\",\"col\":6}},{\"id\":\"RC7kU7kOQ3\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Visites Individuelles Par D\u00e9l\u00e9gu\u00e9\",\"col\":12}}]",
+ "content": "[{\"id\":\"PBV1ReNbgQ\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>Statistiques du jour</b>\",\"col\":12}},{\"id\":\"2645LOATLY\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Programm\u00e9es\",\"col\":3}},{\"id\":\"-o4Lw-UG1n\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"En Cours\",\"col\":3}},{\"id\":\"PejweWf0k2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Termin\u00e9es\",\"col\":3}},{\"id\":\"6D34N8bsSn\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Valid\u00e9es\",\"col\":3}},{\"id\":\"CANywuJOQX\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>Dur\u00e9e Visites</b>\",\"col\":12}},{\"id\":\"rfDgXFQSVW\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Dur\u00e9e VMI\",\"col\":3}},{\"id\":\"wa-9BUYZor\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Moyenne Dur\u00e9e VMI\",\"col\":3}},{\"id\":\"A1pzMD3H_2\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"wlf9I7gWcs\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Visites\",\"col\":6}},{\"id\":\"qarJOYYvzp\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 1\",\"col\":6}},{\"id\":\"6jqsjcTiU_\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 2\",\"col\":6}},{\"id\":\"4hF2mvQguf\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Objectif Produit 3\",\"col\":6}},{\"id\":\"RC7kU7kOQ3\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Visites Individuelles Par D\u00e9l\u00e9gu\u00e9\",\"col\":12}}]",
  "creation": "2023-10-27 21:35:41.613399",
  "custom_blocks": [],
  "docstatus": 0,
@@ -34,11 +34,15 @@
  "is_hidden": 0,
  "label": "Visite Individuelle",
  "links": [],
- "modified": "2024-02-22 12:25:10.368434",
+ "modified": "2024-02-23 10:19:32.097952",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Individuelle",
  "number_cards": [
+  {
+   "label": "Dur\u00e9e VMI",
+   "number_card_name": "Duree VMI"
+  },
   {
    "label": "Programm\u00e9es",
    "number_card_name": "Visites Individuelles Programm\u00e9es"
@@ -46,6 +50,10 @@
   {
    "label": "En Cours",
    "number_card_name": "Visites Individuelles En Cours"
+  },
+  {
+   "label": "Moyenne Dur\u00e9e VMI",
+   "number_card_name": "Moyenne Duree VMI"
   },
   {
    "label": "Termin\u00e9es",

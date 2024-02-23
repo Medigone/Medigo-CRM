@@ -12,6 +12,7 @@
   "date_prevue",
   "date_visite",
   "prescripteur",
+  "nom_presc",
   "titre_prescripteur",
   "objectifs_produits_column",
   "objectif_visite",
@@ -30,14 +31,21 @@
   "traitement_objection",
   "column_break_zwbv",
   "requete",
+  "notes_tab",
+  "remarques",
   "remis_tab",
   "liste_remis",
   "localisation_tab",
+  "utilisateur",
+  "duree_visite",
+  "column_break_rfib",
   "heure_debut_visite",
   "gps_debut_visite",
-  "column_break_rfib",
+  "carte_debut_visite",
+  "column_break_vzqc",
   "heure_fin_visite",
-  "gps_fin_visite"
+  "gps_fin_visite",
+  "carte_fin_visite"
  ],
  "fields": [
   {
@@ -56,12 +64,12 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Date Pr\u00e9vue",
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
    "reqd": 1
   },
   {
    "fieldname": "prescripteur",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Prescripteur",
    "options": "Prescripteurs",
@@ -78,7 +86,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Objectif visite",
+   "label": "Objectif",
    "options": "Objectif Visite",
    "reqd": 1
   },
@@ -222,6 +230,7 @@
   {
    "fieldname": "gps_debut_visite",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "GPS D\u00e9but Visite",
    "read_only": 1
   },
@@ -232,9 +241,9 @@
    "read_only": 1
   },
   {
-   "allow_on_submit": 1,
    "fieldname": "gps_fin_visite",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "GPS Fin Visite",
    "read_only": 1
   },
@@ -245,12 +254,59 @@
   {
    "fieldname": "column_break_rfib",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vzqc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
+   "fieldname": "duree_visite",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Dur\u00e9e",
+   "read_only": 1
+  },
+  {
+   "fieldname": "carte_debut_visite",
+   "fieldtype": "HTML",
+   "label": "Carte D\u00e9but Visite"
+  },
+  {
+   "fieldname": "carte_fin_visite",
+   "fieldtype": "HTML",
+   "label": "Carte Fin Visite"
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
+   "fieldname": "notes_tab",
+   "fieldtype": "Tab Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "remarques",
+   "fieldtype": "Text Editor",
+   "label": "Remarques"
+  },
+  {
+   "fetch_from": "prescripteur.nom_complet_prescripteur",
+   "fieldname": "nom_presc",
+   "fieldtype": "Data",
+   "label": "Nom Prescripteur",
+   "read_only": 1
+  },
+  {
+   "fieldname": "utilisateur",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Utilisateur",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-13 11:07:27.130436",
+ "modified": "2024-02-23 11:08:03.094513",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Individuelles",
@@ -323,8 +379,11 @@
    "write": 1
   }
  ],
+ "search_fields": "nom_presc,titre_prescripteur,commune,objectif_visite",
+ "show_title_field_in_link": 1,
  "sort_field": "date_prevue",
  "sort_order": "ASC",
  "states": [],
+ "title_field": "nom_presc",
  "track_changes": 1
 }
