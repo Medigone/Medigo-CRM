@@ -240,4 +240,5 @@ fixtures = [
     "Dashboard Chart",
     "Number Card",
     "Workspace",
+    "Custom HTML Block"
 ]
