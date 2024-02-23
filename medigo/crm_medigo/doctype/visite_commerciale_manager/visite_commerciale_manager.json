@@ -28,14 +28,17 @@
   "classement_rotations",
   "classements_column",
   "classement_1",
-  "classement_2",
-  "classement_3",
-  "classement_4",
-  "rotations_column",
   "rotation_c1",
+  "classement_2",
   "rotation_c2",
+  "classement_3",
   "rotation_c3",
+  "classement_4",
   "rotation_c4",
+  "rotations_column",
+  "class_b1",
+  "class_bp1",
+  "class_bcf",
   "notes_tab",
   "remarques",
   "remis_tab",
@@ -62,14 +65,17 @@
    "fieldtype": "Date",
    "in_standard_filter": 1,
    "label": "Date Pr\u00e9vue",
-   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")"
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
+   "reqd": 1
   },
   {
    "fieldname": "client",
    "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "Client",
-   "options": "Customer"
+   "options": "Customer",
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
+   "reqd": 1
   },
   {
    "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
@@ -79,53 +85,63 @@
   },
   {
    "fieldname": "classements_column",
-   "fieldtype": "Column Break",
-   "label": "Classements"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "classement_1",
-   "fieldtype": "Data",
-   "label": "Classement - 1"
+   "fieldtype": "Link",
+   "label": "Classement - 1",
+   "options": "Item",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "classement_2",
-   "fieldtype": "Data",
-   "label": "Classement - 2"
+   "fieldtype": "Link",
+   "label": "Classement - 2",
+   "options": "Item",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "classement_3",
-   "fieldtype": "Data",
-   "label": "Classement - 3"
+   "fieldtype": "Link",
+   "label": "Classement - 3",
+   "options": "Item",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "classement_4",
-   "fieldtype": "Data",
-   "label": "Classement - 4"
+   "fieldtype": "Link",
+   "label": "Classement - 4",
+   "options": "Item",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "rotations_column",
-   "fieldtype": "Column Break",
-   "label": "Rotations"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "rotation_c1",
-   "fieldtype": "Data",
-   "label": "Rotation - C1"
+   "fieldtype": "Int",
+   "label": "Rotation - C1",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "rotation_c2",
-   "fieldtype": "Data",
-   "label": "Rotation - C2"
+   "fieldtype": "Int",
+   "label": "Rotation - C2",
+   "mandatory_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "rotation_c3",
-   "fieldtype": "Data",
-   "label": "Rotation - C3"
+   "fieldtype": "Int",
+   "label": "Rotation - C3",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "rotation_c4",
-   "fieldtype": "Data",
-   "label": "Rotation - C4"
+   "fieldtype": "Int",
+   "label": "Rotation - C4",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fetch_from": "client.commune",
@@ -299,6 +315,27 @@
    "in_standard_filter": 1,
    "label": "Utilisateur",
    "read_only": 1
+  },
+  {
+   "fieldname": "class_b1",
+   "fieldtype": "Select",
+   "label": "BIOMIL 1",
+   "options": "\n1\n2\n3\n4\n5\n6\nNon Class\u00e9",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
+  },
+  {
+   "fieldname": "class_bp1",
+   "fieldtype": "Select",
+   "label": "BIOMIL +1",
+   "options": "\n1\n2\n3\n4\n5\n6\nNon Class\u00e9",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
+  },
+  {
+   "fieldname": "class_bcf",
+   "fieldtype": "Select",
+   "label": "CF",
+   "options": "\n1\n2\n3\n4\n5\n6\nNon Class\u00e9",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -309,7 +346,7 @@
    "link_fieldname": "vcm"
   }
  ],
- "modified": "2024-02-23 16:28:05.060454",
+ "modified": "2024-02-23 23:54:17.378804",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Manager",

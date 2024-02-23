@@ -83,6 +83,7 @@
    "fieldtype": "Link",
    "label": "Client",
    "options": "Customer",
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
    "reqd": 1
   },
   {
@@ -90,6 +91,7 @@
    "fieldtype": "Link",
    "label": "D\u00e9l\u00e9gu\u00e9",
    "options": "User",
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
    "reqd": 1
   },
   {
@@ -101,27 +103,32 @@
   {
    "fieldname": "ponctualite",
    "fieldtype": "Int",
-   "label": "Ponctualit\u00e9"
+   "label": "Ponctualit\u00e9",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "adaptation_application",
    "fieldtype": "Int",
-   "label": "Adaptation Application"
+   "label": "Adaptation Application",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "connaissances_commerciales",
    "fieldtype": "Int",
-   "label": "Connaissances Commerciales"
+   "label": "Connaissances Commerciales",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "connaissances_produits",
    "fieldtype": "Int",
-   "label": "Connaissances Produits"
+   "label": "Connaissances Produits",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "autonomie",
    "fieldtype": "Int",
-   "label": "Autonomie"
+   "label": "Autonomie",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "column_break_eizv",
@@ -130,24 +137,29 @@
   {
    "fieldname": "remontee_information",
    "fieldtype": "Int",
-   "label": "Remont\u00e9e Information"
+   "label": "Remont\u00e9e Information",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "relationnel",
    "fieldtype": "Int",
-   "label": "Relationnel"
+   "label": "Relationnel",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "gestion_temps",
    "fieldtype": "Int",
-   "label": "Gestion du temps"
+   "label": "Gestion du temps",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
    "fieldname": "preparation_visite",
    "fieldtype": "Int",
-   "label": "Pr\u00e9paration Visite"
+   "label": "Pr\u00e9paration Visite",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
+   "depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "note_visite",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -197,6 +209,7 @@
   {
    "fieldname": "gps_debut_visite",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "GPS D\u00e9but Visite",
    "read_only": 1
   },
@@ -221,6 +234,7 @@
   {
    "fieldname": "gps_fin_visite",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "GPS Fin Visite",
    "read_only": 1
   },
@@ -257,6 +271,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
    "fieldname": "duree_visite",
    "fieldtype": "Int",
    "in_list_view": 1,
@@ -322,7 +337,7 @@
    "link_fieldname": "vcd"
   }
  ],
- "modified": "2024-02-23 15:54:30.399568",
+ "modified": "2024-02-23 23:26:58.597265",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Duo",
