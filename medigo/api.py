@@ -46,10 +46,19 @@ def login(usr, pwd):
 
     
 
+
 @frappe.whitelist()
 def get_prescripteur(service):
-    prescripteur = frappe.db.sql("""SELECT name FROM `tabPrescripteurs` WHERE service=%s""", (service,), as_dict=True)
-    return prescripteur
+    # Je suppose que l'objectif_visite est stocké dans le doctype "Visites Services" lui-même.
+    # Vous devez vous assurer que le nom du champ est correct.
+    objectif_visite = frappe.db.get_value('Visites Services', {'service': service}, 'objectif_visite')
 
+    prescripteurs = frappe.db.sql("""SELECT name FROM `tabPrescripteurs` WHERE service=%s""", (service,), as_dict=True)
+
+    # Ajoute l'objectif_visite à chaque prescripteur pour le retour.
+    for prescripteur in prescripteurs:
+        prescripteur['objectif_visite'] = objectif_visite
+
+    return prescripteurs
 
 

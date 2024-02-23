@@ -11,22 +11,22 @@
   "d\u00e9tails_visite_tab",
   "d\u00e9tails_visite_column",
   "date_prevue",
-  "date_visite",
   "etablissement",
-  "type_etablissement",
   "column_break_eyom",
+  "date_visite",
+  "amended_from",
+  "section_break_lebu",
   "objectif_visite",
   "objectif_produit_1",
+  "column_break_rwct",
   "objectif_produit_2",
   "objectif_produit_3",
   "section_break_pbdg",
+  "type_etablissement",
   "commune",
+  "column_break_ktfv",
   "wilaya",
   "zone",
-  "column_break_ktfv",
-  "duree_visite",
-  "utilisateur",
-  "amended_from",
   "prescripteurs_tab",
   "service",
   "column_break_ytyb",
@@ -43,6 +43,10 @@
   "notes_tab",
   "remarques",
   "localisation_tab",
+  "duree_visite",
+  "column_break_wzkb",
+  "utilisateur",
+  "section_break_jpjo",
   "column_break_vxjn",
   "heure_debut_visite",
   "gps_debut_visite",
@@ -325,17 +329,35 @@
    "collapsible": 1,
    "fieldname": "section_break_pbdg",
    "fieldtype": "Section Break",
-   "label": "Autres D\u00e9tails"
+   "label": "Infos \u00c9tablissement"
   },
   {
    "fieldname": "column_break_ktfv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wzkb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jpjo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_lebu",
+   "fieldtype": "Section Break",
+   "label": "Objectifs Visite"
+  },
+  {
+   "fieldname": "column_break_rwct",
    "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-23 12:25:25.835110",
+ "modified": "2024-02-23 12:31:57.845137",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Services",
