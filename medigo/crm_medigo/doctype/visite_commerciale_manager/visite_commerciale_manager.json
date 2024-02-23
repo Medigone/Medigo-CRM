@@ -10,16 +10,21 @@
  "engine": "InnoDB",
  "field_order": [
   "details_visite_tab",
+  "section_break_gobd",
   "date_prevue",
-  "date_visite",
   "client",
   "nom_client",
   "cat_client",
   "column_break_vcex",
+  "date_visite",
+  "duree_visite",
+  "utilisateur",
   "amended_from",
+  "section_break_edgy",
   "commune",
   "wilaya",
   "zone",
+  "column_break_mtyw",
   "classement_rotations",
   "classements_column",
   "classement_1",
@@ -43,8 +48,6 @@
   "heure_fin_visite",
   "gps_fin_visite",
   "carte_fin_visite",
-  "column_break_zerh",
-  "duree_visite",
   "connections_tab"
  ],
  "fields": [
@@ -57,12 +60,14 @@
    "default": "Today",
    "fieldname": "date_prevue",
    "fieldtype": "Date",
+   "in_standard_filter": 1,
    "label": "Date Pr\u00e9vue",
    "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")"
   },
   {
    "fieldname": "client",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Client",
    "options": "Customer"
   },
@@ -165,6 +170,7 @@
   {
    "fieldname": "gps_debut_visite",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "GPS D\u00e9but Visite",
    "read_only": 1
   },
@@ -189,6 +195,7 @@
   {
    "fieldname": "gps_fin_visite",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "GPS Fin Visite",
    "read_only": 1
   },
@@ -225,6 +232,7 @@
    "fetch_from": "client.customer_group",
    "fieldname": "cat_client",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Cat\u00e9gorie Client",
    "options": "Customer Group",
@@ -232,10 +240,6 @@
   },
   {
    "fieldname": "column_break_vcex",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_zerh",
    "fieldtype": "Column Break"
   },
   {
@@ -272,6 +276,28 @@
    "fieldname": "remarques",
    "fieldtype": "Text Editor",
    "label": "Remarques"
+  },
+  {
+   "fieldname": "column_break_mtyw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_gobd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_edgy",
+   "fieldtype": "Section Break",
+   "label": "Localisation Client"
+  },
+  {
+   "fieldname": "utilisateur",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Utilisateur",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
@@ -282,7 +308,7 @@
    "link_fieldname": "vcm"
   }
  ],
- "modified": "2024-02-22 17:44:41.087493",
+ "modified": "2024-02-23 15:50:04.315320",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Manager",

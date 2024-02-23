@@ -10,20 +10,25 @@
   "tab_break_bv9m",
   "d\u00eatails_visite_column",
   "date_prevue",
-  "date_visite",
   "prescripteur",
   "nom_presc",
   "titre_prescripteur",
   "objectifs_produits_column",
+  "date_visite",
+  "duree_visite",
+  "utilisateur",
+  "amended_from",
+  "objectifs_visite_section",
   "objectif_visite",
   "objectif_produit_1",
+  "column_break_fode",
   "objectif_produit_2",
   "objectif_produit_3",
-  "localisation_column",
+  "section_break_sexb",
   "commune",
   "wilaya",
   "zone",
-  "amended_from",
+  "column_break_evsy",
   "enquete_visite_tab",
   "partenariat",
   "contrepartie",
@@ -36,8 +41,6 @@
   "remis_tab",
   "liste_remis",
   "localisation_tab",
-  "utilisateur",
-  "duree_visite",
   "column_break_rfib",
   "heure_debut_visite",
   "gps_debut_visite",
@@ -61,7 +64,6 @@
    "default": "Today",
    "fieldname": "date_prevue",
    "fieldtype": "Date",
-   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Date Pr\u00e9vue",
    "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
@@ -253,10 +255,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "localisation_column",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "column_break_rfib",
    "fieldtype": "Column Break"
   },
@@ -303,15 +301,36 @@
   {
    "fieldname": "utilisateur",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Utilisateur",
    "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_sexb",
+   "fieldtype": "Section Break",
+   "label": "Localisation Prescripteur"
+  },
+  {
+   "fieldname": "column_break_evsy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "objectifs_visite_section",
+   "fieldtype": "Section Break",
+   "label": "Objectifs Visite"
+  },
+  {
+   "fieldname": "column_break_fode",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-23 13:06:43.688098",
+ "modified": "2024-02-23 15:44:05.906928",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Individuelles",

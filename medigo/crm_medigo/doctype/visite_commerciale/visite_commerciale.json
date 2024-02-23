@@ -8,18 +8,19 @@
  "field_order": [
   "details_visite_tab",
   "date_prevue",
-  "date_visite",
   "client",
   "nom_client",
   "cat_client",
   "column_break_uexh",
+  "date_visite",
+  "duree_visite",
+  "utilisateur",
   "amended_from",
+  "localisation_client_section",
   "commune",
   "wilaya",
   "zone",
-  "column_break_azwk",
-  "utilisateur",
-  "duree_visite",
+  "column_break_pmee",
   "classement_rotations",
   "classements_column",
   "classement_1",
@@ -336,7 +337,13 @@
    "read_only": 1
   },
   {
-   "fieldname": "column_break_azwk",
+   "collapsible": 1,
+   "fieldname": "localisation_client_section",
+   "fieldtype": "Section Break",
+   "label": "Localisation Client"
+  },
+  {
+   "fieldname": "column_break_pmee",
    "fieldtype": "Column Break"
   }
  ],
@@ -348,7 +355,7 @@
    "link_fieldname": "vci"
   }
  ],
- "modified": "2024-02-23 14:26:50.993076",
+ "modified": "2024-02-23 15:37:22.502977",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale",
