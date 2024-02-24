@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-24 14:16:52.286185",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_awov",
+  "utilisateur",
+  "section_break_nmrk",
+  "type_demande",
+  "column_break_cdqn",
+  "amended_from",
+  "section_break_hzkv",
+  "email",
+  "column_break_ksvc",
+  "telephone",
+  "section_break_jlru",
+  "nom",
+  "column_break_xawy",
+  "prenom",
+  "dates_section",
+  "date_activation",
+  "date_desactivation",
+  "column_break_guhk",
+  "role_autorisations_tab",
+  "role",
+  "column_break_cfkd",
+  "zone",
+  "remarques_tab",
+  "text_editor_hfir"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gestion Des Utilisateurs",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom",
+   "mandatory_depends_on": "eval:(doc.type_demande==\"Activation\")"
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom",
+   "mandatory_depends_on": "eval:(doc.type_demande==\"Activation\")"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "default": "+213-",
+   "fieldname": "telephone",
+   "fieldtype": "Phone",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "fieldname": "column_break_ksvc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Utiliser l'onglet <b>Remarques</b> si utilisateur avec plusieurs r\u00f4les.",
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "R\u00f4le",
+   "mandatory_depends_on": "eval:(doc.type_demande==\"Activation\")",
+   "options": "Role Profile"
+  },
+  {
+   "description": "Utiliser l'onglet <b>Remarques</b> si utilisateur avec plusieurs zones.",
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "mandatory_depends_on": "eval:(doc.type_demande==\"Activation\")",
+   "options": "Zone"
+  },
+  {
+   "depends_on": "eval:(doc.type_demande==\"Activation\")",
+   "fieldname": "role_autorisations_tab",
+   "fieldtype": "Tab Break",
+   "label": "R\u00f4le & Zone"
+  },
+  {
+   "depends_on": "eval:(doc.type_demande==\"Activation\")",
+   "fieldname": "date_activation",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Activation",
+   "mandatory_depends_on": "eval:(doc.type_demande==\"Activation\")"
+  },
+  {
+   "fieldname": "type_demande",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type demande",
+   "options": "Activation\nD\u00e9sactivation"
+  },
+  {
+   "fieldname": "column_break_cdqn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hzkv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:(doc.type_demande==\"D\u00e9sactivation\")",
+   "fieldname": "date_desactivation",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date D\u00e9sactivation",
+   "mandatory_depends_on": "eval:(doc.type_demande==\"D\u00e9sactivation\")"
+  },
+  {
+   "fieldname": "column_break_cfkd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "text_editor_hfir",
+   "fieldtype": "Text Editor",
+   "label": "Autres Pr\u00e9cisions"
+  },
+  {
+   "fieldname": "dates_section",
+   "fieldtype": "Section Break",
+   "label": "Dates"
+  },
+  {
+   "fieldname": "column_break_guhk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarques_tab",
+   "fieldtype": "Tab Break",
+   "label": "Remarques"
+  },
+  {
+   "fieldname": "section_break_jlru",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_xawy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_awov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_nmrk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "utilisateur",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Demande faite par",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-24 15:17:47.576199",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Gestion Des Utilisateurs",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur Commercial",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -60,6 +60,7 @@
    "options": "Public\nPriv\u00e9"
   },
   {
+   "default": "+213-",
    "fieldname": "telephone_etablissement",
    "fieldtype": "Phone",
    "label": "T\u00e9l\u00e9phone"
@@ -67,7 +68,8 @@
   {
    "fieldname": "email_etablissement",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "options": "Email"
   },
   {
    "fieldname": "column_break_mhxz",
@@ -124,7 +126,7 @@
    "link_fieldname": "etablissement"
   }
  ],
- "modified": "2024-02-12 12:15:01.993942",
+ "modified": "2024-02-24 15:06:43.471490",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Etablissements",

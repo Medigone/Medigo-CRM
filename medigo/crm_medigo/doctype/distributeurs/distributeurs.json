@@ -36,6 +36,7 @@
    "options": "Grossiste Alimentaire\nGrossiste Parapharm\nDistributeur"
   },
   {
+   "default": "+213-",
    "fieldname": "phone",
    "fieldtype": "Phone",
    "label": "T\u00e9l\u00e9phone"
@@ -106,7 +107,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-12 22:31:42.454091",
+ "modified": "2024-02-24 15:05:21.244704",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Distributeurs",

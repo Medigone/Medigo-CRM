@@ -70,6 +70,7 @@
    "unique": 1
   },
   {
+   "default": "+213-",
    "fieldname": "telephone_prescripteur",
    "fieldtype": "Phone",
    "label": "T\u00e9l\u00e9phone"
@@ -222,7 +223,7 @@
    "link_fieldname": "prescripteur"
   }
  ],
- "modified": "2024-02-23 15:41:54.138023",
+ "modified": "2024-02-24 15:04:31.061094",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Prescripteurs",
