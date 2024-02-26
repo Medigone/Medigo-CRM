@@ -87,6 +87,7 @@
   {
    "fieldname": "service",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Service",
    "options": "Services",
    "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
@@ -100,7 +101,6 @@
    "default": "Prospection",
    "fieldname": "objectif_visite",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Objectif",
    "options": "Objectif Visite",
@@ -354,7 +354,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-23 15:32:10.374792",
+ "modified": "2024-02-26 09:41:35.073845",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Services",
@@ -449,6 +449,6 @@
    "title": "Annul\u00e9e"
   }
  ],
- "title_field": "type_service",
+ "title_field": "etablissement",
  "track_changes": 1
 }
