@@ -38,6 +38,7 @@
    "in_standard_filter": 1,
    "label": "\u00c9tablissement",
    "options": "Etablissements",
+   "reqd": 1,
    "search_index": 1
   },
   {
@@ -45,7 +46,8 @@
    "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "Type Service",
-   "options": "Type Service"
+   "options": "Type Service",
+   "reqd": 1
   },
   {
    "fieldname": "nom_service",
@@ -112,7 +114,7 @@
    "link_fieldname": "service"
   }
  ],
- "modified": "2024-02-26 16:04:22.044406",
+ "modified": "2024-02-26 16:08:56.974828",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Services",
