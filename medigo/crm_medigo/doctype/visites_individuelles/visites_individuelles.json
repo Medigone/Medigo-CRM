@@ -17,6 +17,7 @@
   "date_visite",
   "duree_visite",
   "utilisateur",
+  "presc_absent",
   "amended_from",
   "objectifs_visite_section",
   "objectif_visite",
@@ -325,12 +326,20 @@
   {
    "fieldname": "column_break_fode",
    "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
+   "fieldname": "presc_absent",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Absent"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-24 12:41:05.170727",
+ "modified": "2024-02-26 11:42:30.177299",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Individuelles",
