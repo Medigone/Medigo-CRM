@@ -18,7 +18,8 @@
   "localisation_column",
   "commune",
   "wilaya",
-  "zone"
+  "zone",
+  "tableau_de_bord_tab"
  ],
  "fields": [
   {
@@ -92,6 +93,12 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Potentiel"
+  },
+  {
+   "fieldname": "tableau_de_bord_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tableau de bord",
+   "show_dashboard": 1
   }
  ],
  "index_web_pages_for_search": 1,
@@ -105,7 +112,7 @@
    "link_fieldname": "service"
   }
  ],
- "modified": "2024-02-23 13:43:06.430170",
+ "modified": "2024-02-26 16:04:22.044406",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Services",
