@@ -35,13 +35,6 @@
   "type_service",
   "section_break_ahsl",
   "prescripteurs",
-  "section_break_twbd",
-  "partenariat",
-  "contrepartie",
-  "objections_produit",
-  "traitement_objection",
-  "column_break_dwph",
-  "requete",
   "notes_tab",
   "remarques",
   "localisation_tab",
@@ -130,37 +123,6 @@
    "options": "Item",
    "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
    "reqd": 1
-  },
-  {
-   "fieldname": "partenariat",
-   "fieldtype": "Data",
-   "label": "Partenariat"
-  },
-  {
-   "fieldname": "contrepartie",
-   "fieldtype": "Link",
-   "label": "Contrepartie",
-   "options": "Contrepartie"
-  },
-  {
-   "fieldname": "objections_produit",
-   "fieldtype": "Data",
-   "label": "Objections Produit"
-  },
-  {
-   "fieldname": "traitement_objection",
-   "fieldtype": "Select",
-   "label": "Traitement Objection",
-   "options": "\nOui\nNon"
-  },
-  {
-   "fieldname": "column_break_dwph",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "requete",
-   "fieldtype": "Small Text",
-   "label": "Requ\u00eate"
   },
   {
    "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
@@ -300,7 +262,6 @@
    "read_only": 1
   },
   {
-   "collapsible": 1,
    "fieldname": "section_break_ahsl",
    "fieldtype": "Section Break",
    "label": "Liste Prescripteurs"
@@ -343,18 +304,12 @@
   {
    "fieldname": "column_break_rwct",
    "fieldtype": "Column Break"
-  },
-  {
-   "collapsible": 1,
-   "fieldname": "section_break_twbd",
-   "fieldtype": "Section Break",
-   "label": "Enqu\u00eate Visite"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-26 09:41:35.073845",
+ "modified": "2024-02-27 11:41:18.213084",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Services",
