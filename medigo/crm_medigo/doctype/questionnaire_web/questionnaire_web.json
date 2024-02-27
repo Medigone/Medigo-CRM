@@ -12,7 +12,6 @@
   "titre",
   "date_heure",
   "column_break_lrwg",
-  "amended_from",
   "section_break_qipr",
   "email",
   "nom",
@@ -29,10 +28,17 @@
   "q_1_r_2",
   "q_1_r_3",
   "column_break_pfav",
+  "q_1_r_1_c",
+  "q_1_r_2_c",
+  "q_1_r_3_c",
   "question_2",
   "q_2_r_1",
   "q_2_r_2",
   "q_2_r_3",
+  "column_break_lzwq",
+  "q_2_r_1_c",
+  "q_2_r_2_c",
+  "q_2_r_3_c",
   "question_3",
   "q_3_r_1",
   "q_3_r_2",
@@ -142,15 +148,6 @@
   {
    "fieldname": "column_break_lrwg",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Africa Pass JPIM Dakar 2024",
-   "print_hide": 1,
-   "read_only": 1
   },
   {
    "fieldname": "section_break_qipr",
@@ -776,11 +773,51 @@
   {
    "fieldname": "column_break_ycva",
    "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_1_r_1_c",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1 correcte"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_1_r_2_c",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2 correcte"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_1_r_3_c",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3 correcte"
+  },
+  {
+   "fieldname": "column_break_lzwq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_2_r_1_c",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1 correcte"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_2_r_2_c",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2 correcte"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_2_r_3_c",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3 correcte"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-27 18:12:19.985268",
+ "modified": "2024-02-27 19:47:06.479672",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Questionnaire Web",
