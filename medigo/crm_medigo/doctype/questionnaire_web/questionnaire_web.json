@@ -1,0 +1,823 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{titre}-{######}",
+ "creation": "2024-02-27 17:43:50.323110",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "infos_personnelles_tab",
+  "titre",
+  "date_heure",
+  "column_break_lrwg",
+  "amended_from",
+  "section_break_qipr",
+  "email",
+  "nom",
+  "prenom",
+  "nom_complet",
+  "column_break_gvoe",
+  "statut_professionnel",
+  "commune",
+  "wilaya",
+  "zone",
+  "laboratoire_faska_tab",
+  "question_1",
+  "q_1_r_1",
+  "q_1_r_2",
+  "q_1_r_3",
+  "column_break_pfav",
+  "question_2",
+  "q_2_r_1",
+  "q_2_r_2",
+  "q_2_r_3",
+  "question_3",
+  "q_3_r_1",
+  "q_3_r_2",
+  "q_3_r_3",
+  "question_4",
+  "q_4_r_1",
+  "q_4_r_2",
+  "q_4_r_3",
+  "formulation_tab",
+  "question_5_section",
+  "q_5_r_1",
+  "q_5_r_2",
+  "q_5_r_3",
+  "column_break_ccry",
+  "question_6_section",
+  "q_6_r_1",
+  "q_6_r_2",
+  "q_6_r_3",
+  "column_break_isnf",
+  "question_7_section",
+  "q_7_r_1",
+  "q_7_r_2",
+  "q_7_r_3",
+  "column_break_uybx",
+  "question_8_section",
+  "q_8_r_1",
+  "q_8_r_2",
+  "q_8_r_3",
+  "column_break_yshm",
+  "partie_3_tab",
+  "question_9_section",
+  "q_9_r_1",
+  "q_9_r_2",
+  "q_9_r_3",
+  "column_break_ijta",
+  "question_10_section",
+  "q_10_r_1",
+  "q_10_r_2",
+  "q_10_r_3",
+  "column_break_cptr",
+  "question_11_section",
+  "q_11_r_1",
+  "q_11_r_2",
+  "q_11_r_3",
+  "column_break_yyms",
+  "question_12_section",
+  "q_12_r_1",
+  "q_12_r_2",
+  "q_12_r_3",
+  "column_break_bgok",
+  "partie_4_tab",
+  "question_13_section",
+  "q_13_r_1",
+  "q_13_r_2",
+  "q_13_r_3",
+  "column_break_bhvy",
+  "question_14_section",
+  "q_14_r_1",
+  "q_14_r_2",
+  "q_14_r_3",
+  "column_break_jfws",
+  "question_15_section",
+  "q_15_r_1",
+  "q_15_r_2",
+  "q_15_r_3",
+  "column_break_oxtl",
+  "question_16_section",
+  "q_16_r_1",
+  "q_16_r_2",
+  "q_16_r_3",
+  "column_break_grme",
+  "partie_5_tab",
+  "question_17_section",
+  "q_17_r_1",
+  "q_17_r_2",
+  "q_17_r_3",
+  "column_break_jfbn",
+  "question_18_section",
+  "q_18_r_1",
+  "q_18_r_2",
+  "q_18_r_3",
+  "column_break_byjo",
+  "question_19_section",
+  "q_19_r_1",
+  "q_19_r_2",
+  "q_19_r_3",
+  "column_break_gqnd",
+  "question_20_section",
+  "q_20_r_1",
+  "q_20_r_2",
+  "q_20_r_3",
+  "column_break_ycva"
+ ],
+ "fields": [
+  {
+   "fieldname": "infos_personnelles_tab",
+   "fieldtype": "Tab Break",
+   "label": "Infos"
+  },
+  {
+   "default": "Now",
+   "fieldname": "date_heure",
+   "fieldtype": "Datetime",
+   "label": "Date & Heure",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lrwg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Africa Pass JPIM Dakar 2024",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_qipr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Adresse e-mail",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pr\u00e9nom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nom_complet",
+   "fieldtype": "Data",
+   "label": "Nom Complet",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gvoe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "statut_professionnel",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Statut professionnel",
+   "options": "Titre Prescripteur",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "label": "Commune",
+   "options": "Communes",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "commune.wilaya",
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "label": "Wilaya",
+   "options": "Wilayas",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "commune.zone",
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "laboratoire_faska_tab",
+   "fieldtype": "Tab Break",
+   "label": "Partie 1"
+  },
+  {
+   "fieldname": "column_break_pfav",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "formulation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Partie 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_1_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_1_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "titre",
+   "fieldtype": "Data",
+   "label": "Titre"
+  },
+  {
+   "fieldname": "question_1",
+   "fieldtype": "Section Break",
+   "label": "Question 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_1_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "fieldname": "question_2",
+   "fieldtype": "Section Break",
+   "label": "Question 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_2_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_2_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_2_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "question_3",
+   "fieldtype": "Section Break",
+   "label": "Question 3"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_3_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_3_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_3_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "question_4",
+   "fieldtype": "Section Break",
+   "label": "Question 4"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_4_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_4_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_4_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "question_5_section",
+   "fieldtype": "Section Break",
+   "label": "Question 5"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_5_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_5_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_5_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_ccry",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_6_section",
+   "fieldtype": "Section Break",
+   "label": "Question 6"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_6_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_6_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_6_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_isnf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_7_section",
+   "fieldtype": "Section Break",
+   "label": "Question 7"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_7_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_7_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_7_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_uybx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_8_section",
+   "fieldtype": "Section Break",
+   "label": "Question 8"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_8_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_8_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_8_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_yshm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "partie_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Partie 3"
+  },
+  {
+   "fieldname": "question_9_section",
+   "fieldtype": "Section Break",
+   "label": "Question 9"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_9_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_9_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_9_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_ijta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_10_section",
+   "fieldtype": "Section Break",
+   "label": "Question 10"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_10_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_10_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_10_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_cptr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_11_section",
+   "fieldtype": "Section Break",
+   "label": "Question 11"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_11_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_11_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_11_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_yyms",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_12_section",
+   "fieldtype": "Section Break",
+   "label": "Question 12"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_12_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_12_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_12_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_bgok",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "partie_4_tab",
+   "fieldtype": "Tab Break",
+   "label": "Partie 4"
+  },
+  {
+   "fieldname": "question_13_section",
+   "fieldtype": "Section Break",
+   "label": "Question 13"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_13_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_13_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_13_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_bhvy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_14_section",
+   "fieldtype": "Section Break",
+   "label": "Question 14"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_14_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_14_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_14_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_jfws",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_15_section",
+   "fieldtype": "Section Break",
+   "label": "Question 15"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_15_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_15_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_15_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_oxtl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_16_section",
+   "fieldtype": "Section Break",
+   "label": "Question 16"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_16_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_16_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_16_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_grme",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "partie_5_tab",
+   "fieldtype": "Tab Break",
+   "label": "Partie 5"
+  },
+  {
+   "fieldname": "question_17_section",
+   "fieldtype": "Section Break",
+   "label": "Question 17"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_17_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_17_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_17_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_jfbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_18_section",
+   "fieldtype": "Section Break",
+   "label": "Question 18"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_18_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_18_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_18_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_byjo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_19_section",
+   "fieldtype": "Section Break",
+   "label": "Question 19"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_19_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_19_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_19_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_gqnd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "question_20_section",
+   "fieldtype": "Section Break",
+   "label": "Question 20"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_20_r_1",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_20_r_2",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_20_r_3",
+   "fieldtype": "Check",
+   "label": "R\u00e9ponse 3"
+  },
+  {
+   "fieldname": "column_break_ycva",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-27 18:12:19.985268",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Questionnaire Web",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analyste M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "titre",
+ "track_changes": 1,
+ "track_seen": 1
+}
