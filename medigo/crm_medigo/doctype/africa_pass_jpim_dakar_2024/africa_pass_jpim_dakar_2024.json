@@ -1,0 +1,884 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Africa Pass-{######}",
+ "creation": "2024-02-28 09:12:00.837906",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "infos_personnelles_tab",
+  "date_heure",
+  "column_break_lrwg",
+  "total_points",
+  "section_break_qipr",
+  "email",
+  "nom",
+  "prenom",
+  "nom_complet",
+  "column_break_gvoe",
+  "statut_professionnel",
+  "commune",
+  "wilaya",
+  "zone",
+  "laboratoire_faska_tab",
+  "question_1",
+  "q_1_r_1",
+  "q_1_r_2",
+  "q_1_r_3",
+  "p_q1",
+  "question_2",
+  "q_2_r_1",
+  "q_2_r_2",
+  "q_2_r_3",
+  "p_q2",
+  "question_3",
+  "q_3_r_1",
+  "q_3_r_2",
+  "q_3_r_3",
+  "p_q3",
+  "question_4",
+  "q_4_r_1",
+  "q_4_r_2",
+  "q_4_r_3",
+  "p_q4",
+  "formulation_tab",
+  "question_5_section",
+  "q_5_r_1",
+  "q_5_r_2",
+  "q_5_r_3",
+  "p_q5",
+  "question_6_section",
+  "q_6_r_1",
+  "q_6_r_2",
+  "q_6_r_3",
+  "p_q6",
+  "question_7_section",
+  "q_7_r_1",
+  "q_7_r_2",
+  "q_7_r_3",
+  "p_q7",
+  "question_8_section",
+  "q_8_r_1",
+  "q_8_r_2",
+  "q_8_r_3",
+  "p_q8",
+  "partie_3_tab",
+  "question_9_section",
+  "q_9_r_1",
+  "q_9_r_2",
+  "q_9_r_3",
+  "p_q9",
+  "question_10_section",
+  "q_10_r_1",
+  "q_10_r_2",
+  "q_10_r_3",
+  "p_q10",
+  "question_11_section",
+  "q_11_r_1",
+  "q_11_r_2",
+  "q_11_r_3",
+  "p_q11",
+  "question_12_section",
+  "q_12_r_1",
+  "q_12_r_2",
+  "q_12_r_3",
+  "p_q12",
+  "partie_4_tab",
+  "question_13_section",
+  "q_13_r_1",
+  "q_13_r_2",
+  "q_13_r_3",
+  "p_q13",
+  "question_14_section",
+  "q_14_r_1",
+  "q_14_r_2",
+  "q_14_r_3",
+  "p_q14",
+  "question_15_section",
+  "q_15_r_1",
+  "q_15_r_2",
+  "q_15_r_3",
+  "p_q15",
+  "question_16_section",
+  "q_16_r_1",
+  "q_16_r_2",
+  "q_16_r_3",
+  "p_q16",
+  "partie_5_tab",
+  "question_17_section",
+  "q_17_r_1",
+  "q_17_r_2",
+  "q_17_r_3",
+  "p_q17",
+  "question_18_section",
+  "q_18_r_1",
+  "q_18_r_2",
+  "q_18_r_3",
+  "p_q18",
+  "question_19_section",
+  "q_19_r_1",
+  "q_19_r_2",
+  "q_19_r_3",
+  "p_q19",
+  "question_20_section",
+  "q_20_r_1",
+  "q_20_r_2",
+  "q_20_r_3",
+  "p_q20"
+ ],
+ "fields": [
+  {
+   "fieldname": "infos_personnelles_tab",
+   "fieldtype": "Tab Break",
+   "label": "Infos"
+  },
+  {
+   "default": "Now",
+   "fieldname": "date_heure",
+   "fieldtype": "Datetime",
+   "label": "Date & Heure",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lrwg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qipr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Adresse e-mail",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nom_complet",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nom Complet",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gvoe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "statut_professionnel",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Statut professionnel",
+   "options": "Titre Prescripteur",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Commune",
+   "options": "Communes",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "commune.wilaya",
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Wilaya",
+   "options": "Wilayas",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "commune.zone",
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Zone",
+   "options": "Zone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "laboratoire_faska_tab",
+   "fieldtype": "Tab Break",
+   "label": "Partie 1"
+  },
+  {
+   "fieldname": "question_1",
+   "fieldtype": "Section Break",
+   "label": "FASSKA est une soci\u00e9t\u00e9 sp\u00e9cialis\u00e9e dans la nutrition infantile"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_1_r_1",
+   "fieldtype": "Check",
+   "label": "D'origine Belge"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_1_r_2",
+   "fieldtype": "Check",
+   "label": "D'origine France"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_1_r_3",
+   "fieldtype": "Check",
+   "label": "D'origine Alg\u00e9rie"
+  },
+  {
+   "fieldname": "question_2",
+   "fieldtype": "Section Break",
+   "label": "FASSKA est reconnue par"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_2_r_1",
+   "fieldtype": "Check",
+   "label": "La formulation de ses propres produits"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_2_r_2",
+   "fieldtype": "Check",
+   "label": "Label AgriConfiance produits hautement contr\u00f4l\u00e9s"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_2_r_3",
+   "fieldtype": "Check",
+   "label": "Label Halal depuis 2014"
+  },
+  {
+   "fieldname": "question_3",
+   "fieldtype": "Section Break",
+   "label": "FASSKA commercialise ses produits ses produits"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_3_r_1",
+   "fieldtype": "Check",
+   "label": "En Alg\u00e9rie exclusivement"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_3_r_2",
+   "fieldtype": "Check",
+   "label": "En Europe, Moyen Orient, et Asie"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_3_r_3",
+   "fieldtype": "Check",
+   "label": "En Afrique et Moyen Orient"
+  },
+  {
+   "fieldname": "question_4",
+   "fieldtype": "Section Break",
+   "label": "Les couleurs du logo Biomil sont"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_4_r_1",
+   "fieldtype": "Check",
+   "label": "Bleu et Blanc"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_4_r_2",
+   "fieldtype": "Check",
+   "label": "Bleu, Blanc et Rouge"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_4_r_3",
+   "fieldtype": "Check",
+   "label": "Bleu et Orange"
+  },
+  {
+   "fieldname": "formulation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Partie 2"
+  },
+  {
+   "fieldname": "question_5_section",
+   "fieldtype": "Section Break",
+   "label": "Les formules Pr\u00e9paration Pour Nourrissons Biomil, et Pr\u00e9paration de Suite Biomil sont \u00e0"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_5_r_1",
+   "fieldtype": "Check",
+   "label": "80% de Lactos\u00e9rum et 20% de Cas\u00e9ine"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_5_r_2",
+   "fieldtype": "Check",
+   "label": "60% de Lactos\u00e9rum et 40% de Cas\u00e9ine"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_5_r_3",
+   "fieldtype": "Check",
+   "label": "50% de Lactos\u00e9rum et 50% de Cas\u00e9ine"
+  },
+  {
+   "fieldname": "question_6_section",
+   "fieldtype": "Section Break",
+   "label": "Biomil Plus est une formule pour"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_6_r_1",
+   "fieldtype": "Check",
+   "label": "Am\u00e9liorer le transit du b\u00e9b\u00e9"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_6_r_2",
+   "fieldtype": "Check",
+   "label": "Prendre en charge les r\u00e9gurgitations"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_6_r_3",
+   "fieldtype": "Check",
+   "label": "Contient des pr\u00e9biotiques du lait maternel"
+  },
+  {
+   "fieldname": "question_7_section",
+   "fieldtype": "Section Break",
+   "label": "Le Biomil Soy est une pr\u00e9paration pour nourrisson"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_7_r_1",
+   "fieldtype": "Check",
+   "label": "A base de prot\u00e9ine de soja faiblement allergisante"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_7_r_2",
+   "fieldtype": "Check",
+   "label": "Sans prot\u00e9ine de lait de vache"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_7_r_3",
+   "fieldtype": "Check",
+   "label": "A base d\u2019hydrolysat de soja"
+  },
+  {
+   "fieldname": "question_8_section",
+   "fieldtype": "Section Break",
+   "label": "Le Biomil LF peut se substituer "
+  },
+  {
+   "default": "0",
+   "fieldname": "q_8_r_1",
+   "fieldtype": "Check",
+   "label": "Aux formules Confort"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_8_r_2",
+   "fieldtype": "Check",
+   "label": "Aux formules Antidiarrh\u00e9ique"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_8_r_3",
+   "fieldtype": "Check",
+   "label": "Aux formules Anti r\u00e9gurgitation"
+  },
+  {
+   "fieldname": "partie_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Partie 3"
+  },
+  {
+   "fieldname": "question_9_section",
+   "fieldtype": "Section Break",
+   "label": "Le GastroFix est un "
+  },
+  {
+   "default": "0",
+   "fieldname": "q_9_r_1",
+   "fieldtype": "Check",
+   "label": "Lait"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_9_r_2",
+   "fieldtype": "Check",
+   "label": "Un substitut de lait"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_9_r_3",
+   "fieldtype": "Check",
+   "label": "Une Alimentation S\u00e9pcifique"
+  },
+  {
+   "fieldname": "question_10_section",
+   "fieldtype": "Section Break",
+   "label": "Le Biomil CF est une"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_10_r_1",
+   "fieldtype": "Check",
+   "label": "Formule Confort"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_10_r_2",
+   "fieldtype": "Check",
+   "label": "Formule en cas de r\u00e9gurgitation"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_10_r_3",
+   "fieldtype": "Check",
+   "label": "A base de prot\u00e9ines hydrolys\u00e9es"
+  },
+  {
+   "fieldname": "question_11_section",
+   "fieldtype": "Section Break",
+   "label": "Quelles sont les particularit\u00e9s des C\u00e9r\u00e9ales Biomil"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_11_r_1",
+   "fieldtype": "Check",
+   "label": "Une vari\u00e9t\u00e9 \u00e0 partir de 4 mois d\u2019\u00e2ge correspondant \u00e0 la fen\u00eatre de diversification"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_11_r_2",
+   "fieldtype": "Check",
+   "label": "Des C\u00e9r\u00e9ales Lact\u00e9es et Non Lact\u00e9es"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_11_r_3",
+   "fieldtype": "Check",
+   "label": "A base de prot\u00e9ines semi-hydrolys\u00e9es facile \u00e0 dig\u00e9r\u00e9es"
+  },
+  {
+   "fieldname": "question_12_section",
+   "fieldtype": "Section Break",
+   "label": "Pour les nourrissons allait\u00e9s au sein, il est recommand\u00e9 de"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_12_r_1",
+   "fieldtype": "Check",
+   "label": "Diversifier d\u00e8s 4 mois r\u00e9volu"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_12_r_2",
+   "fieldtype": "Check",
+   "label": "Encourager un Biomil 2 en formule de suite au-del\u00e0 de 1 an"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_12_r_3",
+   "fieldtype": "Check",
+   "label": "Introduire Biomil 3 formule croissance jusqu\u2019\u00e0 deux ans et demi"
+  },
+  {
+   "fieldname": "partie_4_tab",
+   "fieldtype": "Tab Break",
+   "label": "Partie 4"
+  },
+  {
+   "fieldname": "question_13_section",
+   "fieldtype": "Section Break",
+   "label": "Les pr\u00e9biotiques utilis\u00e9s dans les formules Biomil Plus"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_13_r_1",
+   "fieldtype": "Check",
+   "label": "Sont des oligosaccharides naturellement actifs"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_13_r_2",
+   "fieldtype": "Check",
+   "label": "Les GOS et les FOS r\u00e9sistent aux sucs digestifs durant la digestion"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_13_r_3",
+   "fieldtype": "Check",
+   "label": "Les oligosaccharides garantissent un go\u00fbt naturellement agr\u00e9able"
+  },
+  {
+   "fieldname": "question_14_section",
+   "fieldtype": "Section Break",
+   "label": "Biomil AR est une formule anti r\u00e9gurgitation \u00e9paissie \u00e0 base de"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_14_r_1",
+   "fieldtype": "Check",
+   "label": "Amidon de pomme de terre"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_14_r_2",
+   "fieldtype": "Check",
+   "label": "Amidon de Mais"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_14_r_3",
+   "fieldtype": "Check",
+   "label": "Gomme de graine de caroube"
+  },
+  {
+   "fieldname": "question_15_section",
+   "fieldtype": "Section Break",
+   "label": "L\u2019apport calorique du Pr\u00e9 Biomil est-il de ?"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_15_r_1",
+   "fieldtype": "Check",
+   "label": "75 Kcal/100ml \u00e0 une dilution de 13.5%"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_15_r_2",
+   "fieldtype": "Check",
+   "label": "100 Kcal/100ml \u00e0 une dilution de 13.2%"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_15_r_3",
+   "fieldtype": "Check",
+   "label": "81 Kcal/100ml"
+  },
+  {
+   "fieldname": "question_16_section",
+   "fieldtype": "Section Break",
+   "label": "A l\u2019ouverture de la boite de Biomil, l\u2019odeur fraiche est garantie par"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_16_r_1",
+   "fieldtype": "Check",
+   "label": "L\u2019ajout de fructose"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_16_r_2",
+   "fieldtype": "Check",
+   "label": "Le proc\u00e9d\u00e9 de s\u00e9chage qui maintient la fraicheur des ingr\u00e9dients"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_16_r_3",
+   "fieldtype": "Check",
+   "label": "L\u2019ajout de Maltod\u00e9xtrine"
+  },
+  {
+   "fieldname": "partie_5_tab",
+   "fieldtype": "Tab Break",
+   "label": "Partie 5"
+  },
+  {
+   "fieldname": "question_17_section",
+   "fieldtype": "Section Break",
+   "label": "Le Biomil CF"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_17_r_1",
+   "fieldtype": "Check",
+   "label": "Permet de r\u00e9guler le transit et est enrichi en TCM"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_17_r_2",
+   "fieldtype": "Check",
+   "label": "Couvre la tranche d\u2019\u00e2ge de 0 \u00e0 6 mois"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_17_r_3",
+   "fieldtype": "Check",
+   "label": "Cible le confort intestinal"
+  },
+  {
+   "fieldname": "question_18_section",
+   "fieldtype": "Section Break",
+   "label": "Le Biomil Soy "
+  },
+  {
+   "default": "0",
+   "fieldname": "q_18_r_1",
+   "fieldtype": "Check",
+   "label": "Est une formule adapt\u00e9e \u00e0 la prise en charge des galactos\u00e9mie maladie"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_18_r_2",
+   "fieldtype": "Check",
+   "label": "Aide \u00e0 maintenir un apport nutritionnel adapt\u00e9e chez les nourrissons souffrant d\u2019APLV avec une bonne prise pond\u00e9rale"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_18_r_3",
+   "fieldtype": "Check",
+   "label": "Est consid\u00e9r\u00e9e comme une pr\u00e9paration pour nourrisson"
+  },
+  {
+   "fieldname": "question_19_section",
+   "fieldtype": "Section Break",
+   "label": "Le GastroFix"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_19_r_1",
+   "fieldtype": "Check",
+   "label": "Est exempt de lactose mais enrichi en Fer"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_19_r_2",
+   "fieldtype": "Check",
+   "label": "Est enrichi en \u00e9lectrolytes"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_19_r_3",
+   "fieldtype": "Check",
+   "label": "Permet une reprise alimentaire rapide durant une diarrh\u00e9e aigue"
+  },
+  {
+   "fieldname": "question_20_section",
+   "fieldtype": "Section Break",
+   "label": "Les C\u00e9r\u00e9ales Biomil"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_20_r_1",
+   "fieldtype": "Check",
+   "label": "Les C\u00e9r\u00e9ale 4 mois conviennent \u00e0 tous les \u00e2ges"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_20_r_2",
+   "fieldtype": "Check",
+   "label": "Ont une DLC de 3 ans"
+  },
+  {
+   "default": "0",
+   "fieldname": "q_20_r_3",
+   "fieldtype": "Check",
+   "label": "Sont fabriqu\u00e9es \u00e0 base de flocon de l\u00e9gumes s\u00e9ch\u00e9es afin de procurer une sensation homog\u00e8ne et douce en bouche"
+  },
+  {
+   "fieldname": "total_points",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Points",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q1",
+   "fieldtype": "Int",
+   "label": "Points Q1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q2",
+   "fieldtype": "Int",
+   "label": "Points Q2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q3",
+   "fieldtype": "Int",
+   "label": "Points Q3",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q4",
+   "fieldtype": "Int",
+   "label": "Points Q4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q5",
+   "fieldtype": "Int",
+   "label": "Points Q5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q6",
+   "fieldtype": "Int",
+   "label": "Points Q6",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q7",
+   "fieldtype": "Int",
+   "label": "Points Q7",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q8",
+   "fieldtype": "Int",
+   "label": "Points Q8",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q9",
+   "fieldtype": "Int",
+   "label": "Points Q9",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q10",
+   "fieldtype": "Int",
+   "label": "Points Q10",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q11",
+   "fieldtype": "Int",
+   "label": "Points Q11",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q12",
+   "fieldtype": "Int",
+   "label": "Points Q12",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q13",
+   "fieldtype": "Int",
+   "label": "Points Q13",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q14",
+   "fieldtype": "Int",
+   "label": "Points Q14",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q15",
+   "fieldtype": "Int",
+   "label": "Points Q15",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q16",
+   "fieldtype": "Int",
+   "label": "Points Q16",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q17",
+   "fieldtype": "Int",
+   "label": "Points Q17",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q18",
+   "fieldtype": "Int",
+   "label": "Points Q18",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q19",
+   "fieldtype": "Int",
+   "label": "Points Q19",
+   "read_only": 1
+  },
+  {
+   "fieldname": "p_q20",
+   "fieldtype": "Int",
+   "label": "Points Q20",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-28 09:46:41.685768",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "Africa Pass JPIM Dakar 2024",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analyste M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "date_heure",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
