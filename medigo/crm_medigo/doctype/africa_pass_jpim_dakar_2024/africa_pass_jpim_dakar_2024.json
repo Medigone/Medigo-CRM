@@ -10,8 +10,11 @@
  "field_order": [
   "infos_personnelles_tab",
   "date_heure",
-  "column_break_lrwg",
   "total_points",
+  "column_break_lrwg",
+  "prescripteur",
+  "amended_from",
+  "verifie",
   "section_break_qipr",
   "nom",
   "prenom",
@@ -160,20 +163,20 @@
   {
    "fieldname": "nom",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Nom"
   },
   {
    "fieldname": "prenom",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Pr\u00e9nom"
   },
   {
    "fieldname": "nom_complet",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Nom Complet",
-   "read_only": 1
+   "label": "Nom Complet"
   },
   {
    "fieldname": "column_break_gvoe",
@@ -804,14 +807,12 @@
   {
    "fieldname": "p_q17",
    "fieldtype": "Int",
-   "label": "Points Q17",
-   "read_only": 1
+   "label": "Points Q17"
   },
   {
    "fieldname": "p_q18",
    "fieldtype": "Int",
-   "label": "Points Q18",
-   "read_only": 1
+   "label": "Points Q18"
   },
   {
    "fieldname": "p_q19",
@@ -835,11 +836,34 @@
    "fieldname": "date_naissance",
    "fieldtype": "Date",
    "label": "Date de naissance"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Africa Pass JPIM Dakar 2024",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "prescripteur",
+   "fieldtype": "Link",
+   "label": "Prescripteur",
+   "options": "Prescripteurs"
+  },
+  {
+   "default": "0",
+   "fieldname": "verifie",
+   "fieldtype": "Check",
+   "label": "V\u00e9rifi\u00e9"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-02-28 10:36:45.266129",
+ "modified": "2024-02-28 16:38:11.338521",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Africa Pass JPIM Dakar 2024",
