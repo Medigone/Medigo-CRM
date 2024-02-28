@@ -13,11 +13,13 @@
   "column_break_lrwg",
   "total_points",
   "section_break_qipr",
-  "email",
   "nom",
   "prenom",
   "nom_complet",
+  "phone",
+  "email",
   "column_break_gvoe",
+  "date_naissance",
   "statut_professionnel",
   "commune",
   "wilaya",
@@ -153,20 +155,17 @@
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Adresse e-mail",
-   "options": "Email",
-   "reqd": 1
+   "options": "Email"
   },
   {
    "fieldname": "nom",
    "fieldtype": "Data",
-   "label": "Nom",
-   "reqd": 1
+   "label": "Nom"
   },
   {
    "fieldname": "prenom",
    "fieldtype": "Data",
-   "label": "Pr\u00e9nom",
-   "reqd": 1
+   "label": "Pr\u00e9nom"
   },
   {
    "fieldname": "nom_complet",
@@ -186,8 +185,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Statut professionnel",
-   "options": "Titre Prescripteur",
-   "reqd": 1
+   "options": "Titre Prescripteur"
   },
   {
    "fieldname": "commune",
@@ -195,8 +193,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Commune",
-   "options": "Communes",
-   "reqd": 1
+   "options": "Communes"
   },
   {
    "fetch_from": "commune.wilaya",
@@ -827,11 +824,22 @@
    "fieldtype": "Int",
    "label": "Points Q20",
    "read_only": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "N\u00ba T\u00e9l\u00e9phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "date_naissance",
+   "fieldtype": "Date",
+   "label": "Date de naissance"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-28 09:46:41.685768",
+ "modified": "2024-02-28 10:36:45.266129",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Africa Pass JPIM Dakar 2024",
