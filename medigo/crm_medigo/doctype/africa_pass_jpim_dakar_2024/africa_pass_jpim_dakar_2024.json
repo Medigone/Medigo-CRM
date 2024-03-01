@@ -13,16 +13,14 @@
   "total_points",
   "column_break_lrwg",
   "prescripteur",
+  "calcul_effectue",
   "amended_from",
-  "verifie",
   "section_break_qipr",
-  "nom",
-  "prenom",
-  "nom_complet",
+  "utilisateur",
   "phone",
   "email",
-  "column_break_gvoe",
   "date_naissance",
+  "column_break_gvoe",
   "statut_professionnel",
   "commune",
   "wilaya",
@@ -159,24 +157,6 @@
    "fieldtype": "Data",
    "label": "Adresse e-mail",
    "options": "Email"
-  },
-  {
-   "fieldname": "nom",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Nom"
-  },
-  {
-   "fieldname": "prenom",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Pr\u00e9nom"
-  },
-  {
-   "fieldname": "nom_complet",
-   "fieldtype": "Data",
-   "in_standard_filter": 1,
-   "label": "Nom Complet"
   },
   {
    "fieldname": "column_break_gvoe",
@@ -807,12 +787,14 @@
   {
    "fieldname": "p_q17",
    "fieldtype": "Int",
-   "label": "Points Q17"
+   "label": "Points Q17",
+   "read_only": 1
   },
   {
    "fieldname": "p_q18",
    "fieldtype": "Int",
-   "label": "Points Q18"
+   "label": "Points Q18",
+   "read_only": 1
   },
   {
    "fieldname": "p_q19",
@@ -838,6 +820,19 @@
    "label": "Date de naissance"
   },
   {
+   "allow_on_submit": 1,
+   "fieldname": "prescripteur",
+   "fieldtype": "Link",
+   "label": "Prescripteur",
+   "options": "Prescripteurs"
+  },
+  {
+   "fieldname": "utilisateur",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Utilisateur"
+  },
+  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -847,23 +842,17 @@
    "read_only": 1
   },
   {
-   "allow_on_submit": 1,
-   "fieldname": "prescripteur",
-   "fieldtype": "Link",
-   "label": "Prescripteur",
-   "options": "Prescripteurs"
-  },
-  {
    "default": "0",
-   "fieldname": "verifie",
+   "fieldname": "calcul_effectue",
    "fieldtype": "Check",
-   "label": "V\u00e9rifi\u00e9"
+   "hidden": 1,
+   "label": "Calcul Effectu\u00e9"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-28 16:38:11.338521",
+ "modified": "2024-02-29 22:21:19.682093",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Africa Pass JPIM Dakar 2024",
@@ -897,14 +886,9 @@
   },
   {
    "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
+   "if_owner": 1,
    "read": 1,
-   "report": 1,
-   "role": "All",
-   "share": 1,
+   "role": "Guest",
    "write": 1
   }
  ],

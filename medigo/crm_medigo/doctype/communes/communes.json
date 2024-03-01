@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:commune",
@@ -52,8 +53,9 @@
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_published_field": "commune",
  "links": [],
- "modified": "2024-02-12 22:32:28.767324",
+ "modified": "2024-02-29 16:05:21.152584",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Communes",
@@ -108,7 +110,7 @@
   }
  ],
  "search_fields": "wilaya,zone",
- "sort_field": "wilaya",
+ "sort_field": "commune",
  "sort_order": "ASC",
  "states": [],
  "title_field": "nom_complet_commune"

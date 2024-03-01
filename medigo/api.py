@@ -61,4 +61,3 @@ def get_prescripteur(service):
 
     return prescripteurs
 
-

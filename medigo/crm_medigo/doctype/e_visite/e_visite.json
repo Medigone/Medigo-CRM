@@ -1,0 +1,375 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "creation": "2024-02-28 19:07:30.088444",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_break_bv9m",
+  "d\u00eatails_visite_column",
+  "date_prevue",
+  "nom_presc",
+  "titre_prescripteur",
+  "objectifs_produits_column",
+  "date_visite",
+  "duree_visite",
+  "utilisateur",
+  "amended_from",
+  "objectifs_visite_section",
+  "objectif_visite",
+  "objectif_produit_1",
+  "column_break_fode",
+  "objectif_produit_2",
+  "objectif_produit_3",
+  "section_break_sexb",
+  "commune",
+  "wilaya",
+  "zone",
+  "column_break_evsy",
+  "enquete_visite_tab",
+  "partenariat",
+  "contrepartie",
+  "objections_produit",
+  "traitement_objection",
+  "column_break_zwbv",
+  "requete",
+  "notes_tab",
+  "remarques",
+  "localisation_tab",
+  "column_break_rfib",
+  "heure_debut_visite",
+  "column_break_vzqc",
+  "heure_fin_visite",
+  "web_view_tab",
+  "published",
+  "column_break_oabj",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_break_bv9m",
+   "fieldtype": "Tab Break",
+   "label": "D\u00e9tails Visite"
+  },
+  {
+   "fieldname": "d\u00eatails_visite_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_prevue",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Date Pr\u00e9vue",
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "prescripteur.nom_complet_prescripteur",
+   "fieldname": "nom_presc",
+   "fieldtype": "Data",
+   "label": "Nom Prescripteur",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "prescripteur.titre_prescripteur",
+   "fieldname": "titre_prescripteur",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Titre Prescripteur",
+   "read_only": 1
+  },
+  {
+   "fieldname": "objectifs_produits_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\")",
+   "fieldname": "date_visite",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Visite",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
+   "fieldname": "duree_visite",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Dur\u00e9e",
+   "read_only": 1
+  },
+  {
+   "fieldname": "utilisateur",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Utilisateur",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visites Individuelles",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "objectifs_visite_section",
+   "fieldtype": "Section Break",
+   "label": "Objectifs Visite"
+  },
+  {
+   "fieldname": "objectif_visite",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Objectif",
+   "options": "Objectif Visite",
+   "reqd": 1
+  },
+  {
+   "fieldname": "objectif_produit_1",
+   "fieldtype": "Link",
+   "label": "Objectif Produit 1",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fode",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "objectif_produit_2",
+   "fieldtype": "Link",
+   "label": "Objectif Produit 2",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "objectif_produit_3",
+   "fieldtype": "Link",
+   "label": "Objectif Produit 3",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_sexb",
+   "fieldtype": "Section Break",
+   "label": "Localisation Prescripteur"
+  },
+  {
+   "fetch_from": "prescripteur.commune",
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Commune",
+   "options": "Communes",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "prescripteur.wilaya",
+   "fieldname": "wilaya",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Wilaya",
+   "options": "Wilayas",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "prescripteur.zone",
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_evsy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
+   "fieldname": "enquete_visite_tab",
+   "fieldtype": "Tab Break",
+   "label": "Enqu\u00eate"
+  },
+  {
+   "fieldname": "partenariat",
+   "fieldtype": "Data",
+   "label": "Partenariat",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
+  },
+  {
+   "fieldname": "contrepartie",
+   "fieldtype": "Link",
+   "label": "Contrepartie",
+   "options": "Contrepartie",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
+  },
+  {
+   "fieldname": "objections_produit",
+   "fieldtype": "Data",
+   "label": "Objections Produit",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
+  },
+  {
+   "fieldname": "traitement_objection",
+   "fieldtype": "Select",
+   "label": "Traitement Objection",
+   "options": "\nOui\nNon",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
+  },
+  {
+   "fieldname": "column_break_zwbv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requete",
+   "fieldtype": "Small Text",
+   "label": "Requ\u00eate",
+   "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
+   "fieldname": "notes_tab",
+   "fieldtype": "Tab Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "remarques",
+   "fieldtype": "Text Editor",
+   "label": "Remarques"
+  },
+  {
+   "depends_on": "eval:(doc.workflow_state==\"En Cours\" || doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")",
+   "fieldname": "localisation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_rfib",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heure_debut_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure D\u00e9but Visite",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vzqc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "heure_fin_visite",
+   "fieldtype": "Datetime",
+   "label": "Heure Fin Visite",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visites Individuelles",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "web_view_tab",
+   "fieldtype": "Tab Break",
+   "label": "Web View"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Publi\u00e9"
+  },
+  {
+   "fieldname": "column_break_oabj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  }
+ ],
+ "has_web_view": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2024-02-29 00:50:16.747164",
+ "modified_by": "Administrator",
+ "module": "CRM Medigo",
+ "name": "E-Visite",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrateur M\u00e9dical",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Analyste M\u00e9dical",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Prescripteur",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "route",
+ "search_fields": "nom_presc,titre_prescripteur,commune,objectif_visite",
+ "show_title_field_in_link": 1,
+ "sort_field": "date_visite",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nom_presc",
+ "track_changes": 1
+}
