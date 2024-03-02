@@ -60,7 +60,6 @@
    "options": "Public\nPriv\u00e9"
   },
   {
-   "default": "+213-",
    "fieldname": "telephone_etablissement",
    "fieldtype": "Phone",
    "label": "T\u00e9l\u00e9phone"
@@ -126,7 +125,7 @@
    "link_fieldname": "etablissement"
   }
  ],
- "modified": "2024-02-24 15:06:43.471490",
+ "modified": "2024-03-02 17:11:54.062297",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Etablissements",
