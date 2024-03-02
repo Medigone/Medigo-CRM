@@ -22,7 +22,8 @@
   "wilaya",
   "zone",
   "gps_etablissement",
-  "potentiel"
+  "potentiel",
+  "tableau_de_bord_tab"
  ],
  "fields": [
   {
@@ -112,6 +113,12 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Potentiel"
+  },
+  {
+   "fieldname": "tableau_de_bord_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tableau de bord",
+   "show_dashboard": 1
   }
  ],
  "index_web_pages_for_search": 1,
@@ -125,7 +132,7 @@
    "link_fieldname": "etablissement"
   }
  ],
- "modified": "2024-03-02 17:11:54.062297",
+ "modified": "2024-03-02 17:17:19.148534",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Etablissements",

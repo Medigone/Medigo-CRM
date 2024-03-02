@@ -24,6 +24,7 @@
   "service",
   "cabinet_prive_prescripteur",
   "chef_de_service",
+  "tableau_de_bord_tab",
   "informations_personnelles_tab",
   "sexe",
   "situation_matrimoniale",
@@ -213,6 +214,12 @@
    "fieldname": "potentiel_tab",
    "fieldtype": "Tab Break",
    "label": "Potentiel"
+  },
+  {
+   "fieldname": "tableau_de_bord_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tableau de bord",
+   "show_dashboard": 1
   }
  ],
  "index_web_pages_for_search": 1,
@@ -222,7 +229,7 @@
    "link_fieldname": "prescripteur"
   }
  ],
- "modified": "2024-03-02 17:11:37.742672",
+ "modified": "2024-03-02 17:17:07.389781",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Prescripteurs",
