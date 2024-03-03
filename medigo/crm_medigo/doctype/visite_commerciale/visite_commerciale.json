@@ -57,7 +57,8 @@
    "fieldtype": "Date",
    "in_standard_filter": 1,
    "label": "Date Pr\u00e9vue",
-   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")"
+   "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
+   "reqd": 1
   },
   {
    "fieldname": "client",
@@ -66,6 +67,7 @@
    "label": "Client",
    "options": "Customer",
    "read_only_depends_on": "eval:(doc.workflow_state!=\"Programm\u00e9e\")",
+   "reqd": 1,
    "search_index": 1
   },
   {
@@ -355,7 +357,7 @@
    "link_fieldname": "vci"
   }
  ],
- "modified": "2024-02-23 15:37:22.502977",
+ "modified": "2024-03-03 16:16:22.254439",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale",
