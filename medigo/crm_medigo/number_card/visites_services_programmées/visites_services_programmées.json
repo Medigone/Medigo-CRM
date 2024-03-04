@@ -12,14 +12,14 @@
  "is_public": 1,
  "is_standard": 1,
  "label": "Visites Services Programm\u00e9es",
- "modified": "2024-03-03 12:03:52.701204",
+ "modified": "2024-03-03 16:57:40.266043",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Services Programm\u00e9es",
  "owner": "Administrator",
  "parent_document_type": "",
  "report_function": "Sum",
- "show_percentage_stats": 1,
+ "show_percentage_stats": 0,
  "stats_time_interval": "Daily",
  "type": "Document Type"
 }

@@ -64,7 +64,6 @@
    "reqd": 1
   },
   {
-   "default": "+213-",
    "fieldname": "telephone",
    "fieldtype": "Phone",
    "label": "T\u00e9l\u00e9phone"
@@ -185,7 +184,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-02-24 15:17:47.576199",
+ "modified": "2024-03-04 10:03:04.039283",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Gestion Des Utilisateurs",
