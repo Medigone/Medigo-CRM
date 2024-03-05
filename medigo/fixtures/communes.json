@@ -40,16 +40,6 @@
   "zone": "Ouest"
  },
  {
-  "commune": "TIT",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:21.449128",
-  "name": "TIT",
-  "nom_complet_commune": "TIT - ADRAR",
-  "wilaya": "ADRAR",
-  "zone": "Ouest"
- },
- {
   "commune": "KSAR KADDOUR",
   "docstatus": 0,
   "doctype": "Communes",
@@ -260,26 +250,6 @@
   "zone": "Ouest"
  },
  {
-  "commune": "CHLEF",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:21.212507",
-  "name": "CHLEF",
-  "nom_complet_commune": "CHLEF - CHLEF",
-  "wilaya": "CHLEF",
-  "zone": "Ouest"
- },
- {
-  "commune": "TENES",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:21.197243",
-  "name": "TENES",
-  "nom_complet_commune": "TENES - CHLEF",
-  "wilaya": "CHLEF",
-  "zone": "Ouest"
- },
- {
   "commune": "BENAIRIA",
   "docstatus": 0,
   "doctype": "Communes",
@@ -346,16 +316,6 @@
   "modified": "2023-12-05 12:13:21.123167",
   "name": "HARCHOUN",
   "nom_complet_commune": "HARCHOUN - CHLEF",
-  "wilaya": "CHLEF",
-  "zone": "Ouest"
- },
- {
-  "commune": "OULED FARES",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:21.111925",
-  "name": "OULED FARES",
-  "nom_complet_commune": "OULED FARES - CHLEF",
   "wilaya": "CHLEF",
   "zone": "Ouest"
  },
@@ -460,16 +420,6 @@
   "zone": "Ouest"
  },
  {
-  "commune": "OUED SLY",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:21.005611",
-  "name": "OUED SLY",
-  "nom_complet_commune": "OUED SLY - CHLEF",
-  "wilaya": "CHLEF",
-  "zone": "Ouest"
- },
- {
   "commune": "ABOU EL HASSAN",
   "docstatus": 0,
   "doctype": "Communes",
@@ -486,16 +436,6 @@
   "modified": "2023-12-05 12:13:20.986019",
   "name": "EL MARSA -02",
   "nom_complet_commune": "EL MARSA -02 - CHLEF",
-  "wilaya": "CHLEF",
-  "zone": "Ouest"
- },
- {
-  "commune": "CHETTIA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:20.977034",
-  "name": "CHETTIA",
-  "nom_complet_commune": "CHETTIA - CHLEF",
   "wilaya": "CHLEF",
   "zone": "Ouest"
  },
@@ -616,16 +556,6 @@
   "modified": "2023-12-05 12:13:20.856216",
   "name": "LAGHOUAT",
   "nom_complet_commune": "LAGHOUAT - LAGHOUAT",
-  "wilaya": "LAGHOUAT",
-  "zone": "Centre 1"
- },
- {
-  "commune": "KSAR EL HIRANE",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:20.846151",
-  "name": "KSAR EL HIRANE",
-  "nom_complet_commune": "KSAR EL HIRANE - LAGHOUAT",
   "wilaya": "LAGHOUAT",
   "zone": "Centre 1"
  },
@@ -866,16 +796,6 @@
   "modified": "2023-12-05 12:13:20.655917",
   "name": "AIN BEIDA",
   "nom_complet_commune": "AIN BEIDA - OUM EL BOUAGUI",
-  "wilaya": "OUM EL BOUAGUI",
-  "zone": "Est"
- },
- {
-  "commune": "AIN M'LILA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:20.648524",
-  "name": "AIN M'LILA",
-  "nom_complet_commune": "AIN M'LILA - OUM EL BOUAGUI",
   "wilaya": "OUM EL BOUAGUI",
   "zone": "Est"
  },
@@ -1750,16 +1670,6 @@
   "zone": "Est"
  },
  {
-  "commune": "BEJAIA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:19.670966",
-  "name": "BEJAIA",
-  "nom_complet_commune": "BEJAIA - BEJAIA",
-  "wilaya": "BEJAIA",
-  "zone": "Centre 2"
- },
- {
   "commune": "AMIZOUR",
   "docstatus": 0,
   "doctype": "Communes",
@@ -2140,16 +2050,6 @@
   "zone": "Centre 2"
  },
  {
-  "commune": "EL KSEUR",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:19.318915",
-  "name": "EL KSEUR",
-  "nom_complet_commune": "EL KSEUR - BEJAIA",
-  "wilaya": "BEJAIA",
-  "zone": "Centre 2"
- },
- {
   "commune": "MELBOU",
   "docstatus": 0,
   "doctype": "Communes",
@@ -2268,16 +2168,6 @@
   "nom_complet_commune": "BOUDJELLIL - BEJAIA",
   "wilaya": "BEJAIA",
   "zone": "Centre 2"
- },
- {
-  "commune": "BISKRA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:19.124917",
-  "name": "BISKRA",
-  "nom_complet_commune": "BISKRA - BISKRA",
-  "wilaya": "BISKRA",
-  "zone": "Est"
  },
  {
   "commune": "OUMACHE",
@@ -2760,16 +2650,6 @@
   "zone": "Ouest"
  },
  {
-  "commune": "ABADLA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:18.577670",
-  "name": "ABADLA",
-  "nom_complet_commune": "ABADLA - BECHAR",
-  "wilaya": "BECHAR",
-  "zone": "Ouest"
- },
- {
   "commune": "KERZAZ",
   "docstatus": 0,
   "doctype": "Communes",
@@ -2846,16 +2726,6 @@
   "modified": "2023-12-05 12:13:18.498652",
   "name": "OUED EL ALLEUG",
   "nom_complet_commune": "OUED EL ALLEUG - BLIDA",
-  "wilaya": "BLIDA",
-  "zone": "Centre 1"
- },
- {
-  "commune": "OULED YAICH",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:18.491185",
-  "name": "OULED YAICH",
-  "nom_complet_commune": "OULED YAICH - BLIDA",
   "wilaya": "BLIDA",
   "zone": "Centre 1"
  },
@@ -2960,16 +2830,6 @@
   "zone": "Centre 1"
  },
  {
-  "commune": "BOUFARIK",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:18.397598",
-  "name": "BOUFARIK",
-  "nom_complet_commune": "BOUFARIK - BLIDA",
-  "wilaya": "BLIDA",
-  "zone": "Centre 1"
- },
- {
   "commune": "LARBAA - 09",
   "docstatus": 0,
   "doctype": "Communes",
@@ -3026,16 +2886,6 @@
   "modified": "2023-12-05 12:13:18.350250",
   "name": "BOUGARA - 09",
   "nom_complet_commune": "BOUGARA - 09 - BLIDA",
-  "wilaya": "BLIDA",
-  "zone": "Centre 1"
- },
- {
-  "commune": "GUERROUAOU",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:18.344006",
-  "name": "GUERROUAOU",
-  "nom_complet_commune": "GUERROUAOU - BLIDA",
   "wilaya": "BLIDA",
   "zone": "Centre 1"
  },
@@ -3890,16 +3740,6 @@
   "zone": "Est"
  },
  {
-  "commune": "TLEMCEN",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:17.423748",
-  "name": "TLEMCEN",
-  "nom_complet_commune": "TLEMCEN - TLEMCEN",
-  "wilaya": "TLEMCEN",
-  "zone": "Ouest"
- },
- {
   "commune": "BENI MEstER",
   "docstatus": 0,
   "doctype": "Communes",
@@ -4006,16 +3846,6 @@
   "modified": "2023-12-05 12:13:17.332355",
   "name": "AIN FEZZA",
   "nom_complet_commune": "AIN FEZZA - TLEMCEN",
-  "wilaya": "TLEMCEN",
-  "zone": "Ouest"
- },
- {
-  "commune": "OULED MIMOUN",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:17.325192",
-  "name": "OULED MIMOUN",
-  "nom_complet_commune": "OULED MIMOUN - TLEMCEN",
   "wilaya": "TLEMCEN",
   "zone": "Ouest"
  },
@@ -4417,16 +4247,6 @@
   "name": "AIN KEBIRA",
   "nom_complet_commune": "AIN KEBIRA - TLEMCEN",
   "wilaya": "TLEMCEN",
-  "zone": "Ouest"
- },
- {
-  "commune": "TIARET",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:17.012321",
-  "name": "TIARET",
-  "nom_complet_commune": "TIARET - TIARET",
-  "wilaya": "TIARET",
   "zone": "Ouest"
  },
  {
@@ -4838,16 +4658,6 @@
   "nom_complet_commune": "TIDDA - TIARET",
   "wilaya": "TIARET",
   "zone": "Ouest"
- },
- {
-  "commune": "TIZI-OUZOU",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:16.497848",
-  "name": "TIZI-OUZOU",
-  "nom_complet_commune": "TIZI-OUZOU - TIZI OUZOU",
-  "wilaya": "TIZI OUZOU",
-  "zone": "Centre 2"
  },
  {
   "commune": "AIN-EL-HAMMAM",
@@ -5300,16 +5110,6 @@
   "zone": "Centre 2"
  },
  {
-  "commune": "DRAA-BEN-KHEDDA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:16.089594",
-  "name": "DRAA-BEN-KHEDDA",
-  "nom_complet_commune": "DRAA-BEN-KHEDDA - TIZI OUZOU",
-  "wilaya": "TIZI OUZOU",
-  "zone": "Centre 2"
- },
- {
   "commune": "OUACIF",
   "docstatus": 0,
   "doctype": "Communes",
@@ -5590,16 +5390,6 @@
   "zone": "Centre 2"
  },
  {
-  "commune": "EL BIAR",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:15.864259",
-  "name": "EL BIAR",
-  "nom_complet_commune": "EL BIAR - ALGER",
-  "wilaya": "ALGER",
-  "zone": "Centre 2"
- },
- {
   "commune": "BOUZAREAH",
   "docstatus": 0,
   "doctype": "Communes",
@@ -5626,16 +5416,6 @@
   "modified": "2023-12-05 12:13:15.836587",
   "name": "EL HARRACH",
   "nom_complet_commune": "EL HARRACH - ALGER",
-  "wilaya": "ALGER",
-  "zone": "Centre 2"
- },
- {
-  "commune": "BARAKI",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:15.829359",
-  "name": "BARAKI",
-  "nom_complet_commune": "BARAKI - ALGER",
   "wilaya": "ALGER",
   "zone": "Centre 2"
  },
@@ -5696,26 +5476,6 @@
   "modified": "2023-12-05 12:13:15.780374",
   "name": "DAR EL BEIDA",
   "nom_complet_commune": "DAR EL BEIDA - ALGER",
-  "wilaya": "ALGER",
-  "zone": "Centre 2"
- },
- {
-  "commune": "BAB EZZOUAR",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:15.770377",
-  "name": "BAB EZZOUAR",
-  "nom_complet_commune": "BAB EZZOUAR - ALGER",
-  "wilaya": "ALGER",
-  "zone": "Centre 2"
- },
- {
-  "commune": "BEN AKNOUN",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:15.762641",
-  "name": "BEN AKNOUN",
-  "nom_complet_commune": "BEN AKNOUN - ALGER",
   "wilaya": "ALGER",
   "zone": "Centre 2"
  },
@@ -5830,16 +5590,6 @@
   "zone": "Centre 2"
  },
  {
-  "commune": "LES EUCALYPTUS",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:15.576769",
-  "name": "LES EUCALYPTUS",
-  "nom_complet_commune": "LES EUCALYPTUS - ALGER",
-  "wilaya": "ALGER",
-  "zone": "Centre 2"
- },
- {
   "commune": "TESSALA EL MERDJA",
   "docstatus": 0,
   "doctype": "Communes",
@@ -5900,32 +5650,12 @@
   "zone": "Centre 2"
  },
  {
-  "commune": "REGHAIA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:15.477448",
-  "name": "REGHAIA",
-  "nom_complet_commune": "REGHAIA - ALGER",
-  "wilaya": "ALGER",
-  "zone": "Centre 2"
- },
- {
   "commune": "AIN TAYA",
   "docstatus": 0,
   "doctype": "Communes",
   "modified": "2023-12-05 12:13:15.464730",
   "name": "AIN TAYA",
   "nom_complet_commune": "AIN TAYA - ALGER",
-  "wilaya": "ALGER",
-  "zone": "Centre 2"
- },
- {
-  "commune": "BORDJ EL BAHRI",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:15.452174",
-  "name": "BORDJ EL BAHRI",
-  "nom_complet_commune": "BORDJ EL BAHRI - ALGER",
   "wilaya": "ALGER",
   "zone": "Centre 2"
  },
@@ -5976,26 +5706,6 @@
   "modified": "2023-12-05 12:13:15.381274",
   "name": "BABA HESEN",
   "nom_complet_commune": "BABA HESEN - ALGER",
-  "wilaya": "ALGER",
-  "zone": "Centre 2"
- },
- {
-  "commune": "DOUIRA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:15.371285",
-  "name": "DOUIRA",
-  "nom_complet_commune": "DOUIRA - ALGER",
-  "wilaya": "ALGER",
-  "zone": "Centre 2"
- },
- {
-  "commune": "DRARIA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:15.362011",
-  "name": "DRARIA",
-  "nom_complet_commune": "DRARIA - ALGER",
   "wilaya": "ALGER",
   "zone": "Centre 2"
  },
@@ -6710,16 +6420,6 @@
   "zone": "Est"
  },
  {
-  "commune": "SETIF",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:14.715703",
-  "name": "SETIF",
-  "nom_complet_commune": "SETIF - SETIF",
-  "wilaya": "SETIF",
-  "zone": "Est"
- },
- {
   "commune": "AIN EL KEBIRA",
   "docstatus": 0,
   "doctype": "Communes",
@@ -6896,16 +6596,6 @@
   "modified": "2023-12-05 12:13:14.561121",
   "name": "BOUSSELAM",
   "nom_complet_commune": "BOUSSELAM - SETIF",
-  "wilaya": "SETIF",
-  "zone": "Est"
- },
- {
-  "commune": "EL EULMA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:14.547638",
-  "name": "EL EULMA",
-  "nom_complet_commune": "EL EULMA - SETIF",
   "wilaya": "SETIF",
   "zone": "Est"
  },
@@ -7308,16 +6998,6 @@
   "nom_complet_commune": "TELLA - SETIF",
   "wilaya": "SETIF",
   "zone": "Est"
- },
- {
-  "commune": "SAIDA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:14.093055",
-  "name": "SAIDA",
-  "nom_complet_commune": "SAIDA - SAIDA",
-  "wilaya": "SAIDA",
-  "zone": "Ouest"
  },
  {
   "commune": "DOUI THABET",
@@ -8370,16 +8050,6 @@
   "zone": "Ouest"
  },
  {
-  "commune": "ANNABA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:13.059614",
-  "name": "ANNABA",
-  "nom_complet_commune": "ANNABA - ANNABA",
-  "wilaya": "ANNABA",
-  "zone": "Est"
- },
- {
   "commune": "BERRAHEL",
   "docstatus": 0,
   "doctype": "Communes",
@@ -8830,16 +8500,6 @@
   "zone": "Est"
  },
  {
-  "commune": "CONSTANTINE",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:12.618041",
-  "name": "CONSTANTINE",
-  "nom_complet_commune": "CONSTANTINE - CONSTANTINE",
-  "wilaya": "CONSTANTINE",
-  "zone": "Est"
- },
- {
   "commune": "HAMMA BOUZIANE",
   "docstatus": 0,
   "doctype": "Communes",
@@ -8890,16 +8550,6 @@
   "zone": "Est"
  },
  {
-  "commune": "AIN ABID",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:12.565071",
-  "name": "AIN ABID",
-  "nom_complet_commune": "AIN ABID - CONSTANTINE",
-  "wilaya": "CONSTANTINE",
-  "zone": "Est"
- },
- {
   "commune": "BENI HAMIDENE",
   "docstatus": 0,
   "doctype": "Communes",
@@ -8916,16 +8566,6 @@
   "modified": "2023-12-05 12:13:12.548456",
   "name": "OULED RAHMOUNI",
   "nom_complet_commune": "OULED RAHMOUNI - CONSTANTINE",
-  "wilaya": "CONSTANTINE",
-  "zone": "Est"
- },
- {
-  "commune": "AIN SMARA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:12.541663",
-  "name": "AIN SMARA",
-  "nom_complet_commune": "AIN SMARA - CONSTANTINE",
   "wilaya": "CONSTANTINE",
   "zone": "Est"
  },
@@ -8948,16 +8588,6 @@
   "nom_complet_commune": "IBN ZIAD - CONSTANTINE",
   "wilaya": "CONSTANTINE",
   "zone": "Est"
- },
- {
-  "commune": "MEDEA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:12.517032",
-  "name": "MEDEA",
-  "nom_complet_commune": "MEDEA - MEDEA",
-  "wilaya": "MEDEA",
-  "zone": "Centre 1"
  },
  {
   "commune": "OUZERA",
@@ -9400,16 +9030,6 @@
   "zone": "Centre 1"
  },
  {
-  "commune": "BENI SLIMANE",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:12.103640",
-  "name": "BENI SLIMANE",
-  "nom_complet_commune": "BENI SLIMANE - MEDEA",
-  "wilaya": "MEDEA",
-  "zone": "Centre 1"
- },
- {
   "commune": "BERROUAGHIA",
   "docstatus": 0,
   "doctype": "Communes",
@@ -9588,16 +9208,6 @@
   "nom_complet_commune": "SANEG - MEDEA",
   "wilaya": "MEDEA",
   "zone": "Centre 1"
- },
- {
-  "commune": "MOSTAGANEM",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:11.866184",
-  "name": "MOSTAGANEM",
-  "nom_complet_commune": "MOSTAGANEM - MOSTAGANEM",
-  "wilaya": "MOSTAGANEM",
-  "zone": "Ouest"
  },
  {
   "commune": "SAYADA",
@@ -10010,26 +9620,6 @@
   "zone": "Est"
  },
  {
-  "commune": "MAGRA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:11.433773",
-  "name": "MAGRA",
-  "nom_complet_commune": "MAGRA - M'SILA",
-  "wilaya": "M'SILA",
-  "zone": "Est"
- },
- {
-  "commune": "BERHOUM",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:11.426347",
-  "name": "BERHOUM",
-  "nom_complet_commune": "BERHOUM - M'SILA",
-  "wilaya": "M'SILA",
-  "zone": "Est"
- },
- {
   "commune": "AIN KHADRA",
   "docstatus": 0,
   "doctype": "Communes",
@@ -10378,16 +9968,6 @@
   "nom_complet_commune": "DJEBEL MESSAAD - M'SILA",
   "wilaya": "M'SILA",
   "zone": "Est"
- },
- {
-  "commune": "MASCARA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:11.122611",
-  "name": "MASCARA",
-  "nom_complet_commune": "MASCARA - MASCARA",
-  "wilaya": "MASCARA",
-  "zone": "Ouest"
  },
  {
   "commune": "BOUHANIFIA",
@@ -10970,16 +10550,6 @@
   "zone": "Centre 2"
  },
  {
-  "commune": "TOUGGOURT",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:10.323389",
-  "name": "TOUGGOURT",
-  "nom_complet_commune": "TOUGGOURT - OUARGLA",
-  "wilaya": "OUARGLA",
-  "zone": "Centre 2"
- },
- {
   "commune": "EL-HADJIRA",
   "docstatus": 0,
   "doctype": "Communes",
@@ -11070,32 +10640,12 @@
   "zone": "Ouest"
  },
  {
-  "commune": "BIR EL DJIR",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:10.181781",
-  "name": "BIR EL DJIR",
-  "nom_complet_commune": "BIR EL DJIR - ORAN",
-  "wilaya": "ORAN",
-  "zone": "Ouest"
- },
- {
   "commune": "HASSI BOUNIF",
   "docstatus": 0,
   "doctype": "Communes",
   "modified": "2023-12-05 12:13:10.147983",
   "name": "HASSI BOUNIF",
   "nom_complet_commune": "HASSI BOUNIF - ORAN",
-  "wilaya": "ORAN",
-  "zone": "Ouest"
- },
- {
-  "commune": "ES SENIA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:10.097798",
-  "name": "ES SENIA",
-  "nom_complet_commune": "ES SENIA - ORAN",
   "wilaya": "ORAN",
   "zone": "Ouest"
  },
@@ -11240,16 +10790,6 @@
   "zone": "Ouest"
  },
  {
-  "commune": "BEN FREHA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:09.989465",
-  "name": "BEN FREHA",
-  "nom_complet_commune": "BEN FREHA - ORAN",
-  "wilaya": "ORAN",
-  "zone": "Ouest"
- },
- {
   "commune": "HASSI MEFSOUKH",
   "docstatus": 0,
   "doctype": "Communes",
@@ -11276,16 +10816,6 @@
   "modified": "2023-12-05 12:13:09.968101",
   "name": "MESSERGHIN",
   "nom_complet_commune": "MESSERGHIN - ORAN",
-  "wilaya": "ORAN",
-  "zone": "Ouest"
- },
- {
-  "commune": "BOUTLELIS",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:09.961145",
-  "name": "BOUTLELIS",
-  "nom_complet_commune": "BOUTLELIS - ORAN",
   "wilaya": "ORAN",
   "zone": "Ouest"
  },
@@ -11587,16 +11117,6 @@
   "name": "IN AMENAS",
   "nom_complet_commune": "IN AMENAS - ILLIZI",
   "wilaya": "ILLIZI",
-  "zone": "Est"
- },
- {
-  "commune": "BORDJ BOU ARRERIDJ",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:09.631019",
-  "name": "BORDJ BOU ARRERIDJ",
-  "nom_complet_commune": "BORDJ BOU ARRERIDJ - BORDJ BOU ARRERIDJ",
-  "wilaya": "BORDJ BOU ARRERIDJ",
   "zone": "Est"
  },
  {
@@ -11930,16 +11450,6 @@
   "zone": "Est"
  },
  {
-  "commune": "BOUMERDES",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:09.244936",
-  "name": "BOUMERDES",
-  "nom_complet_commune": "BOUMERDES - BOUMERDES",
-  "wilaya": "BOUMERDES",
-  "zone": "Centre 2"
- },
- {
   "commune": "BOUDOUAOU",
   "docstatus": 0,
   "doctype": "Communes",
@@ -11956,16 +11466,6 @@
   "modified": "2023-12-05 12:13:09.227845",
   "name": "AFIR",
   "nom_complet_commune": "AFIR - BOUMERDES",
-  "wilaya": "BOUMERDES",
-  "zone": "Centre 2"
- },
- {
-  "commune": "BORDJ MENAIEL",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:09.219192",
-  "name": "BORDJ MENAIEL",
-  "nom_complet_commune": "BORDJ MENAIEL - BOUMERDES",
   "wilaya": "BOUMERDES",
   "zone": "Centre 2"
  },
@@ -13240,16 +12740,6 @@
   "zone": "Est"
  },
  {
-  "commune": "SOUK AHRAS",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:08.050031",
-  "name": "SOUK AHRAS",
-  "nom_complet_commune": "SOUK AHRAS - SOUK AHRAS",
-  "wilaya": "SOUK AHRAS",
-  "zone": "Est"
- },
- {
   "commune": "SEDRATA",
   "docstatus": 0,
   "doctype": "Communes",
@@ -13500,16 +12990,6 @@
   "zone": "Est"
  },
  {
-  "commune": "TIPAZA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:07.842206",
-  "name": "TIPAZA",
-  "nom_complet_commune": "TIPAZA - TIPAZA",
-  "wilaya": "TIPAZA",
-  "zone": "Centre 1"
- },
- {
   "commune": "MENACEUR",
   "docstatus": 0,
   "doctype": "Communes",
@@ -13660,16 +13140,6 @@
   "zone": "Centre 1"
  },
  {
-  "commune": "FOUKA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:07.708106",
-  "name": "FOUKA",
-  "nom_complet_commune": "FOUKA - TIPAZA",
-  "wilaya": "TIPAZA",
-  "zone": "Centre 1"
- },
- {
   "commune": "BOU ISMAIL",
   "docstatus": 0,
   "doctype": "Communes",
@@ -13786,16 +13256,6 @@
   "modified": "2023-12-05 12:13:07.621810",
   "name": "MILA",
   "nom_complet_commune": "MILA - MILA",
-  "wilaya": "MILA",
-  "zone": "Est"
- },
- {
-  "commune": "FERDJIOUA",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:07.613441",
-  "name": "FERDJIOUA",
-  "nom_complet_commune": "FERDJIOUA - MILA",
   "wilaya": "MILA",
   "zone": "Est"
  },
@@ -14066,16 +13526,6 @@
   "modified": "2023-12-05 12:13:07.369231",
   "name": "ELAYADI BARBES",
   "nom_complet_commune": "ELAYADI BARBES - MILA",
-  "wilaya": "MILA",
-  "zone": "Est"
- },
- {
-  "commune": "AIN BEIDA HARRICHE",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:07.357766",
-  "name": "AIN BEIDA HARRICHE",
-  "nom_complet_commune": "AIN BEIDA HARRICHE - MILA",
   "wilaya": "MILA",
   "zone": "Est"
  },
@@ -14577,16 +14027,6 @@
   "name": "EL BIOD",
   "nom_complet_commune": "EL BIOD - NAAMA",
   "wilaya": "NAAMA",
-  "zone": "Ouest"
- },
- {
-  "commune": "AIN TEMOUCHENT",
-  "docstatus": 0,
-  "doctype": "Communes",
-  "modified": "2023-12-05 12:13:06.854897",
-  "name": "AIN TEMOUCHENT",
-  "nom_complet_commune": "AIN TEMOUCHENT - AIN TEMOUCHENT",
-  "wilaya": "AIN TEMOUCHENT",
   "zone": "Ouest"
  },
  {
@@ -15540,6 +14980,176 @@
   "zone": "Ouest"
  },
  {
+  "commune": "OULED FARES",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:21.111925",
+  "name": "OULED FARES",
+  "nom_complet_commune": "OULED FARES - CHLEF",
+  "wilaya": "CHLEF",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "OUED SLY",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:21.005611",
+  "name": "OUED SLY",
+  "nom_complet_commune": "OUED SLY - CHLEF",
+  "wilaya": "CHLEF",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "KSAR EL HIRANE",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:20.846151",
+  "name": "KSAR EL HIRANE",
+  "nom_complet_commune": "KSAR EL HIRANE - LAGHOUAT",
+  "wilaya": "LAGHOUAT",
+  "zone": "Centre 1"
+ },
+ {
+  "commune": "EL KSEUR",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:19.318915",
+  "name": "EL KSEUR",
+  "nom_complet_commune": "EL KSEUR - BEJAIA",
+  "wilaya": "BEJAIA",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "BARAKI",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:15.829359",
+  "name": "BARAKI",
+  "nom_complet_commune": "BARAKI - ALGER",
+  "wilaya": "ALGER",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "BAB EZZOUAR",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:15.770377",
+  "name": "BAB EZZOUAR",
+  "nom_complet_commune": "BAB EZZOUAR - ALGER",
+  "wilaya": "ALGER",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "BORDJ EL BAHRI",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:15.452174",
+  "name": "BORDJ EL BAHRI",
+  "nom_complet_commune": "BORDJ EL BAHRI - ALGER",
+  "wilaya": "ALGER",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "DOUIRA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:15.371285",
+  "name": "DOUIRA",
+  "nom_complet_commune": "DOUIRA - ALGER",
+  "wilaya": "ALGER",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "EL EULMA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:14.547638",
+  "name": "EL EULMA",
+  "nom_complet_commune": "EL EULMA - SETIF",
+  "wilaya": "SETIF",
+  "zone": "Est"
+ },
+ {
+  "commune": "AIN ABID",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:12.565071",
+  "name": "AIN ABID",
+  "nom_complet_commune": "AIN ABID - CONSTANTINE",
+  "wilaya": "CONSTANTINE",
+  "zone": "Est"
+ },
+ {
+  "commune": "MEDEA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:12.517032",
+  "name": "MEDEA",
+  "nom_complet_commune": "MEDEA - MEDEA",
+  "wilaya": "MEDEA",
+  "zone": "Centre 1"
+ },
+ {
+  "commune": "MAGRA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:11.433773",
+  "name": "MAGRA",
+  "nom_complet_commune": "MAGRA - M'SILA",
+  "wilaya": "M'SILA",
+  "zone": "Est"
+ },
+ {
+  "commune": "BERHOUM",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:11.426347",
+  "name": "BERHOUM",
+  "nom_complet_commune": "BERHOUM - M'SILA",
+  "wilaya": "M'SILA",
+  "zone": "Est"
+ },
+ {
+  "commune": "TOUGGOURT",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:10.323389",
+  "name": "TOUGGOURT",
+  "nom_complet_commune": "TOUGGOURT - OUARGLA",
+  "wilaya": "OUARGLA",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "BOUMERDES",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:09.244936",
+  "name": "BOUMERDES",
+  "nom_complet_commune": "BOUMERDES - BOUMERDES",
+  "wilaya": "BOUMERDES",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "BORDJ MENAIEL",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:09.219192",
+  "name": "BORDJ MENAIEL",
+  "nom_complet_commune": "BORDJ MENAIEL - BOUMERDES",
+  "wilaya": "BOUMERDES",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "AIN TEMOUCHENT",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:06.854897",
+  "name": "AIN TEMOUCHENT",
+  "nom_complet_commune": "AIN TEMOUCHENT - AIN TEMOUCHENT",
+  "wilaya": "AIN TEMOUCHENT",
+  "zone": "Ouest"
+ },
+ {
   "commune": "ALGER CENTRE",
   "docstatus": 0,
   "doctype": "Communes",
@@ -15550,13 +15160,313 @@
   "zone": "Centre 2"
  },
  {
-  "commune": "ORAN",
+  "commune": "CHETTIA",
   "docstatus": 0,
   "doctype": "Communes",
-  "modified": "2023-12-05 12:13:05.979964",
-  "name": "ORAN",
-  "nom_complet_commune": "ORAN - ORAN",
+  "modified": "2023-12-05 12:13:20.977034",
+  "name": "CHETTIA",
+  "nom_complet_commune": "CHETTIA - CHLEF",
+  "wilaya": "CHLEF",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "AIN M'LILA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:20.648524",
+  "name": "AIN M'LILA",
+  "nom_complet_commune": "AIN M'LILA - OUM EL BOUAGUI",
+  "wilaya": "OUM EL BOUAGUI",
+  "zone": "Est"
+ },
+ {
+  "commune": "BISKRA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:19.124917",
+  "name": "BISKRA",
+  "nom_complet_commune": "BISKRA - BISKRA",
+  "wilaya": "BISKRA",
+  "zone": "Est"
+ },
+ {
+  "commune": "GUERROUAOU",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:18.344006",
+  "name": "GUERROUAOU",
+  "nom_complet_commune": "GUERROUAOU - BLIDA",
+  "wilaya": "BLIDA",
+  "zone": "Centre 1"
+ },
+ {
+  "commune": "TIARET",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:17.012321",
+  "name": "TIARET",
+  "nom_complet_commune": "TIARET - TIARET",
+  "wilaya": "TIARET",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "TIZI-OUZOU",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:16.497848",
+  "name": "TIZI-OUZOU",
+  "nom_complet_commune": "TIZI-OUZOU - TIZI OUZOU",
+  "wilaya": "TIZI OUZOU",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "REGHAIA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:15.477448",
+  "name": "REGHAIA",
+  "nom_complet_commune": "REGHAIA - ALGER",
+  "wilaya": "ALGER",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "SAIDA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:14.093055",
+  "name": "SAIDA",
+  "nom_complet_commune": "SAIDA - SAIDA",
+  "wilaya": "SAIDA",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "AIN SMARA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:12.541663",
+  "name": "AIN SMARA",
+  "nom_complet_commune": "AIN SMARA - CONSTANTINE",
+  "wilaya": "CONSTANTINE",
+  "zone": "Est"
+ },
+ {
+  "commune": "MASCARA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:11.122611",
+  "name": "MASCARA",
+  "nom_complet_commune": "MASCARA - MASCARA",
+  "wilaya": "MASCARA",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "BOUTLELIS",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:09.961145",
+  "name": "BOUTLELIS",
+  "nom_complet_commune": "BOUTLELIS - ORAN",
   "wilaya": "ORAN",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "BORDJ BOU ARRERIDJ",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:09.631019",
+  "name": "BORDJ BOU ARRERIDJ",
+  "nom_complet_commune": "BORDJ BOU ARRERIDJ - BORDJ BOU ARRERIDJ",
+  "wilaya": "BORDJ BOU ARRERIDJ",
+  "zone": "Est"
+ },
+ {
+  "commune": "CHLEF",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:21.212507",
+  "name": "CHLEF",
+  "nom_complet_commune": "CHLEF - CHLEF",
+  "wilaya": "CHLEF",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "DRAA-BEN-KHEDDA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:16.089594",
+  "name": "DRAA-BEN-KHEDDA",
+  "nom_complet_commune": "DRAA-BEN-KHEDDA - TIZI OUZOU",
+  "wilaya": "TIZI OUZOU",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "BEN AKNOUN",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:15.762641",
+  "name": "BEN AKNOUN",
+  "nom_complet_commune": "BEN AKNOUN - ALGER",
+  "wilaya": "ALGER",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "BENI SLIMANE",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:12.103640",
+  "name": "BENI SLIMANE",
+  "nom_complet_commune": "BENI SLIMANE - MEDEA",
+  "wilaya": "MEDEA",
+  "zone": "Centre 1"
+ },
+ {
+  "commune": "BEN FREHA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:09.989465",
+  "name": "BEN FREHA",
+  "nom_complet_commune": "BEN FREHA - ORAN",
+  "wilaya": "ORAN",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "AIN BEIDA HARRICHE",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:07.357766",
+  "name": "AIN BEIDA HARRICHE",
+  "nom_complet_commune": "AIN BEIDA HARRICHE - MILA",
+  "wilaya": "MILA",
+  "zone": "Est"
+ },
+ {
+  "commune": "FOUKA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:07.708106",
+  "name": "FOUKA",
+  "nom_complet_commune": "FOUKA - TIPAZA",
+  "wilaya": "TIPAZA",
+  "zone": "Centre 1"
+ },
+ {
+  "commune": "FERDJIOUA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:07.613441",
+  "name": "FERDJIOUA",
+  "nom_complet_commune": "FERDJIOUA - MILA",
+  "wilaya": "MILA",
+  "zone": "Est"
+ },
+ {
+  "commune": "OULED MIMOUN",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:17.325192",
+  "name": "OULED MIMOUN",
+  "nom_complet_commune": "OULED MIMOUN - TLEMCEN",
+  "wilaya": "TLEMCEN",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "TIPAZA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:07.842206",
+  "name": "TIPAZA",
+  "nom_complet_commune": "TIPAZA - TIPAZA",
+  "wilaya": "TIPAZA",
+  "zone": "Centre 1"
+ },
+ {
+  "commune": "BOUFARIK",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:18.397598",
+  "name": "BOUFARIK",
+  "nom_complet_commune": "BOUFARIK - BLIDA",
+  "wilaya": "BLIDA",
+  "zone": "Centre 1"
+ },
+ {
+  "commune": "EL BIAR",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:15.864259",
+  "name": "EL BIAR",
+  "nom_complet_commune": "EL BIAR - ALGER",
+  "wilaya": "ALGER",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "DRARIA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:15.362011",
+  "name": "DRARIA",
+  "nom_complet_commune": "DRARIA - ALGER",
+  "wilaya": "ALGER",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "CONSTANTINE",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:12.618041",
+  "name": "CONSTANTINE",
+  "nom_complet_commune": "CONSTANTINE - CONSTANTINE",
+  "wilaya": "CONSTANTINE",
+  "zone": "Est"
+ },
+ {
+  "commune": "MOSTAGANEM",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:11.866184",
+  "name": "MOSTAGANEM",
+  "nom_complet_commune": "MOSTAGANEM - MOSTAGANEM",
+  "wilaya": "MOSTAGANEM",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "ES SENIA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:10.097798",
+  "name": "ES SENIA",
+  "nom_complet_commune": "ES SENIA - ORAN",
+  "wilaya": "ORAN",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "SETIF",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:14.715703",
+  "name": "SETIF",
+  "nom_complet_commune": "SETIF - SETIF",
+  "wilaya": "SETIF",
+  "zone": "Est"
+ },
+ {
+  "commune": "BIR EL DJIR",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:10.181781",
+  "name": "BIR EL DJIR",
+  "nom_complet_commune": "BIR EL DJIR - ORAN",
+  "wilaya": "ORAN",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "TIT",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:21.449128",
+  "name": "TIT",
+  "nom_complet_commune": "TIT - ADRAR",
+  "wilaya": "ADRAR",
   "zone": "Ouest"
  },
  {
@@ -15567,6 +15477,96 @@
   "name": "ADRAR",
   "nom_complet_commune": "ADRAR - ADRAR",
   "wilaya": "ADRAR",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "ANNABA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:13.059614",
+  "name": "ANNABA",
+  "nom_complet_commune": "ANNABA - ANNABA",
+  "wilaya": "ANNABA",
+  "zone": "Est"
+ },
+ {
+  "commune": "BEJAIA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:19.670966",
+  "name": "BEJAIA",
+  "nom_complet_commune": "BEJAIA - BEJAIA",
+  "wilaya": "BEJAIA",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "OULED YAICH",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:18.491185",
+  "name": "OULED YAICH",
+  "nom_complet_commune": "OULED YAICH - BLIDA",
+  "wilaya": "BLIDA",
+  "zone": "Centre 1"
+ },
+ {
+  "commune": "TLEMCEN",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:17.423748",
+  "name": "TLEMCEN",
+  "nom_complet_commune": "TLEMCEN - TLEMCEN",
+  "wilaya": "TLEMCEN",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "TENES",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:21.197243",
+  "name": "TENES",
+  "nom_complet_commune": "TENES - CHLEF",
+  "wilaya": "CHLEF",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "SOUK AHRAS",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:08.050031",
+  "name": "SOUK AHRAS",
+  "nom_complet_commune": "SOUK AHRAS - SOUK AHRAS",
+  "wilaya": "SOUK AHRAS",
+  "zone": "Est"
+ },
+ {
+  "commune": "LES EUCALYPTUS",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:15.576769",
+  "name": "LES EUCALYPTUS",
+  "nom_complet_commune": "LES EUCALYPTUS - ALGER",
+  "wilaya": "ALGER",
+  "zone": "Centre 2"
+ },
+ {
+  "commune": "ABADLA",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:18.577670",
+  "name": "ABADLA",
+  "nom_complet_commune": "ABADLA - BECHAR",
+  "wilaya": "BECHAR",
+  "zone": "Ouest"
+ },
+ {
+  "commune": "ORAN",
+  "docstatus": 0,
+  "doctype": "Communes",
+  "modified": "2023-12-05 12:13:05.979964",
+  "name": "ORAN",
+  "nom_complet_commune": "ORAN - ORAN",
+  "wilaya": "ORAN",
   "zone": "Ouest"
  }
 ]

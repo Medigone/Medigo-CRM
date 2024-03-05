@@ -23,34 +23,6 @@
  {
   "docstatus": 0,
   "doctype": "Titre Prescripteur",
-  "modified": "2023-10-24 18:46:15.512586",
-  "name": "MG",
-  "titre_prescripteur": "MG"
- },
- {
-  "docstatus": 0,
-  "doctype": "Titre Prescripteur",
-  "modified": "2023-10-24 18:46:15.524682",
-  "name": "PED",
-  "titre_prescripteur": "PED"
- },
- {
-  "docstatus": 0,
-  "doctype": "Titre Prescripteur",
-  "modified": "2023-10-24 18:46:15.545126",
-  "name": "MGP",
-  "titre_prescripteur": "MGP"
- },
- {
-  "docstatus": 0,
-  "doctype": "Titre Prescripteur",
-  "modified": "2023-10-24 18:46:15.556642",
-  "name": "PED RES",
-  "titre_prescripteur": "PED RES"
- },
- {
-  "docstatus": 0,
-  "doctype": "Titre Prescripteur",
   "modified": "2023-10-24 18:46:15.584258",
   "name": "PUER",
   "titre_prescripteur": "PUER"
@@ -121,13 +93,6 @@
  {
   "docstatus": 0,
   "doctype": "Titre Prescripteur",
-  "modified": "2023-10-24 18:46:15.740714",
-  "name": "COORDINATEUR",
-  "titre_prescripteur": "COORDINATEUR"
- },
- {
-  "docstatus": 0,
-  "doctype": "Titre Prescripteur",
   "modified": "2023-10-24 18:46:15.751472",
   "name": "DIRECTEUR",
   "titre_prescripteur": "DIRECTEUR"
@@ -156,9 +121,9 @@
  {
   "docstatus": 0,
   "doctype": "Titre Prescripteur",
-  "modified": "2023-10-24 18:46:15.695535",
-  "name": "PED MA",
-  "titre_prescripteur": "PED MA"
+  "modified": "2023-10-24 18:46:15.545126",
+  "name": "MGP",
+  "titre_prescripteur": "MGP"
  },
  {
   "docstatus": 0,
@@ -170,15 +135,50 @@
  {
   "docstatus": 0,
   "doctype": "Titre Prescripteur",
-  "modified": "2023-10-24 18:46:15.804773",
-  "name": "CHEF DE SERVICE PROF",
-  "titre_prescripteur": "CHEF DE SERVICE PROF"
+  "modified": "2023-10-24 18:46:15.653076",
+  "name": "CHIR",
+  "titre_prescripteur": "CHIR"
  },
  {
   "docstatus": 0,
   "doctype": "Titre Prescripteur",
-  "modified": "2023-10-24 18:46:15.653076",
-  "name": "CHIR",
-  "titre_prescripteur": "CHIR"
+  "modified": "2023-10-24 18:46:15.512586",
+  "name": "MG",
+  "titre_prescripteur": "MG"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.556642",
+  "name": "PED RES",
+  "titre_prescripteur": "PED RES"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.695535",
+  "name": "PED MA",
+  "titre_prescripteur": "PED MA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.740714",
+  "name": "COORDINATEUR",
+  "titre_prescripteur": "COORDINATEUR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.524682",
+  "name": "PED",
+  "titre_prescripteur": "PED"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Titre Prescripteur",
+  "modified": "2023-10-24 18:46:15.804773",
+  "name": "CHEF DE SERVICE PROF",
+  "titre_prescripteur": "CHEF DE SERVICE PROF"
  }
 ]

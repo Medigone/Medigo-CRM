@@ -103,10 +103,10 @@
   "doctype": "Client Script",
   "dt": "Visite Commerciale Duo",
   "enabled": 1,
-  "modified": "2024-02-21 17:25:45.512702",
+  "modified": "2024-03-04 10:53:31.082512",
   "module": "CRM Medigo",
   "name": "Filtre commercial",
-  "script": "frappe.ui.form.on('Visite Commerciale Duo', {\n    refresh: function(frm) {\n        frm.set_query(\"delegue\", function() {\n            return {\n                filters: {\n                    \"role_profile_name\": [\"in\", [\"Délégue Commercial\",\"Délégué Médicaux Commercial\"]]\n                }\n            };\n        });\n    }\n});\n\n\n",
+  "script": "frappe.ui.form.on('Visite Commerciale Duo', {\n    refresh: function(frm) {\n        frm.set_query(\"delegue\", function() {\n            return {\n                filters: {\n                    \"role_profile_name\": [\"in\", [\"Délégue Commercial\",\"Délégué Médico-Commercial\"]]\n                }\n            };\n        });\n    }\n});\n\n\n",
   "view": "Form"
  },
  {
@@ -701,6 +701,83 @@
   "module": "CRM Medigo",
   "name": "Remis VMM",
   "script": "frappe.ui.form.on('Visite Medicale Manager', {\n\trefresh(frm) {\n\t\t// your code here\n\t}\n})\nfrappe.ui.form.on('Remis', {\n    refresh(frm) {\n        // Ceci est appelé à chaque fois que le formulaire est chargé ou rafraîchi\n    },\n    // Écouteur pour les changements dans la table enfant \"liste_remis\"\n    liste_remis_add(frm, cdt, cdn) {\n        let d = locals[cdt][cdn];\n        // Mise à jour du champ \"client\" dans la ligne ajoutée avec la valeur du champ \"client\" du doctype parent\n        frappe.model.set_value(cdt, cdn, 'prescripteur', frm.doc.prescripteur);\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Visite Commerciale Manager",
+  "enabled": 1,
+  "modified": "2024-02-23 23:58:33.304670",
+  "module": "CRM Medigo",
+  "name": "Classement Produits VCM",
+  "script": "frappe.ui.form.on('Visite Commerciale Manager', {\n    validate(frm) {\n        // Validation pour l'unicité et la contrainte de non-nullité\n        let classements = [\n            frm.doc.classement_1, \n            frm.doc.classement_2, \n            frm.doc.classement_3, \n            frm.doc.classement_4\n        ].filter(Boolean); // Filtrer les valeurs non définies ou vides\n\n        if (classements.length !== new Set(classements).size) {\n            frappe.msgprint(__('Un même article ne peut être sélectionné plus d’une fois dans les champs de classement.'));\n            frappe.validated = false;\n        }\n\n        let rotations = [\n            {field: 'classement_1', rotation: frm.doc.rotation_c1},\n            {field: 'classement_2', rotation: frm.doc.rotation_c2},\n            {field: 'classement_3', rotation: frm.doc.rotation_c3},\n            {field: 'classement_4', rotation: frm.doc.rotation_c4}\n        ];\n\n        rotations.forEach((item, index) => {\n            if (frm.doc[item.field] && item.rotation === 0) {\n                frappe.msgprint(__(`Si un article est sélectionné dans ${item.field}, alors \"rotation_c${index + 1}\" ne doit pas être \"0\".`));\n                frappe.validated = false;\n            }\n        });\n\n        // Validation pour la comparaison séquentielle des rotations\n        for (let i = 0; i < rotations.length - 1; i++) {\n            if (rotations[i].rotation < rotations[i + 1].rotation) {\n                frappe.msgprint(__(`La rotation de \"${rotations[i + 1].field}\" ne peut pas être supérieure à celle de \"${rotations[i].field}\".`));\n                frappe.validated = false;\n                break; // Sortir de la boucle dès qu'une violation est trouvée\n            }\n        }\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Gestion Des Utilisateurs",
+  "enabled": 1,
+  "modified": "2024-02-24 14:57:43.722277",
+  "module": "CRM Medigo",
+  "name": "Demandeur",
+  "script": "frappe.ui.form.on('Gestion Des Utilisateurs', {\n    before_save(frm) {\n        if (!frm.doc.__islocal) return; // Exécuter seulement lors de la création d'un nouveau document\n        // Récupérer le nom complet de l'utilisateur actuellement connecté\n        frappe.call({\n            method: \"frappe.client.get_value\",\n            args: {\n                doctype: \"User\",\n                filters: {\"name\": frappe.session.user},\n                fieldname: [\"full_name\"]\n            },\n            callback: function(r) {\n                if (r.message) {\n                    // Définir la valeur du champ avec le nom complet de l'utilisateur\n                    frm.set_value('utilisateur', r.message.full_name);\n                }\n            }\n        });\n    }\n});\n\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Africa Pass JPIM Dakar 2024",
+  "enabled": 0,
+  "modified": "2024-02-28 14:48:31.162092",
+  "module": "CRM Medigo",
+  "name": "Total Points",
+  "script": "frappe.ui.form.on('Africa Pass JPIM Dakar 2024', {\n    validate: function(frm) {\n        // Calculer le total des points\n        let total_points = 0;\n        for (let i = 1; i <= 20; i++) {\n            let field_name = `p_q${i}`;\n            if (frm.doc[field_name]) {\n                total_points += parseInt(frm.doc[field_name], 10); // Utilisez toujours une base pour parseInt\n            }\n        }\n\n        // Mettre à jour le champ total_points avec la somme calculée\n        frm.set_value('total_points', total_points);\n\n        // Rafraîchir le champ pour refléter les changements dans l'interface utilisateur\n        frm.refresh_field('total_points');\n    },\n    on_submit: function(frm) {\n        // Actions à exécuter après la soumission du document\n        // Par exemple, afficher un message de confirmation\n        frappe.msgprint(__('Ce document a été soumis avec succès.'));\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Africa Pass JPIM Dakar 2024",
+  "enabled": 1,
+  "modified": "2024-02-29 21:03:55.944199",
+  "module": "CRM Medigo",
+  "name": "Q1",
+  "script": "frappe.ui.form.on('Africa Pass JPIM Dakar 2024', {\n    onload_post_render: function(frm) {\n        // Exécutez le calcul uniquement si le document est chargé après être enregistré et que le calcul n'a pas encore été effectué\n        if (!frm.is_new() && !frm.doc.calcul_effectue) {\n            let total_points = 0;\n            for (let i = 1; i <= 20; i++) {\n                let field_name = `p_q${i}`;\n                if (frm.doc[field_name]) {\n                    total_points += parseInt(frm.doc[field_name], 10);\n                }\n            }\n\n            // Mettre à jour le champ total_points avec la somme calculée\n            frm.set_value('total_points', total_points);\n\n            // Marquez le calcul comme effectué\n            frm.set_value('calcul_effectue', 1);\n\n            // Rafraîchir le champ pour montrer la valeur mise à jour\n            frm.refresh_field('total_points');\n\n            // Optionnel : sauvegardez le document pour enregistrer les modifications\n            frm.save();\n        }\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Africa Pass JPIM Dakar 2024",
+  "enabled": 0,
+  "modified": "2024-02-29 16:08:53.194774",
+  "module": "CRM Medigo",
+  "name": "Utilisateur Africa",
+  "script": "frappe.ui.form.on('Africa Pass JPIM Dakar 2024', {\n    before_save(frm) {\n        if (!frm.doc.__islocal) return; // Exécuter seulement lors de la création d'un nouveau document\n        // Récupérer le nom complet de l'utilisateur actuellement connecté\n        frappe.call({\n            method: \"frappe.client.get_value\",\n            args: {\n                doctype: \"User\",\n                filters: {\"name\": frappe.session.user},\n                fieldname: [\"full_name\"]\n            },\n            callback: function(r) {\n                if (r.message) {\n                    // Définir la valeur du champ avec le nom complet de l'utilisateur\n                    frm.set_value('utilisateur', r.message.utilisateur);\n                }\n            }\n        });\n    }\n});\n\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Web Form",
+  "enabled": 0,
+  "modified": "2024-02-29 15:49:15.859605",
+  "module": "CRM Medigo",
+  "name": "Test script client web form",
+  "script": "frappe.ready(function () {\n    var user_id = frappe.session.user;\n    frappe.call({\n        method: 'frappe.client.get',\n        args: {\n            doctype: 'User',\n            name: user_id\n        },\n        callback: function (data) {\n            if (data.message) {\n                var full_name = data.message.full_name;\n                frappe.web_form.set_value('utilisateur', full_name);\n            }\n        }\n    });\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Objectifs Commerciaux",
+  "enabled": 1,
+  "modified": "2024-03-04 10:54:02.559062",
+  "module": "CRM Medigo",
+  "name": "Filtre Utilisateurs",
+  "script": "frappe.ui.form.on('Objectifs Commerciaux', {\n    refresh: function(frm) {\n        frm.set_query(\"delegue\", function() {\n            return {\n                filters: {\n                    \"role_profile_name\": [\"in\", [\"Délégue Commercial\",\"Délégué Médico-Commercial\"]]\n                }\n            };\n        });\n    }\n});\n\n",
   "view": "Form"
  }
 ]

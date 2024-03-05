@@ -645,7 +645,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:14.095758",
+  "modified": "2024-03-01 19:35:19.759675",
   "module": "CRM",
   "name": "CRM",
   "number_cards": [],
@@ -667,7 +667,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 31.0,
+  "sequence_id": 32.0,
   "shortcuts": [
    {
     "color": "Blue",
@@ -1686,7 +1686,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-23 14:10:48.654317",
+  "modified": "2024-03-01 19:35:18.028384",
   "module": "Selling",
   "name": "Selling",
   "number_cards": [],
@@ -1708,7 +1708,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 23.0,
+  "sequence_id": 24.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -2583,7 +2583,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:13.073311",
+  "modified": "2024-03-01 19:35:18.338102",
   "module": "Buying",
   "name": "Buying",
   "number_cards": [],
@@ -2599,7 +2599,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 24.0,
+  "sequence_id": 25.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -3066,7 +3066,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:13.958348",
+  "modified": "2024-03-01 19:35:19.623632",
   "module": "Website",
   "name": "Website",
   "number_cards": [],
@@ -3088,7 +3088,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 30.0,
+  "sequence_id": 31.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -3475,7 +3475,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:14.279054",
+  "modified": "2024-03-01 19:35:19.895702",
   "module": "Automation",
   "name": "Tools",
   "number_cards": [],
@@ -3497,7 +3497,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 32.0,
+  "sequence_id": 33.0,
   "shortcuts": [],
   "title": "Tools"
  },
@@ -4404,7 +4404,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:14.866484",
+  "modified": "2024-03-01 19:35:20.305473",
   "module": "Integrations",
   "name": "Integrations",
   "number_cards": [],
@@ -4426,7 +4426,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 36.0,
+  "sequence_id": 37.0,
   "shortcuts": [],
   "title": "Integrations"
  },
@@ -6036,7 +6036,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:12.207956",
+  "modified": "2024-03-01 19:35:17.274358",
   "module": "Accounts",
   "name": "Accounting",
   "number_cards": [
@@ -6087,7 +6087,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 18.0,
+  "sequence_id": 19.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -7394,7 +7394,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:13.253094",
+  "modified": "2024-03-01 19:35:18.596504",
   "module": "Stock",
   "name": "Stock",
   "number_cards": [
@@ -7438,7 +7438,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 25.0,
+  "sequence_id": 26.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -7881,7 +7881,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:12.789422",
+  "modified": "2024-03-01 19:35:17.854569",
   "module": "Assets",
   "name": "Assets",
   "number_cards": [],
@@ -7890,7 +7890,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 22.0,
+  "sequence_id": 23.0,
   "shortcuts": [
    {
     "color": null,
@@ -8301,7 +8301,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:13.596922",
+  "modified": "2024-03-01 19:35:19.269310",
   "module": "Projects",
   "name": "Projects",
   "number_cards": [],
@@ -8310,7 +8310,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 27.0,
+  "sequence_id": 28.0,
   "shortcuts": [
    {
     "color": "Blue",
@@ -8633,7 +8633,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:13.853038",
+  "modified": "2024-03-01 19:35:19.519137",
   "module": "Support",
   "name": "Support",
   "number_cards": [],
@@ -8655,7 +8655,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 29.0,
+  "sequence_id": 30.0,
   "shortcuts": [
    {
     "color": "Yellow",
@@ -8930,7 +8930,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:13.732749",
+  "modified": "2024-03-01 19:35:19.402258",
   "module": "Quality Management",
   "name": "Quality",
   "number_cards": [],
@@ -8952,7 +8952,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 28.0,
+  "sequence_id": 29.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -9531,7 +9531,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:13.462841",
+  "modified": "2024-03-01 19:35:18.984983",
   "module": "Manufacturing",
   "name": "Manufacturing",
   "number_cards": [],
@@ -9547,7 +9547,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 26.0,
+  "sequence_id": 27.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -10062,7 +10062,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:14.950577",
+  "modified": "2024-03-01 19:35:20.381683",
   "module": "ERPNext Integrations",
   "name": "ERPNext Integrations",
   "number_cards": [],
@@ -10071,7 +10071,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 37.0,
+  "sequence_id": 38.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -10602,7 +10602,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:14.387194",
+  "modified": "2024-03-01 19:35:19.985491",
   "module": "Core",
   "name": "Build",
   "number_cards": [],
@@ -10624,7 +10624,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 33.0,
+  "sequence_id": 34.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -11411,7 +11411,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:14.599572",
+  "modified": "2024-03-01 19:35:20.103093",
   "module": "Setup",
   "name": "ERPNext Settings",
   "number_cards": [],
@@ -11433,7 +11433,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 34.0,
+  "sequence_id": 35.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -11836,7 +11836,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:11.133125",
+  "modified": "2024-03-01 19:35:16.440609",
   "module": "CRM Medigo",
   "name": "Configuration",
   "number_cards": [],
@@ -11896,7 +11896,7 @@
   "is_hidden": 0,
   "label": "Prescripteur",
   "links": [],
-  "modified": "2024-02-22 12:25:10.718431",
+  "modified": "2024-03-01 19:35:16.116235",
   "module": "CRM Medigo",
   "name": "Prescripteur",
   "number_cards": [
@@ -11991,7 +11991,7 @@
   "is_hidden": 0,
   "label": "Établissement",
   "links": [],
-  "modified": "2024-02-22 12:25:10.845843",
+  "modified": "2024-03-01 19:35:16.216651",
   "module": "CRM Medigo",
   "name": "Établissement",
   "number_cards": [
@@ -12107,7 +12107,7 @@
   "is_hidden": 0,
   "label": "Visite Individuelle",
   "links": [],
-  "modified": "2024-02-23 10:19:32.097952",
+  "modified": "2024-03-01 19:35:15.943892",
   "module": "CRM Medigo",
   "name": "Visite Individuelle",
   "number_cards": [
@@ -12230,7 +12230,7 @@
   "is_hidden": 0,
   "label": "Visite Service",
   "links": [],
-  "modified": "2024-02-23 10:16:41.309818",
+  "modified": "2024-03-01 19:35:16.038181",
   "module": "CRM Medigo",
   "name": "Visite Service",
   "number_cards": [
@@ -12332,7 +12332,7 @@
   "is_hidden": 0,
   "label": "Action",
   "links": [],
-  "modified": "2024-02-22 12:25:11.022427",
+  "modified": "2024-03-01 19:35:16.337385",
   "module": "CRM Medigo",
   "name": "Action",
   "number_cards": [
@@ -12704,7 +12704,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:12.423776",
+  "modified": "2024-03-01 19:35:17.508012",
   "module": "Accounts",
   "name": "Payables",
   "number_cards": [],
@@ -12713,7 +12713,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 19.0,
+  "sequence_id": 20.0,
   "shortcuts": [
    {
     "color": null,
@@ -13084,7 +13084,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:12.560794",
+  "modified": "2024-03-01 19:35:17.612413",
   "module": "Accounts",
   "name": "Receivables",
   "number_cards": [],
@@ -13093,7 +13093,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 20.0,
+  "sequence_id": 21.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -13576,7 +13576,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:12.665502",
+  "modified": "2024-03-01 19:35:17.728336",
   "module": "Accounts",
   "name": "Financial Reports",
   "number_cards": [],
@@ -13585,7 +13585,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 21.0,
+  "sequence_id": 22.0,
   "shortcuts": [],
   "title": "Financial Reports"
  },
@@ -13819,7 +13819,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-23 13:46:00.399216",
+  "modified": "2024-03-01 19:35:15.833153",
   "module": "CRM Medigo",
   "name": "Menu Médical",
   "number_cards": [
@@ -14107,7 +14107,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:11.334348",
+  "modified": "2024-03-01 19:35:16.510990",
   "module": null,
   "name": "Menu Commercial",
   "number_cards": [
@@ -14235,7 +14235,7 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"FqW--jGnGx\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Accueil\",\"col\":12}},{\"id\":\"-r8CO3nx9U\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total C.A\",\"col\":3}},{\"id\":\"juRATN1uUu\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Visites\",\"col\":3}},{\"id\":\"mXiCZM3toj\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Stats - Com\",\"col\":12}},{\"id\":\"tdXj8ct8gz\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nombre Commandes\",\"col\":3}},{\"id\":\"DczhT1UOiM\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Montant Commandes\",\"col\":3}},{\"id\":\"nKwaEiFlCQ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Panier Moyen\",\"col\":3}},{\"id\":\"w3KGdKZRuT\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Quantité Articles\",\"col\":3}},{\"id\":\"lSCny--3Kj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VCI - Programmées\",\"col\":3}},{\"id\":\"hEbwLehTUi\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VCI - Terminées\",\"col\":3}},{\"id\":\"7SWfoduxA1\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VCI - Validée\",\"col\":3}},{\"id\":\"JmV7GGhReM\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Stats - Med\",\"col\":12}},{\"id\":\"G8xj2zVY2r\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMI -programmées \",\"col\":3}},{\"id\":\"TOfQq_I7xb\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMI - Terminée\",\"col\":3}},{\"id\":\"YzreRWsU20\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMI - Validée\",\"col\":3}},{\"id\":\"FYiFDeriLz\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"44aw7b1NtE\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMS - Programmées\",\"col\":3}},{\"id\":\"BIYqGzpP5T\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMS - Terminée\",\"col\":3}},{\"id\":\"M0mr9kswBX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMS - Validée\",\"col\":3}}]",
+  "content": "[{\"id\":\"FqW--jGnGx\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Accueil\",\"col\":12}},{\"id\":\"-r8CO3nx9U\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total C.A\",\"col\":3}},{\"id\":\"juRATN1uUu\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Visites\",\"col\":3}},{\"id\":\"mXiCZM3toj\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Stats - Com\",\"col\":12}},{\"id\":\"tdXj8ct8gz\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nombre Commandes\",\"col\":3}},{\"id\":\"DczhT1UOiM\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Montant Commandes\",\"col\":3}},{\"id\":\"nKwaEiFlCQ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Panier Moyen\",\"col\":3}},{\"id\":\"w3KGdKZRuT\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Quantité Articles\",\"col\":3}},{\"id\":\"lSCny--3Kj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VCI - Programmées\",\"col\":3}},{\"id\":\"x_J76VpMpb\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VCI - En Cours\",\"col\":3}},{\"id\":\"hEbwLehTUi\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VCI - Terminées\",\"col\":3}},{\"id\":\"JmV7GGhReM\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Stats - Med\",\"col\":12}},{\"id\":\"G8xj2zVY2r\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMI -programmées \",\"col\":3}},{\"id\":\"eQCe1DDhQK\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMI - En Cours\",\"col\":3}},{\"id\":\"TOfQq_I7xb\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMI - Terminée\",\"col\":3}},{\"id\":\"YzreRWsU20\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMI - Validée\",\"col\":3}},{\"id\":\"FYiFDeriLz\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"44aw7b1NtE\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMS - Programmées\",\"col\":3}},{\"id\":\"HxAxDHN2L8\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMS - En Cours\",\"col\":3}},{\"id\":\"BIYqGzpP5T\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMS - Terminée\",\"col\":3}},{\"id\":\"M0mr9kswBX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"VMS - Validée\",\"col\":3}}]",
   "custom_blocks": [
    {
     "custom_block_name": "Stats - Com",
@@ -14268,7 +14268,7 @@
   "is_hidden": 0,
   "label": "Accueil",
   "links": [],
-  "modified": "2024-02-22 12:25:09.948447",
+  "modified": "2024-03-03 16:29:39.953000",
   "module": null,
   "name": "Accueil",
   "number_cards": [
@@ -14282,6 +14282,13 @@
    {
     "label": "Total Visites",
     "number_card_name": "Total Visites Commerciales",
+    "parent": "Accueil",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "VMI - En Cours",
+    "number_card_name": "VMI - En Cours",
     "parent": "Accueil",
     "parentfield": "number_cards",
     "parenttype": "Workspace"
@@ -14322,15 +14329,15 @@
     "parenttype": "Workspace"
    },
    {
-    "label": "Quantité Articles",
-    "number_card_name": "Quantité Commandes Confirmées",
+    "label": "VCI - En Cours",
+    "number_card_name": "VCI - En Cours",
     "parent": "Accueil",
     "parentfield": "number_cards",
     "parenttype": "Workspace"
    },
    {
-    "label": "VCI - Validée",
-    "number_card_name": "VCI - Validée",
+    "label": "Quantité Articles",
+    "number_card_name": "Quantité Commandes Confirmées",
     "parent": "Accueil",
     "parentfield": "number_cards",
     "parenttype": "Workspace"
@@ -14359,6 +14366,13 @@
    {
     "label": "Total C.A",
     "number_card_name": "Total C.A",
+    "parent": "Accueil",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "VMS - En Cours",
+    "number_card_name": "VMS - En Cours",
     "parent": "Accueil",
     "parentfield": "number_cards",
     "parenttype": "Workspace"
@@ -14438,8 +14452,16 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"WKdbAxd6Pk\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Support - Tickets</span>\",\"col\":12}},{\"id\":\"HLmMo1jkCF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Nouveau Ticket\",\"col\":3}},{\"id\":\"78_8T9r5sS\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"OG5bXewyoD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ouverts\",\"col\":3}},{\"id\":\"VQhb6kXIhX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"En Traitement\",\"col\":3}},{\"id\":\"qwMEYJSj9J\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Résolus\",\"col\":3}},{\"id\":\"HqHpaVsETz\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Fermés\",\"col\":3}}]",
-  "custom_blocks": [],
+  "content": "[{\"id\":\"-Zgvys09vR\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>Support - Tickets</b>\",\"col\":12}},{\"id\":\"HLmMo1jkCF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Nouveau Ticket\",\"col\":3}},{\"id\":\"78_8T9r5sS\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"OG5bXewyoD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ouverts\",\"col\":3}},{\"id\":\"VQhb6kXIhX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"En Traitement\",\"col\":3}},{\"id\":\"qwMEYJSj9J\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Résolus\",\"col\":3}},{\"id\":\"HqHpaVsETz\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Fermés\",\"col\":3}},{\"id\":\"6CLDnr93DL\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>Fichiers Aide</b>\",\"col\":12}},{\"id\":\"fxKvZ4wgG4\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Fichiers Cours\",\"col\":12}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Fichiers Cours",
+    "label": "Fichiers Cours",
+    "parent": "Support - Tickets",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -14449,7 +14471,7 @@
   "is_hidden": 0,
   "label": "Support - Tickets",
   "links": [],
-  "modified": "2024-02-22 12:25:12.075391",
+  "modified": "2024-03-02 18:26:17.654381",
   "module": null,
   "name": "Support - Tickets",
   "number_cards": [
@@ -14536,7 +14558,7 @@
     "role": "Superviseur Médical"
    }
   ],
-  "sequence_id": 16.0,
+  "sequence_id": 17.0,
   "shortcuts": [
    {
     "color": "Blue",
@@ -14556,89 +14578,6 @@
    }
   ],
   "title": "Support - Tickets"
- },
- {
-  "charts": [],
-  "content": "[{\"id\":\"-C1s1xewm3\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Fichiers Cours\",\"col\":12}}]",
-  "custom_blocks": [
-   {
-    "custom_block_name": "Fichiers Cours",
-    "label": "Fichiers Cours",
-    "parent": "Aide",
-    "parentfield": "custom_blocks",
-    "parenttype": "Workspace"
-   }
-  ],
-  "docstatus": 0,
-  "doctype": "Workspace",
-  "for_user": "",
-  "hide_custom": 0,
-  "icon": "help",
-  "indicator_color": "green",
-  "is_hidden": 0,
-  "label": "Aide",
-  "links": [],
-  "modified": "2024-02-22 12:25:12.142561",
-  "module": null,
-  "name": "Aide",
-  "number_cards": [],
-  "parent_page": "",
-  "public": 1,
-  "quick_lists": [],
-  "restrict_to_domain": null,
-  "roles": [
-   {
-    "parent": "Aide",
-    "parentfield": "roles",
-    "parenttype": "Workspace",
-    "role": "Administrateur Médical"
-   },
-   {
-    "parent": "Aide",
-    "parentfield": "roles",
-    "parenttype": "Workspace",
-    "role": "Analyste Médical"
-   },
-   {
-    "parent": "Aide",
-    "parentfield": "roles",
-    "parenttype": "Workspace",
-    "role": "Délégue Médical"
-   },
-   {
-    "parent": "Aide",
-    "parentfield": "roles",
-    "parenttype": "Workspace",
-    "role": "Superviseur Médical"
-   },
-   {
-    "parent": "Aide",
-    "parentfield": "roles",
-    "parenttype": "Workspace",
-    "role": "Administrateur Commercial"
-   },
-   {
-    "parent": "Aide",
-    "parentfield": "roles",
-    "parenttype": "Workspace",
-    "role": "Analyste Commercial"
-   },
-   {
-    "parent": "Aide",
-    "parentfield": "roles",
-    "parenttype": "Workspace",
-    "role": "Délégue Commercial"
-   },
-   {
-    "parent": "Aide",
-    "parentfield": "roles",
-    "parenttype": "Workspace",
-    "role": "Superviseur Commercial"
-   }
-  ],
-  "sequence_id": 17.0,
-  "shortcuts": [],
-  "title": "Aide"
  },
  {
   "charts": [
@@ -14669,7 +14608,7 @@
   "is_hidden": 0,
   "label": "Menu Distributeur",
   "links": [],
-  "modified": "2024-02-22 12:25:11.971112",
+  "modified": "2024-03-01 19:35:16.962401",
   "module": null,
   "name": "Menu Distributeur",
   "number_cards": [
@@ -14707,7 +14646,7 @@
     "role": "Distributeur"
    }
   ],
-  "sequence_id": 14.0,
+  "sequence_id": 15.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -14745,7 +14684,7 @@
     "parenttype": "Workspace"
    }
   ],
-  "content": "[{\"id\":\"IYdgyfc4wx\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Accueil\",\"col\":12}},{\"id\":\"6iUG23imPd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Liste Commandes\",\"col\":3}},{\"id\":\"xB3FX0W-_9\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>Mes Statistiques&nbsp;</b>\",\"col\":12}},{\"id\":\"ns1C1aXOEI\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nouvelles Commandes\",\"col\":3}},{\"id\":\"YJY7DlwNxp\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Confirmées\",\"col\":3}},{\"id\":\"H73x-SYr7I\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Montant Confirmées\",\"col\":3}},{\"id\":\"LntYEDFbd-\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Mes Commandes\",\"col\":12}},{\"id\":\"ApP8_vmlG9\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Mes Articles\",\"col\":12}}]",
+  "content": "[{\"id\":\"IYdgyfc4wx\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Accueil\",\"col\":12}},{\"id\":\"m8GIKD96Wc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Nouvelle Commande\",\"col\":3}},{\"id\":\"6iUG23imPd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Liste Commandes\",\"col\":3}},{\"id\":\"xB3FX0W-_9\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>Mes Statistiques&nbsp;</b>\",\"col\":12}},{\"id\":\"ns1C1aXOEI\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Nouvelles Commandes\",\"col\":3}},{\"id\":\"YJY7DlwNxp\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Confirmées\",\"col\":3}},{\"id\":\"H73x-SYr7I\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Montant Confirmées\",\"col\":3}},{\"id\":\"LntYEDFbd-\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Mes Commandes\",\"col\":12}},{\"id\":\"ApP8_vmlG9\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Mes Articles\",\"col\":12}}]",
   "custom_blocks": [
    {
     "custom_block_name": "Accueil",
@@ -14764,7 +14703,7 @@
   "is_hidden": 0,
   "label": "Menu Client",
   "links": [],
-  "modified": "2024-02-23 14:34:29.421960",
+  "modified": "2024-03-01 19:36:35.882207",
   "module": null,
   "name": "Menu Client",
   "number_cards": [
@@ -14802,7 +14741,7 @@
     "role": "Client"
    }
   ],
-  "sequence_id": 15.0,
+  "sequence_id": 14.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -14817,6 +14756,22 @@
     "parenttype": "Workspace",
     "restrict_to_domain": null,
     "stats_filter": "[]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Blue",
+    "doc_view": "New",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Nouvelle Commande",
+    "link_to": "Sales Order",
+    "parent": "Menu Client",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Sales Order\",\"workflow_state\",\"=\",\"Nouveau\",false]]",
     "type": "DocType",
     "url": null
    }
@@ -14851,7 +14806,7 @@
   "is_hidden": 0,
   "label": "Clients",
   "links": [],
-  "modified": "2024-02-22 12:25:11.600925",
+  "modified": "2024-03-01 19:35:16.640780",
   "module": null,
   "name": "Clients",
   "number_cards": [
@@ -14932,7 +14887,7 @@
   "is_hidden": 0,
   "label": "Distributeur",
   "links": [],
-  "modified": "2024-02-22 12:25:11.716070",
+  "modified": "2024-03-01 19:35:16.703787",
   "module": null,
   "name": "Distributeur",
   "number_cards": [
@@ -14998,6 +14953,211 @@
   "sequence_id": 12.0,
   "shortcuts": [],
   "title": "Distributeur"
+ },
+ {
+  "charts": [],
+  "content": "[{\"id\":\"HmO0WzfgIq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Nouvelle Activation\",\"col\":3}},{\"id\":\"DslHrrENak\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Nouvelle Desactivation\",\"col\":3}},{\"id\":\"s2-OnzgVBv\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>Délégués</b>\",\"col\":12}},{\"id\":\"Qf9Ke8vPjy\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Délégué Commercial\",\"col\":4}},{\"id\":\"Wkfha8PK2D\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Délégué Médical\",\"col\":4}},{\"id\":\"pgUpFu7Plj\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Délégué Médico-Commercial\",\"col\":4}},{\"id\":\"B8rklFj5n-\",\"type\":\"paragraph\",\"data\":{\"text\":\"<b>Superviseurs</b>\",\"col\":12}},{\"id\":\"0FclM8tILl\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Superviseur Commercial\",\"col\":4}},{\"id\":\"Y6b2upbmwz\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Superviseur Médical\",\"col\":4}},{\"id\":\"049ic3ENOF\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Superviseur Médico-Commercial\",\"col\":4}}]",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "users",
+  "indicator_color": "green",
+  "is_hidden": 0,
+  "label": "Gestion Utilisateurs",
+  "links": [],
+  "modified": "2024-03-01 19:35:17.171506",
+  "module": null,
+  "name": "Gestion Utilisateurs",
+  "number_cards": [
+   {
+    "label": "Délégué Commercial",
+    "number_card_name": "Délégué Commercial",
+    "parent": "Gestion Utilisateurs",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Délégué Médical",
+    "number_card_name": "Délégué Médical",
+    "parent": "Gestion Utilisateurs",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Délégué Médico-Commercial",
+    "number_card_name": "Délégué Médico-Commercial",
+    "parent": "Gestion Utilisateurs",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Superviseur Commercial",
+    "number_card_name": "Superviseur Commercial",
+    "parent": "Gestion Utilisateurs",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Superviseur Médical",
+    "number_card_name": "Superviseur Médical",
+    "parent": "Gestion Utilisateurs",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   },
+   {
+    "label": "Superviseur Médico-Commercial",
+    "number_card_name": "Superviseur Médico-Commercial",
+    "parent": "Gestion Utilisateurs",
+    "parentfield": "number_cards",
+    "parenttype": "Workspace"
+   }
+  ],
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [
+   {
+    "parent": "Gestion Utilisateurs",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Administrateur Commercial"
+   },
+   {
+    "parent": "Gestion Utilisateurs",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Administrateur Médical"
+   }
+  ],
+  "sequence_id": 18.0,
+  "shortcuts": [
+   {
+    "color": "Blue",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Nouvelle Activation",
+    "link_to": "Gestion Des Utilisateurs",
+    "parent": "Gestion Utilisateurs",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Gestion Des Utilisateurs\",\"type_demande\",\"=\",\"Activation\",false],[\"Gestion Des Utilisateurs\",\"workflow_state\",\"=\",\"Nouveau\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Red",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Nouvelle Desactivation",
+    "link_to": "Gestion Des Utilisateurs",
+    "parent": "Gestion Utilisateurs",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Gestion Des Utilisateurs\",\"type_demande\",\"=\",\"Désactivation\",false],[\"Gestion Des Utilisateurs\",\"workflow_state\",\"=\",\"Nouveau\",false]]",
+    "type": "DocType",
+    "url": null
+   }
+  ],
+  "title": "Gestion Utilisateurs"
+ },
+ {
+  "charts": [],
+  "content": "[{\"id\":\"bNa--EbO0w\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Accueil\",\"col\":12}},{\"id\":\"rXJ0pzcD36\",\"type\":\"card\",\"data\":{\"card_name\":\"Mon Compte\",\"col\":4}}]",
+  "custom_blocks": [
+   {
+    "custom_block_name": "Accueil",
+    "label": "Accueil",
+    "parent": "Portail Prescripteur",
+    "parentfield": "custom_blocks",
+    "parenttype": "Workspace"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "star",
+  "indicator_color": "green",
+  "is_hidden": 0,
+  "label": "Portail Prescripteur",
+  "links": [
+   {
+    "dependencies": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Mon Compte",
+    "link_count": 2,
+    "link_to": null,
+    "link_type": null,
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Portail Prescripteur",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Card Break"
+   },
+   {
+    "dependencies": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Ma Fiche",
+    "link_count": 0,
+    "link_to": "Prescripteurs",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Portail Prescripteur",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
+   },
+   {
+    "dependencies": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Mes E-Visites",
+    "link_count": 0,
+    "link_to": "E-Visite",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Portail Prescripteur",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
+   }
+  ],
+  "modified": "2024-03-01 19:35:17.038299",
+  "module": null,
+  "name": "Portail Prescripteur",
+  "number_cards": [],
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [
+   {
+    "parent": "Portail Prescripteur",
+    "parentfield": "roles",
+    "parenttype": "Workspace",
+    "role": "Prescripteur"
+   }
+  ],
+  "sequence_id": 16.0,
+  "shortcuts": [],
+  "title": "Portail Prescripteur"
  },
  {
   "charts": [
@@ -15645,7 +15805,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:11.792234",
+  "modified": "2024-03-01 19:35:16.777863",
   "module": "Selling",
   "name": "Rapports - Configuration",
   "number_cards": [],
@@ -15875,7 +16035,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:11.474692",
+  "modified": "2024-03-01 19:35:16.567848",
   "module": null,
   "name": "Visites Commerciales",
   "number_cards": [
@@ -16184,7 +16344,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2024-02-22 12:25:14.774364",
+  "modified": "2024-03-01 19:35:20.219524",
   "module": "Core",
   "name": "Users",
   "number_cards": [],
@@ -16206,7 +16366,7 @@
     "role": "System Manager"
    }
   ],
-  "sequence_id": 35.0,
+  "sequence_id": 36.0,
   "shortcuts": [
    {
     "color": null,

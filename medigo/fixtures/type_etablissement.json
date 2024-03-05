@@ -2,13 +2,6 @@
  {
   "docstatus": 0,
   "doctype": "Type Etablissement",
-  "modified": "2023-10-24 18:51:41.448034",
-  "name": "EPH",
-  "type_etablissement": "EPH"
- },
- {
-  "docstatus": 0,
-  "doctype": "Type Etablissement",
   "modified": "2023-10-24 18:51:41.495423",
   "name": "CLINIQUE",
   "type_etablissement": "CLINIQUE"
@@ -47,5 +40,12 @@
   "modified": "2023-10-24 18:51:41.482555",
   "name": "CHU",
   "type_etablissement": "CHU"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Type Etablissement",
+  "modified": "2023-10-24 18:51:41.448034",
+  "name": "EPH",
+  "type_etablissement": "EPH"
  }
 ]

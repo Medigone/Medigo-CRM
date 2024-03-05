@@ -2,76 +2,21 @@
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2024-02-21 13:21:50.533857",
-  "name": "Superviseur Médicaux Commercial",
-  "role_profile": "Superviseur Médicaux Commercial",
+  "modified": "2024-02-24 15:35:54.269365",
+  "name": "Superviseur Médico-Commercial",
+  "role_profile": "Superviseur Médico-Commercial",
   "roles": [
    {
-    "parent": "Superviseur Médicaux Commercial",
+    "parent": "Superviseur Médico-Commercial",
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "Superviseur Commercial"
    },
    {
-    "parent": "Superviseur Médicaux Commercial",
+    "parent": "Superviseur Médico-Commercial",
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "Superviseur Médical"
-   }
-  ]
- },
- {
-  "docstatus": 0,
-  "doctype": "Role Profile",
-  "modified": "2023-10-24 19:36:32.605650",
-  "name": "Inventory",
-  "role_profile": "Inventory",
-  "roles": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Role Profile",
-  "modified": "2023-10-24 19:36:32.614557",
-  "name": "Manufacturing",
-  "role_profile": "Manufacturing",
-  "roles": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Role Profile",
-  "modified": "2023-10-24 19:36:32.618432",
-  "name": "Accounts",
-  "role_profile": "Accounts",
-  "roles": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Role Profile",
-  "modified": "2023-10-24 19:36:32.620881",
-  "name": "Sales",
-  "role_profile": "Sales",
-  "roles": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Role Profile",
-  "modified": "2023-10-24 19:36:32.623893",
-  "name": "Purchase",
-  "role_profile": "Purchase",
-  "roles": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Role Profile",
-  "modified": "2024-02-23 14:48:51.689799",
-  "name": "Administrateur Médical",
-  "role_profile": "Administrateur Médical",
-  "roles": [
-   {
-    "parent": "Administrateur Médical",
-    "parentfield": "roles",
-    "parenttype": "Role Profile",
-    "role": "Administrateur Médical"
    }
   ]
  },
@@ -131,21 +76,6 @@
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2024-02-23 14:19:29.925408",
-  "name": "Superviseur Commercial",
-  "role_profile": "Superviseur Commercial",
-  "roles": [
-   {
-    "parent": "Superviseur Commercial",
-    "parentfield": "roles",
-    "parenttype": "Role Profile",
-    "role": "Superviseur Commercial"
-   }
-  ]
- },
- {
-  "docstatus": 0,
-  "doctype": "Role Profile",
   "modified": "2024-02-23 10:26:59.628077",
   "name": "Délégue Médical",
   "role_profile": "Délégue Médical",
@@ -155,6 +85,36 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "Délégue Médical"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-02-23 14:48:51.689799",
+  "name": "Administrateur Médical",
+  "role_profile": "Administrateur Médical",
+  "roles": [
+   {
+    "parent": "Administrateur Médical",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Administrateur Médical"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-02-23 14:19:29.925408",
+  "name": "Superviseur Commercial",
+  "role_profile": "Superviseur Commercial",
+  "roles": [
+   {
+    "parent": "Superviseur Commercial",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Superviseur Commercial"
    }
   ]
  },
@@ -176,18 +136,33 @@
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2024-02-21 13:21:32.380053",
-  "name": "Délégué Médicaux Commercial",
-  "role_profile": "Délégué Médicaux Commercial",
+  "modified": "2024-02-28 17:55:42.436611",
+  "name": "Prescripteur",
+  "role_profile": "Prescripteur",
   "roles": [
    {
-    "parent": "Délégué Médicaux Commercial",
+    "parent": "Prescripteur",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Prescripteur"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-02-24 15:36:10.276392",
+  "name": "Délégué Médico-Commercial",
+  "role_profile": "Délégué Médico-Commercial",
+  "roles": [
+   {
+    "parent": "Délégué Médico-Commercial",
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "Délégue Commercial"
    },
    {
-    "parent": "Délégué Médicaux Commercial",
+    "parent": "Délégué Médico-Commercial",
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "Délégue Médical"
