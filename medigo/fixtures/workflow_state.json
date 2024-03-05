@@ -1,0 +1,146 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-19 16:03:28.256489",
+  "name": "En Traitement",
+  "style": "Warning",
+  "workflow_state_name": "En Traitement"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-24 15:12:35.345865",
+  "name": "Traité",
+  "style": "Success",
+  "workflow_state_name": "Traité"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-15 12:34:19.938634",
+  "name": "Non Livrée",
+  "style": "",
+  "workflow_state_name": "Non Livrée"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-14 12:48:23.477716",
+  "name": "Livrée",
+  "style": "Success",
+  "workflow_state_name": "Livrée"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-12 20:29:48.355042",
+  "name": "En Attente",
+  "style": "",
+  "workflow_state_name": "En Attente"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-12 21:19:25.168488",
+  "name": "Fermé",
+  "style": "Inverse",
+  "workflow_state_name": "Fermé"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-12 21:09:38.177107",
+  "name": "Résolu",
+  "style": "Success",
+  "workflow_state_name": "Résolu"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-12 21:19:47.009448",
+  "name": "Répondu",
+  "style": "Warning",
+  "workflow_state_name": "Répondu"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-12 21:18:49.753155",
+  "name": "Ouvert",
+  "style": "Info",
+  "workflow_state_name": "Ouvert"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-05 15:26:13.303861",
+  "name": "Validée",
+  "style": "Success",
+  "workflow_state_name": "Validée"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-09 14:25:57.458599",
+  "name": "Confirmée",
+  "style": "Success",
+  "workflow_state_name": "Confirmée"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-13 14:47:32.768330",
+  "name": "Annulée",
+  "style": "Danger",
+  "workflow_state_name": "Annulée"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-14 12:47:15.105884",
+  "name": "Nouveau",
+  "style": "Info",
+  "workflow_state_name": "Nouveau"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-16 11:52:21.205742",
+  "name": "Programmée",
+  "style": "Info",
+  "workflow_state_name": "Programmée"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-02-16 11:52:53.313985",
+  "name": "Terminée",
+  "style": "Danger",
+  "workflow_state_name": "Terminée"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-01-13 14:47:14.862001",
+  "name": "En Cours",
+  "style": "Warning",
+  "workflow_state_name": "En Cours"
+ }
+]

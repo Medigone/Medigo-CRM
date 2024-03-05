@@ -240,8 +240,11 @@ fixtures = [
     "Dashboard Chart",
     "Number Card",
     "Workspace",
-    "Custom HTML Block",
-    "Region"
+    "Custom HTML Block",  
+    "Workflow",
+    "Workflow State",
+    "Workflow Action Master"  # Si vous souhaitez également exporter toutes les actions de workflow
+
 ]
 
 

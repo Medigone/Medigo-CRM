@@ -1,0 +1,93 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-19 16:04:31.130425",
+  "name": "En Traitement",
+  "workflow_action_name": "En Traitement"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-24 15:11:55.827293",
+  "name": "Traité",
+  "workflow_action_name": "Traité"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-15 12:34:48.513973",
+  "name": "Non Livrée",
+  "workflow_action_name": "Non Livrée"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-14 12:45:00.733548",
+  "name": "Commande Livrée",
+  "workflow_action_name": "Commande Livrée"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-14 12:44:35.129064",
+  "name": "Commande Confirmée",
+  "workflow_action_name": "Commande Confirmée"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-12 20:30:37.722968",
+  "name": "Répondre",
+  "workflow_action_name": "Répondre"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-12 21:05:19.783195",
+  "name": "En Attente",
+  "workflow_action_name": "En Attente"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-05 13:25:11.956632",
+  "name": "Valider",
+  "workflow_action_name": "Valider"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-12 20:31:32.100011",
+  "name": "Résolu",
+  "workflow_action_name": "Résolu"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-02-12 21:05:42.643265",
+  "name": "Fermer",
+  "workflow_action_name": "Fermer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-13 14:49:34.592172",
+  "name": "Début Visite",
+  "workflow_action_name": "Début Visite"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-13 14:51:09.318154",
+  "name": "Fin Visite",
+  "workflow_action_name": "Fin Visite"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2024-01-13 14:53:53.472984",
+  "name": "Annuler",
+  "workflow_action_name": "Annuler"
+ }
+]
