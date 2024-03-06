@@ -16,7 +16,6 @@
   "duree_visite",
   "utilisateur",
   "amended_from",
-  "workflow_state",
   "localisation_client_section",
   "commune",
   "wilaya",
@@ -348,19 +347,12 @@
   {
    "fieldname": "column_break_pmee",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "workflow_state",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Statut",
-   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-06 12:13:50.060920",
+ "modified": "2024-03-06 12:33:00.038835",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale",

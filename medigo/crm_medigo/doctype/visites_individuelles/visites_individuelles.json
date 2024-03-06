@@ -19,7 +19,6 @@
   "utilisateur",
   "presc_absent",
   "amended_from",
-  "workflow_state",
   "objectifs_visite_section",
   "objectif_visite",
   "objectif_produit_1",
@@ -335,19 +334,12 @@
    "fieldtype": "Check",
    "in_list_view": 1,
    "label": "Absent"
-  },
-  {
-   "fieldname": "workflow_state",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Statut",
-   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-06 12:00:55.992826",
+ "modified": "2024-03-06 12:33:57.971715",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visites Individuelles",
