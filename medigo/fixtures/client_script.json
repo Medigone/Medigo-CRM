@@ -631,10 +631,10 @@
   "doctype": "Client Script",
   "dt": "Sales Order",
   "enabled": 1,
-  "modified": "2024-02-23 14:29:57.475980",
+  "modified": "2024-03-06 15:37:05.215122",
   "module": "CRM Medigo",
   "name": "Utilisateur Commande",
-  "script": "frappe.ui.form.on('Sales Order', {\n    before_save(frm) {\n        if (!frm.doc.__islocal) return; // Exécuter seulement lors de la création d'un nouveau document\n        // Récupérer le nom complet de l'utilisateur actuellement connecté\n        frappe.call({\n            method: \"frappe.client.get_value\",\n            args: {\n                doctype: \"User\",\n                filters: {\"name\": frappe.session.user},\n                fieldname: [\"full_name\"]\n            },\n            callback: function(r) {\n                if (r.message) {\n                    // Définir la valeur du champ avec le nom complet de l'utilisateur\n                    frm.set_value('utilisateur', r.message.full_name);\n                }\n            }\n        });\n    }\n});\n\n",
+  "script": "frappe.ui.form.on('Sales Order', {\n    before_save(frm) {\n        if (!frm.doc.__islocal) return; // Exécuter seulement lors de la création d'un nouveau document\n        // Récupérer le nom complet de l'utilisateur actuellement connecté\n        frappe.call({\n            method: \"frappe.client.get_value\",\n            args: {\n                doctype: \"User\",\n                filters: {\"name\": frappe.session.user},\n                fieldname: [\"full_name\"]\n            },\n            callback: function(r) {\n                if (r.message) {\n                    // Définir la valeur du champ avec le nom complet de l'utilisateur\n                    frm.set_value('custom_utilisateur', r.message.full_name);\n                }\n            }\n        });\n    }\n});",
   "view": "Form"
  },
  {
