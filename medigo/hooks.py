@@ -237,7 +237,6 @@ fixtures = [
     "Server Script",
     "Client Script",
     "Module Profile",
-    "Dashboard Chart",
     "Number Card",
     "Workspace",
     "Custom HTML Block",  
