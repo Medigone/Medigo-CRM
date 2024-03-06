@@ -16,6 +16,7 @@
   "duree_visite",
   "utilisateur",
   "amended_from",
+  "workflow_state",
   "localisation_client_section",
   "commune",
   "wilaya",
@@ -155,7 +156,7 @@
    "read_only_depends_on": "eval:(doc.workflow_state==\"Termin\u00e9e\" || doc.workflow_state==\"Valid\u00e9e\" || doc.workflow_state==\"Annul\u00e9e\")"
   },
   {
-   "fetch_from": "client.commune",
+   "fetch_from": "client.custom_commune",
    "fieldname": "commune",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -165,7 +166,7 @@
    "read_only": 1
   },
   {
-   "fetch_from": "client.wilaya",
+   "fetch_from": "client.custom_wilaya",
    "fieldname": "wilaya",
    "fieldtype": "Link",
    "in_standard_filter": 1,
@@ -174,7 +175,7 @@
    "read_only": 1
   },
   {
-   "fetch_from": "client.zone",
+   "fetch_from": "client.custom_zone",
    "fieldname": "zone",
    "fieldtype": "Link",
    "label": "Zone",
@@ -347,17 +348,19 @@
   {
    "fieldname": "column_break_pmee",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Statut",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [
-  {
-   "link_doctype": "Sales Order",
-   "link_fieldname": "vci"
-  }
- ],
- "modified": "2024-03-03 16:16:22.254439",
+ "links": [],
+ "modified": "2024-03-06 12:13:50.060920",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale",
