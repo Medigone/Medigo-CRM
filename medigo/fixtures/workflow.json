@@ -11,6 +11,7 @@
   "states": [
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -25,6 +26,7 @@
    },
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -39,6 +41,7 @@
    },
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "2",
     "is_optional_state": 0,
     "message": null,
@@ -94,6 +97,7 @@
   "states": [
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -108,6 +112,7 @@
    },
    {
     "allow_edit": "System Manager",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -122,6 +127,7 @@
    },
    {
     "allow_edit": "System Manager",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -136,6 +142,7 @@
    },
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -150,6 +157,7 @@
    },
    {
     "allow_edit": "System Manager",
+    "avoid_status_override": 0,
     "doc_status": "2",
     "is_optional_state": 0,
     "message": null,
@@ -253,6 +261,7 @@
   "states": [
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -267,6 +276,7 @@
    },
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -281,6 +291,7 @@
    },
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -295,6 +306,7 @@
    },
    {
     "allow_edit": "Superviseur Médical",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -309,6 +321,7 @@
    },
    {
     "allow_edit": "Superviseur Médical",
+    "avoid_status_override": 0,
     "doc_status": "2",
     "is_optional_state": 0,
     "message": null,
@@ -388,6 +401,7 @@
   "states": [
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -402,6 +416,7 @@
    },
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -416,6 +431,7 @@
    },
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -430,6 +446,7 @@
    },
    {
     "allow_edit": "Superviseur Médical",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -444,6 +461,7 @@
    },
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "2",
     "is_optional_state": 0,
     "message": null,
@@ -523,6 +541,7 @@
   "states": [
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -537,6 +556,7 @@
    },
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -551,6 +571,7 @@
    },
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -565,6 +586,7 @@
    },
    {
     "allow_edit": "Superviseur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -579,6 +601,7 @@
    },
    {
     "allow_edit": "Superviseur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "2",
     "is_optional_state": 0,
     "message": null,
@@ -658,6 +681,7 @@
   "states": [
    {
     "allow_edit": "Superviseur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -672,6 +696,7 @@
    },
    {
     "allow_edit": "Superviseur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -686,6 +711,7 @@
    },
    {
     "allow_edit": "Superviseur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -700,6 +726,7 @@
    },
    {
     "allow_edit": "Administrateur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -714,6 +741,7 @@
    },
    {
     "allow_edit": "Administrateur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "2",
     "is_optional_state": 0,
     "message": null,
@@ -793,6 +821,7 @@
   "states": [
    {
     "allow_edit": "Superviseur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -807,6 +836,7 @@
    },
    {
     "allow_edit": "Superviseur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -821,6 +851,7 @@
    },
    {
     "allow_edit": "Superviseur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -835,6 +866,7 @@
    },
    {
     "allow_edit": "Administrateur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -849,6 +881,7 @@
    },
    {
     "allow_edit": "Administrateur Commercial",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -928,6 +961,7 @@
   "states": [
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -942,6 +976,7 @@
    },
    {
     "allow_edit": "System Manager",
+    "avoid_status_override": 0,
     "doc_status": "1",
     "is_optional_state": 0,
     "message": null,
@@ -956,6 +991,7 @@
    },
    {
     "allow_edit": "System Manager",
+    "avoid_status_override": 0,
     "doc_status": "2",
     "is_optional_state": 0,
     "message": null,
@@ -1011,6 +1047,7 @@
   "states": [
    {
     "allow_edit": "All",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
@@ -1025,6 +1062,7 @@
    },
    {
     "allow_edit": "Analyste Médical",
+    "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,

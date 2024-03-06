@@ -168,5 +168,45 @@
     "role": "Délégue Médical"
    }
   ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-03-06 02:41:10.336475",
+  "name": "Inventory",
+  "role_profile": "Inventory",
+  "roles": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-03-06 02:41:10.347317",
+  "name": "Manufacturing",
+  "role_profile": "Manufacturing",
+  "roles": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-03-06 02:41:10.359501",
+  "name": "Accounts",
+  "role_profile": "Accounts",
+  "roles": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-03-06 02:41:10.367892",
+  "name": "Sales",
+  "role_profile": "Sales",
+  "roles": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-03-06 02:41:10.375975",
+  "name": "Purchase",
+  "role_profile": "Purchase",
+  "roles": []
  }
 ]

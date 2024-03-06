@@ -243,7 +243,8 @@ fixtures = [
     "Custom HTML Block",  
     "Workflow",
     "Workflow State",
-    "Workflow Action Master"  # Si vous souhaitez également exporter toutes les actions de workflow
+    "Workflow Action Master",  # Si vous souhaitez également exporter toutes les actions de workflow
+    "Custom Field"
 
 ]
 

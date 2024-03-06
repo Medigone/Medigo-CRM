@@ -142,5 +142,32 @@
   "name": "En Cours",
   "style": "Warning",
   "workflow_state_name": "En Cours"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2024-03-06 02:39:05.421515",
+  "name": "Pending",
+  "style": "",
+  "workflow_state_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2024-03-06 02:39:05.422878",
+  "name": "Approved",
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2024-03-06 02:39:05.424124",
+  "name": "Rejected",
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
  }
 ]
