@@ -168,7 +168,7 @@
    "read_only": 1
   },
   {
-   "fetch_from": "client.commune",
+   "fetch_from": "client.custom_commune",
    "fieldname": "commune",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -177,7 +177,7 @@
    "read_only": 1
   },
   {
-   "fetch_from": "client.wilaya",
+   "fetch_from": "client.custom_wilaya",
    "fieldname": "wilaya",
    "fieldtype": "Link",
    "in_standard_filter": 1,
@@ -186,7 +186,7 @@
    "read_only": 1
   },
   {
-   "fetch_from": "client.zone",
+   "fetch_from": "client.custom_zone",
    "fieldname": "zone",
    "fieldtype": "Link",
    "in_standard_filter": 1,
@@ -331,13 +331,8 @@
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [
-  {
-   "link_doctype": "Sales Order",
-   "link_fieldname": "vcd"
-  }
- ],
- "modified": "2024-02-23 23:26:58.597265",
+ "links": [],
+ "modified": "2024-03-07 17:14:35.619421",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "Visite Commerciale Duo",
