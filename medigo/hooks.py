@@ -243,8 +243,8 @@ fixtures = [
     "Workflow",
     "Workflow State",
     "Workflow Action Master",  # Si vous souhaitez également exporter toutes les actions de workflow
-    "Custom Field",
-    {"dt": "Dashboard Chart", "filters": [["module", "=", "CRM Medigo"]]}
+    "Custom Field"
+   
 
 ]
 
