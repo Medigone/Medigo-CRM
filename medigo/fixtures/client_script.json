@@ -213,8 +213,8 @@
   "doctype": "Client Script",
   "dt": "Customer",
   "enabled": 1,
-  "modified": "2024-02-19 13:18:55.681804",
-  "module": "Selling",
+  "modified": "2024-03-07 17:25:39.009735",
+  "module": "CRM Medigo",
   "name": "Bouton creer",
   "script": "frappe.ui.form.on('Customer', {\n    refresh(frm) {\n        frm.add_custom_button(__('Commande Client'), function () {\n            // Logique pour créer une nouvelle commande client\n            frappe.new_doc('Sales Order', {\n                // Pré-remplissage de quelques champs si nécessaire\n                customer: frm.doc.name // Pré-remplir le nom du client dans la nouvelle commande client\n                // Vous pouvez ajouter d'autres champs ici\n            });\n        }, __('Create'));\n    }\n});\n\nfrappe.ui.form.on('Customer', {\n    refresh(frm) {\n        frm.add_custom_button(__('Visite Commerciale'), function () {\n            // Logique pour créer une nouvelle commande client\n            frappe.new_doc('Visite Commerciale', {\n                // Pré-remplissage de quelques champs si nécessaire\n                client: frm.doc.name // Pré-remplir le nom du client dans la nouvelle commande client\n                // Vous pouvez ajouter d'autres champs ici\n            });\n        }, __('Create'));\n    }\n});\n",
   "view": "Form"
@@ -389,10 +389,10 @@
   "doctype": "Client Script",
   "dt": "Customer",
   "enabled": 1,
-  "modified": "2024-02-19 23:52:15.473359",
-  "module": "Selling",
+  "modified": "2024-03-07 17:24:57.920306",
+  "module": "CRM Medigo",
   "name": "GPS Client",
-  "script": "frappe.ui.form.on('Customer', {\n    refresh(frm) {\n        // Ajouter un bouton dans la barre d'outils du formulaire\n        frm.add_custom_button('Récupérer GPS', function() {\n            // Vérifier si la géolocalisation est prise en charge\n            if (\"geolocation\" in navigator) {\n                navigator.geolocation.getCurrentPosition(function(position) {\n                    // Récupérer les coordonnées GPS\n                    const lat = position.coords.latitude;\n                    const lon = position.coords.longitude;\n                    const gpsCoords = `${lat}, ${lon}`;\n\n                    // Mettre à jour le champ 'gps_client' avec les coordonnées GPS récupérées\n                    frm.set_value('gps_client', gpsCoords);\n\n                    // Optionnel : Afficher un message de succès\n                    frappe.msgprint(`Coordonnées GPS récupérées : ${gpsCoords}`);\n                }, function(error) {\n                    // Gérer les erreurs\n                    frappe.msgprint(`Erreur lors de la récupération des coordonnées GPS : ${error.message}`);\n                }, {\n                    // Options de géolocalisation\n                    enableHighAccuracy: true,\n                    timeout: 5000,\n                    maximumAge: 0\n                });\n            } else {\n                frappe.msgprint(\"La géolocalisation n'est pas prise en charge par ce navigateur.\");\n            }\n        });\n    }\n});\n",
+  "script": "frappe.ui.form.on('Customer', {\n    refresh(frm) {\n        // Ajouter un bouton dans la barre d'outils du formulaire\n        frm.add_custom_button('Récupérer GPS', function() {\n            // Vérifier si la géolocalisation est prise en charge\n            if (\"geolocation\" in navigator) {\n                navigator.geolocation.getCurrentPosition(function(position) {\n                    // Récupérer les coordonnées GPS\n                    const lat = position.coords.latitude;\n                    const lon = position.coords.longitude;\n                    const gpsCoords = `${lat}, ${lon}`;\n\n                    // Mettre à jour le champ 'gps_client' avec les coordonnées GPS récupérées\n                    frm.set_value('custom_gps', gpsCoords);\n\n                    // Optionnel : Afficher un message de succès\n                    frappe.msgprint(`Coordonnées GPS récupérées : ${gpsCoords}`);\n                }, function(error) {\n                    // Gérer les erreurs\n                    frappe.msgprint(`Erreur lors de la récupération des coordonnées GPS : ${error.message}`);\n                }, {\n                    // Options de géolocalisation\n                    enableHighAccuracy: true,\n                    timeout: 5000,\n                    maximumAge: 0\n                });\n            } else {\n                frappe.msgprint(\"La géolocalisation n'est pas prise en charge par ce navigateur.\");\n            }\n        });\n    }\n});\n",
   "view": "Form"
  },
  {
@@ -400,10 +400,10 @@
   "doctype": "Client Script",
   "dt": "Customer",
   "enabled": 1,
-  "modified": "2024-02-19 23:54:20.534581",
-  "module": "Selling",
+  "modified": "2024-03-07 17:29:37.359454",
+  "module": "CRM Medigo",
   "name": "Carte Client",
-  "script": "frappe.ui.form.on('Customer', {\n    refresh(frm) {\n        if (frm.doc.gps_client) {\n            const [latitude, longitude] = frm.doc.gps_client.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['carte_client'].wrapper).html(`<iframe width=\"100%\" height=\"200\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
+  "script": "frappe.ui.form.on('Customer', {\n    refresh(frm) {\n        if (frm.doc.custom_gps) {\n            const [latitude, longitude] = frm.doc.custom_gps.split(\", \");\n            const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBhtddbDMEu4OoBJAxlfYADptjTspOqflw&q=${latitude},${longitude}&zoom=15`;\n\n            $(frm.fields_dict['custom_carte'].wrapper).html(`<iframe width=\"100%\" height=\"200\" frameborder=\"0\" style=\"border:1\" src=\"${mapUrl}\" allowfullscreen></iframe>`);\n        }\n    }\n});",
   "view": "Form"
  },
  {
@@ -778,6 +778,50 @@
   "module": "CRM Medigo",
   "name": "Filtre Utilisateurs",
   "script": "frappe.ui.form.on('Objectifs Commerciaux', {\n    refresh: function(frm) {\n        frm.set_query(\"delegue\", function() {\n            return {\n                filters: {\n                    \"role_profile_name\": [\"in\", [\"Délégue Commercial\",\"Délégué Médico-Commercial\"]]\n                }\n            };\n        });\n    }\n});\n\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Customer",
+  "enabled": 1,
+  "modified": "2024-03-07 18:21:01.073275",
+  "module": "CRM Medigo",
+  "name": "Cacher regle de tarification",
+  "script": "frappe.ui.form.on('Customer', {\n    refresh: function(frm) {\n        // Utiliser une légère attente est parfois nécessaire pour s'assurer que le bouton est déjà rendu\n        setTimeout(() => {\n            // Cacher le bouton \"Créer Règle de Tarification\"\n            frm.remove_custom_button('Pricing Rule', 'Create');\n            frm.remove_custom_button('Accounts Receivable', 'View');\n            frm.remove_custom_button('Accounting Ledger', 'View');\n            frm.remove_custom_button('Get Customer Group Details', 'Actions');\n       \n        }, 100); // Ajustez le délai au besoin, mais gardez-le aussi court que possible\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Item",
+  "enabled": 1,
+  "modified": "2024-03-07 18:03:55.549932",
+  "module": "CRM Medigo",
+  "name": "Cacher bouttons",
+  "script": "frappe.ui.form.on('Item', {\n\trefresh(frm) {\n\t    setTimeout(() => {\n            // Cacher le bouton \"Créer Règle de Tarification\"\n            frm.remove_custom_button('Stock Balance', 'View');\n            frm.remove_custom_button('Stock Ledger', 'View');\n            frm.remove_custom_button('Stock Projected Qty', 'View');\n            frm.remove_custom_button('Get Customer Group Details', 'Actions');\n        }, 100); // Ajustez le délai au besoin, mais gardez-le aussi court que possible\n\t\n\t}\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Item",
+  "enabled": 1,
+  "modified": "2024-03-07 18:12:57.143027",
+  "module": "CRM Medigo",
+  "name": "Cacher Dashboard",
+  "script": "frappe.ui.form.on('Item', {\n    refresh: function(frm) {\n        // Cacher le tableau de bord (dashboard) associé au DocType Item\n        frm.dashboard.hide();\n        frm.dashboard_tab.hide();\n    }\n});\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Customer",
+  "enabled": 1,
+  "modified": "2024-03-07 18:16:51.823894",
+  "module": "CRM Medigo",
+  "name": "Cacher Dashboard Client",
+  "script": "frappe.ui.form.on('Customer', {\n\trefresh(frm) {\n\t    frm.dashboard.hide();\n        frm.dashboard_tab.hide();\n\t}\n})",
   "view": "Form"
  }
 ]
