@@ -243,7 +243,8 @@ fixtures = [
     "Workflow",
     "Workflow State",
     "Workflow Action Master",  # Si vous souhaitez également exporter toutes les actions de workflow
-    "Custom Field"
+    "Custom Field",
+    "Dashboard Chart",
 
 ]
 
