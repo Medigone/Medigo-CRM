@@ -36,10 +36,35 @@
   "docstatus": 0,
   "doctype": "Custom HTML Block",
   "html": "\n                    \n                    <h4 class=\"card-title \"><b>Menu Médical</b></h4>\n\n           \n               \n                    <h6 class=\"card-subtitle mb-2 text-muted\">\n                       \n                             \n                             <p class=\"some-class\" id=\"dateAffichee\"></p>\n\n    \n                             \n                             \n                    </h6>",
-  "modified": "2024-01-30 11:28:53.035691",
+  "modified": "2024-03-07 19:34:20.637325",
   "name": "Accueil - Med",
   "private": 0,
-  "roles": [],
+  "roles": [
+   {
+    "parent": "Accueil - Med",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Administrateur Médical"
+   },
+   {
+    "parent": "Accueil - Med",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Analyste Médical"
+   },
+   {
+    "parent": "Accueil - Med",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Délégue Médical"
+   },
+   {
+    "parent": "Accueil - Med",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Superviseur Médical"
+   }
+  ],
   "script": "// Récupérer la date du jour\nvar dateDuJour = new Date();\n\n// Obtenir les composants de la date\nvar jour = dateDuJour.getDate();\nvar mois = dateDuJour.getMonth() + 1; // Les mois commencent à 0, donc ajout de 1\nvar annee = dateDuJour.getFullYear();\n\n// Formater la date\nvar dateFormatee = jour + '/' + mois + '/' + annee;\n\n// Récupérer l'élément avec la classe \"some-class\" dans le framework Frappe\nvar someClassElement = root_element.querySelector('.some-class');\n\n// Mettre à jour le contenu de l'élément avec la date formatée\nsomeClassElement.textContent = \"Date du jour : \" + dateFormatee;\n",
   "style": "        body {\r\n            font-family: 'Rubik', sans-serif;\r\n            height: 100% !important;\r\n            background-color: #3F51B5 !important;\r\n        }\r\n\r\n\r\n        #star {\r\n            margin-left: -5px !important;\r\n            vertical-align: bottom !important;\r\n            opacity: 0.5;\r\n        }\r\n\r\n\r\n        .more {\r\n            opacity: 0.5 !important;\r\n        }\r\n\r\n        .btn:hover {\r\n            color: black !important;\r\n        }\r\n\r\n        .vl {\r\n            margin: 0px !important;\r\n            width: 2px;\r\n            border-right: 1px solid #aaaaaa;\r\n            height: 25px;\r\n        }\r\n\r\n\r\n        #plus {\r\n            opacity: 0.8;\r\n        }\r\n\r\n\r\n        .card {\r\n            border-radius: 10px !important;\r\n        }\r\n\r\n        a:hover {\r\n            background-color: #ccc !important;\r\n        }\r\n\r\n\r\n\r\n        .btn-outlined:active {\r\n            color: #FFF;\r\n            border-color: #fff !important;\r\n        }\r\n\r\n\r\n        img {\r\n\r\n            cursor: pointer;\r\n            overflow: visible;\r\n        }\r\n\r\n        .btn:focus,\r\n        .btn:active {\r\n            outline: none !important;\r\n            box-shadow: none !important;\r\n        }\r\n\r\n\t.container{\r\n\t   margin-top:0px !important;\r\n\t}\r\n"
  },
@@ -130,10 +155,35 @@
   "docstatus": 0,
   "doctype": "Custom HTML Block",
   "html": "\n                    <h4 class=\"card-title \"><b>Menu Commercial</b></h4>\n\n           \n                \n                    <h6 class=\"card-subtitle mb-2 text-muted\">\n                       \n                             \n                             <p class=\"some-class\" id=\"dateAffichee\"></p>\n\n    \n                             \n                             \n                    </h6>",
-  "modified": "2024-01-30 11:29:22.069199",
+  "modified": "2024-03-07 19:33:50.194482",
   "name": "Accueil - Comm",
   "private": 0,
-  "roles": [],
+  "roles": [
+   {
+    "parent": "Accueil - Comm",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Administrateur Commercial"
+   },
+   {
+    "parent": "Accueil - Comm",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Analyste Commercial"
+   },
+   {
+    "parent": "Accueil - Comm",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Délégue Commercial"
+   },
+   {
+    "parent": "Accueil - Comm",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Superviseur Commercial"
+   }
+  ],
   "script": "// Récupérer la date du jour\nvar dateDuJour = new Date();\n\n// Obtenir les composants de la date\nvar jour = dateDuJour.getDate();\nvar mois = dateDuJour.getMonth() + 1; // Les mois commencent à 0, donc ajout de 1\nvar annee = dateDuJour.getFullYear();\n\n// Formater la date\nvar dateFormatee = jour + '/' + mois + '/' + annee;\n\n// Récupérer l'élément avec la classe \"some-class\" dans le framework Frappe\nvar someClassElement = root_element.querySelector('.some-class');\n\n// Mettre à jour le contenu de l'élément avec la date formatée\nsomeClassElement.textContent = \"Date du jour : \" + dateFormatee;\n",
   "style": "        body {\r\n            font-family: 'Rubik', sans-serif;\r\n            height: 100% !important;\r\n            background-color: #3F51B5 !important;\r\n        }\r\n\r\n\r\n        #star {\r\n            margin-left: -5px !important;\r\n            vertical-align: bottom !important;\r\n            opacity: 0.5;\r\n        }\r\n\r\n\r\n        .more {\r\n            opacity: 0.5 !important;\r\n        }\r\n\r\n        .btn:hover {\r\n            color: black !important;\r\n        }\r\n\r\n        .vl {\r\n            margin: 0px !important;\r\n            width: 2px;\r\n            border-right: 1px solid #aaaaaa;\r\n            height: 25px;\r\n        }\r\n\r\n\r\n        #plus {\r\n            opacity: 0.8;\r\n        }\r\n\r\n\r\n        .card {\r\n            border-radius: 10px !important;\r\n        }\r\n\r\n        a:hover {\r\n            background-color: #ccc !important;\r\n        }\r\n\r\n\r\n\r\n        .btn-outlined:active {\r\n            color: #FFF;\r\n            border-color: #fff !important;\r\n        }\r\n\r\n\r\n        img {\r\n\r\n            cursor: pointer;\r\n            overflow: visible;\r\n        }\r\n\r\n        .btn:focus,\r\n        .btn:active {\r\n            outline: none !important;\r\n            box-shadow: none !important;\r\n        }\r\n\r\n\t.container{\r\n\t   margin-top:0px !important;\r\n\t}\r\n"
  },
