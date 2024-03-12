@@ -1,6 +1,6 @@
 {
  "aggregate_function_based_on": "",
- "color": "#cf4848",
+ "color": "#29CD42",
  "creation": "2024-03-05 22:26:21.327227",
  "docstatus": 0,
  "doctype": "Number Card",
@@ -12,7 +12,7 @@
  "is_public": 1,
  "is_standard": 1,
  "label": "VMI - Termin\u00e9e",
- "modified": "2024-03-12 09:26:05.952064",
+ "modified": "2024-03-12 09:27:29.009758",
  "modified_by": "Administrator",
  "module": "CRM Medigo",
  "name": "VMI - Nombre",
