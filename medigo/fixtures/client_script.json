@@ -823,5 +823,16 @@
   "name": "Cacher Dashboard Client",
   "script": "frappe.ui.form.on('Customer', {\n\trefresh(frm) {\n\t    frm.dashboard.hide();\n        frm.dashboard_tab.hide();\n\t}\n})",
   "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Sales Order",
+  "enabled": 1,
+  "modified": "2024-03-12 10:01:59.108253",
+  "module": "CRM Medigo",
+  "name": "cacher creer",
+  "script": "frappe.ui.form.on('Sales Order', {\n    refresh: function(frm) {\n        // Utiliser une légère attente est parfois nécessaire pour s'assurer que le bouton est déjà rendu\n        setTimeout(() => {\n            // Cacher le bouton \"Créer Règle de Tarification\"\n            frm.remove_custom_button('Delivery Note', 'Create');\n            frm.remove_custom_button('Pick List', 'Create');\n            frm.remove_custom_button('Sales Invoice', 'Create');\n            frm.remove_custom_button('Material Request', 'Create');\n            frm.remove_custom_button('Purchase Order', 'Create');\n            frm.remove_custom_button('Project', 'Create');\n            frm.remove_custom_button('Payment Entry', 'Create');\n            frm.remove_custom_button('Work Order', 'Create');\n            frm.remove_custom_button('Payment Request', 'Create');\n            frm.remove_custom_button('Payment', 'Create');\n            frm.remove_custom_button('Request for Raw Materials', 'Create');\n            frm.remove_custom_button('Update Items');\n            frm.remove_custom_button('Resume', 'Status');\n            frm.remove_custom_button('Close', 'Status');\n            frm.remove_custom_button('Hold', 'Status');\n       \n        }, 50); // Ajustez le délai au besoin, mais gardez-le aussi court que possible\n    }\n});",
+  "view": "Form"
  }
 ]

@@ -124,7 +124,7 @@
   "doctype": "Custom Field",
   "dt": "Sales Order",
   "fetch_from": "customer.custom_distributeur",
-  "fetch_if_empty": 0,
+  "fetch_if_empty": 1,
   "fieldname": "custom_distributeur",
   "fieldtype": "Link",
   "hidden": 0,
